@@ -1,0 +1,356 @@
+Modelspace: <ezdxf.layouts.layout.Modelspace object at 0x00000247340115B0>
+Layout: Model
+Layout: 布局1
+
+Layers in the DXF file:
+ - Layername: 0, Color: 7, Is On: True
+ - Layername: 等高线, Color: 7, Is On: False
+ - Layername: 测点, Color: 7, Is On: True
+ - Layername: 65, Color: 7, Is On: True
+ - Layername: 6度带, Color: 7, Is On: True
+ - Layername: 51, Color: 7, Is On: True
+ - Layername: 50, Color: 7, Is On: True
+ - Layername: 通风闭墙, Color: 1, Is On: True
+ - Layername: 巷道, Color: 7, Is On: True
+ - Layername: 测风站, Color: 4, Is On: False
+ - Layername: 矿界, Color: 7, Is On: True
+ - Layername: 经纬网, Color: 7, Is On: True
+ - Layername: 采掘图例, Color: 7, Is On: False
+ - Layername: Defpoints, Color: 7, Is On: True
+ - Layername: 陷落柱, Color: 7, Is On: True
+ - Layername: 钻孔, Color: 7, Is On: True
+ - Layername: 综合柱状, Color: 7, Is On: True
+ - Layername: 指北针, Color: 7, Is On: True
+ - Layername: 管路, Color: 7, Is On: False
+ - Layername: 避灾路线图, Color: 7, Is On: True
+ - Layername: 避灾路线图例, Color: 7, Is On: True
+ - Layername: 15104尾巷图, Color: 7, Is On: True
+ - Layername: 通风系统图, Color: 7, Is On: False
+ - Layername: 通风系统图例, Color: 7, Is On: False
+ - Layername: 瓦斯监控图例, Color: 7, Is On: False
+ - Layername: 瓦斯监控图, Color: 7, Is On: False
+ - Layername: 10, Color: 7, Is On: True
+ - Layername: 11, Color: 7, Is On: True
+ - Layername: 图例, Color: 7, Is On: True
+ - Layername: 46, Color: 7, Is On: True
+ - Layername: 瓦斯抽放图例, Color: 7, Is On: False
+ - Layername: 防尘洒水图, Color: 7, Is On: False
+ - Layername: 冲洗巷道阀门, Color: 7, Is On: False
+ - Layername: 水幕, Color: 7, Is On: False
+ - Layername: 防、灭火图, Color: 7, Is On: False
+ - Layername: 三通, Color: 7, Is On: False
+ - Layername: 通讯图, Color: 7, Is On: False
+ - Layername: 排水图, Color: 7, Is On: False
+ - Layername: 图例井下运输, Color: 5, Is On: False
+ - Layername: 运输图, Color: 7, Is On: False
+ - Layername: 井下设备布置图, Color: 7, Is On: False
+ - Layername: 巷道布置图, Color: 7, Is On: False
+ - Layername: 压风系统图, Color: 7, Is On: False
+ - Layername: 新等高线, Color: 7, Is On: True
+ - Layername: 保护煤柱图, Color: 7, Is On: False
+ - Layername: 保护煤柱, Color: 1, Is On: True
+ - Layername: 监控图, Color: 7, Is On: False
+ - Layername: 通风真图的部分, Color: 7, Is On: False
+ - Layername: 等值线注记, Color: 7, Is On: True
+ - Layername: 煤仓, Color: 7, Is On: True
+ - Layername: 10月, Color: 7, Is On: True
+ - Layername: 风机, Color: 7, Is On: False
+ - Layername: 40, Color: 7, Is On: True
+ - Layername: 52, Color: 7, Is On: True
+ - Layername: 45, Color: 7, Is On: True
+ - Layername: 通风系统图旧名称, Color: 7, Is On: False
+ - Layername: 通风系统图新名称, Color: 7, Is On: False
+ - Layername: 监控图旧名称, Color: 7, Is On: False
+ - Layername: 监控图新名称, Color: 7, Is On: False
+ - Layername: 排水图旧名称, Color: 7, Is On: False
+ - Layername: 排水图新名称, Color: 7, Is On: False
+ - Layername: 采掘图旧名称, Color: 7, Is On: False
+ - Layername: 采掘图新名称, Color: 7, Is On: False
+ - Layername: 布置图旧名称, Color: 7, Is On: False
+ - Layername: 布置图新名称, Color: 7, Is On: False
+ - Layername: 避灾图旧名称, Color: 7, Is On: False
+ - Layername: 避灾图新名称, Color: 7, Is On: True
+ - Layername: 1, Color: 7, Is On: True
+ - Layername: 59, Color: 7, Is On: True
+ - Layername: 39, Color: 7, Is On: True
+ - Layername: 90, Color: 7, Is On: True
+ - Layername: 85, Color: 7, Is On: True
+ - Layername: 供水施救装置, Color: 7, Is On: False
+ - Layername: 二采区轨道大巷避灾路线, Color: 7, Is On: True
+ - Layername: tu, Color: 7, Is On: True
+ - Layername: 采空区, Color: 7, Is On: True
+ - Layername: 供电图, Color: 7, Is On: True
+ - Layername: gai, Color: 7, Is On: True
+ - Layername: 月进度图例, Color: 7, Is On: True
+ - Layername: 真进尺, Color: 7, Is On: True
+ - Layername: 假进尺, Color: 7, Is On: True
+ - Layername: 独立经纬网, Color: 7, Is On: True
+ - Layername: 改图, Color: 7, Is On: True
+ - Layername: 无突出区域, Color: 7, Is On: True
+ - Layername: 2000网格, Color: 7, Is On: True
+ - Layername: 图框, Color: 1, Is On: True
+ - Layername: 积水线探水线, Color: 7, Is On: True
+ - Layername: 采区边界, Color: 7, Is On: True
+ - Layername: 矿界2, Color: 1, Is On: True
+ - Layername: 2000矿界, Color: 7, Is On: True
+ - Layername: 开关, Color: 7, Is On: True
+ - Layername: 图层1, Color: 7, Is On: True
+ - Layername: 禁采区, Color: 7, Is On: True
+ - Layername: 3度带网格, Color: 7, Is On: True
+ - Layername: 通风设施, Color: 7, Is On: True
+ - Layername: 0监控设备图例, Color: 7, Is On: True
+ - Layername: 监控设备图例, Color: 7, Is On: True
+ - Layername: 12, Color: 7, Is On: True
+ - Layername: 逆断层, Color: 7, Is On: True
+ - Layername: 旧采空区巷道, Color: 7, Is On: True
+ - Layername: MAPLAYER_100, Color: 7, Is On: True
+
+Layout: 布局2
+Block: *Model_Space
+Block: *Paper_Space
+Block: *Paper_Space0
+Block: 喷嘴
+Block: A$C60A7502E
+Block: A$C3CD85FFE
+Block: A$C37C667C8
+Block: 局扇
+Block: 水袋
+Block: 进风箭头
+Block: 回风箭头
+Block: A$C11462000
+Block: A$C7AA94ABB
+Block: _Open30
+Block: 三通
+Block: fm
+Block: 水幕
+Block: A$C1CBF0C34
+Block: 新块
+Block: A$C1E731EC9
+Block: 煤流路线
+Block: 运料路线
+Block: 胶带输送机
+Block: 刮板
+Block: 绞车
+Block: A$C01A113BE
+Block: A$C1CF3592B
+Block: A$C697821D7
+Block: A$C6251000F
+Block: A$C5BC43CFA
+Block: A$C0EE74421
+Block: A$C784D0E93
+Block: A$C00A16E0A
+Block: A$C13A20F94
+Block: A$C1F6047B5
+Block: A$C3C7C1195
+Block: A$C6E5150CF
+Block: A$C5A023CF4
+Block: A$C4E096DDC
+Block: A$C05F63F4B
+Block: A$C06D21B68
+Block: A$C43183317
+Block: A$C01AE5128
+Block: A$C1BAF2869
+Block: A$C3384100E
+Block: A$C68C36CE1
+Block: A$C460911DF
+Block: A$C59E537C8
+Block: A$C33CF1E86
+Block: A$C37404BC0
+Block: A$C510B0D8F
+Block: A$C47C6679E
+Block: A$C6EF81D5B
+Block: A$C3CEB67FD
+Block: A$C1F1B6A3B
+Block: A$C5AD15CB6
+Block: A$C1B952277
+Block: A$C41FA578F
+Block: A$C3A767C6C
+Block: A$C44E41D2B
+Block: A$C7165756B
+Block: A$C6DDA21D9
+Block: A$C54252C34
+Block: A$C68C106D0
+Block: A$C3FA2484E
+Block: A$C324C7A3E
+Block: A$C08A743D6
+Block: A$C6A4E78C8
+Block: A$C6FCC0122
+Block: A$C441E64E1
+Block: A$C2EB461B8
+Block: _Open90
+Block: $AUDIT_BAD_BLOCK_RECORD1
+Block: A$C26AC1BE5
+Block: A$C32157E0C
+Block: A$C6BD93A3C
+Block: A$C1FCD29BB
+Block: A$C3C077E2B
+Block: A$C20B615B5
+Block: A$C73D17190
+Block: A$C132F5318
+Block: A$C49634F76
+Block: A$C16193687
+Block: A$C55425FEA
+Block: A$C35E84D5A
+Block: A$C76E17D39
+Block: A$C36133311
+Block: A$C65281A73
+Block: A$C0B3C0768
+Block: A$C237F1B8A
+Block: A$C1C6A3DC8
+Block: A$C20457096
+Block: A$C472A3673
+Block: A$C447D1D0D
+Block: A$C080A738F
+Block: A$C64BB2779
+Block: A$C071E3AEC
+Block: A$C3E887E9F
+Block: A$C6EAC38B7
+Block: A$C7A237083
+Block: A$C75C328DC
+Block: *D99
+Block: A$C598B7E4A
+Block: A$C3C8425A1
+Block: A$C31F5068D
+Block: A$C1BAF7C6C
+Block: 图例
+Block: fgv
+Block: w30
+Block: *D107
+Block: *D108
+Block: *D109
+Block: *D110
+Block: *D111
+Block: *D112
+Block: *D113
+Block: *D114
+Block: *D115
+Block: *D116
+Block: *D117
+Block: *D118
+Block: *D119
+Block: *D120
+Block: *D121
+Block: *D122
+Block: *D123
+Block: *D124
+Block: *D125
+Block: *D126
+Block: *D127
+Block: *D128
+Block: *D129
+Block: *D130
+Block: *D131
+Block: *D132
+Block: *D133
+Block: *D134
+Block: *D135
+Block: *D136
+Block: *D137
+Block: *D138
+Block: *D139
+Block: *D140
+Block: *D141
+Block: *D142
+Block: *D143
+Block: *D144
+Block: *D145
+Block: *D146
+Block: *D147
+Block: *D148
+Block: *D149
+Block: *D150
+Block: *D151
+Block: *D152
+Block: *D153
+Block: *D154
+Block: *D155
+Block: 15206低抽巷图
+Block: ASAs
+Block: sdsfgbbnhhmn
+Block: 煤仓
+Block: A$C145A6E7A
+Block: 调节风窗
+Block: 15205
+Block: A$C54C8072C
+Block: *D164
+Block: *D165
+Block: *D166
+Block: *D167
+Block: *D168
+Block: *D169
+Block: *D170
+Block: *D171
+Block: *D172
+Block: *D173
+Block: *D174
+Block: *D175
+Block: *D176
+Block: *D177
+Block: *D178
+Block: *D179
+Block: *D180
+Block: *D181
+Block: *D182
+Block: *D183
+Block: *D184
+Block: *D185
+Block: *D186
+Block: *D187
+Block: *D188
+Block: *D189
+Block: *D190
+Block: *D191
+Block: *D192
+Block: *D193
+Block: *D194
+Block: *D195
+Block: *D196
+Block: A$C2F77172F
+Block: _DIMX
+Block: 防火门
+Block: 调节风门
+Block: A$C0089675B
+Block: A$C46257D8F
+Block: A$C636D62E6
+Block: A$C5A1226B7
+Block: A$C03AA1463
+Block: *D206
+Block: *D207
+Block: *D208
+Block: *D209
+Block: *D210
+Block: *D211
+Block: *D212
+Block: *D213
+Block: *D214
+Block: *D215
+Block: *D216
+Block: *D217
+Block: *D218
+Block: *D219
+Block: *D220
+Block: *D221
+Block: *D222
+Block: *D223
+Block: *D224
+Block: *D225
+Block: *D226
+Block: *D227
+Block: *D228
+Block: *D229
+Block: *D230
+Block: *D231
+Block: *D232
+Block: *D233
+Block: *D234
+Block: *D235
+Block: *D236
+Block: *D237
+Block: *D238
+Block: *D239
+Block: *D240
+Block: *D241
+Block: A$C550E01BA
+Block: A$C23D165D9
+Block: A$C236C7B0F
+Block: *D245

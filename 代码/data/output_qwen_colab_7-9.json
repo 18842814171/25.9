@@ -1,0 +1,1654 @@
+{
+    "triples": [
+        {
+            "subject": {
+                "name": "人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "高压设备",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "移开或越过遮栏（围栏）",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "任何人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "高压设备",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "进行工作",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "室内高压设备的隔离室",
+                "type": "环境"
+            },
+            "object": {
+                "name": "安装牢固、高度大于1.7m的遮栏",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "设有",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "隔离室",
+                "type": "环境"
+            },
+            "object": {
+                "name": "加锁的通道门",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "包含",
+                "type": "物理关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "室内高压断路器的操动机构",
+                "type": "设备"
+            },
+            "object": {
+                "name": "墙或金属板",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "隔离于",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "室内高压断路器的操动机构",
+                "type": "设备"
+            },
+            "object": {
+                "name": "远方操动机构",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "装有",
+                "type": "设备关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "高压设备发生接地时",
+                "type": "活动"
+            },
+            "object": {
+                "name": "室内不应接近故障点4m以内，室外不应接近故障点8m以内",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "规定距离限制",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "进入上述范围人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "应穿绝缘靴，接触设备的外壳和构架时，应戴绝缘手套",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行要求",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "运行中高压设备",
+                "type": "设备"
+            },
+            "object": {
+                "name": "中性点接地点",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "断开前建立有效旁路接地",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "换流站内",
+                "type": "环境"
+            },
+            "object": {
+                "name": "运行中高压直流系统",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "包含",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "直流场中性区域设备",
+                "type": "设备"
+            },
+            "object": {
+                "name": "带电体",
+                "type": "状态"
+            },
+            "relation": {
+                "name": "视为",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "雷雨天气",
+                "type": "环境",
+                "meta": [
+                    "巡视室外高压设备的条件"
+                ]
+            },
+            "object": {
+                "name": "主体实体文本",
+                "type": "人员",
+                "meta": []
+            },
+            "relation": {
+                "name": "使用绝缘靴",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "雷雨天气",
+                "type": "环境",
+                "meta": [
+                    "巡视室外高压设备的条件"
+                ]
+            },
+            "object": {
+                "name": "主体实体文本",
+                "type": "人员",
+                "meta": []
+            },
+            "relation": {
+                "name": "不应使用伞具",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "雷雨天气",
+                "type": "环境",
+                "meta": [
+                    "巡视室外高压设备的条件"
+                ]
+            },
+            "object": {
+                "name": "主体实体文本",
+                "type": "人员",
+                "meta": []
+            },
+            "relation": {
+                "name": "不应靠近避雷器和避雷针",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "拉合断路器和隔离开关",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "推入（拉出）手车式断路器",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检查断路器和隔离开关的位置",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "验电、装拆接地线",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检查负荷分配",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "合上（安装）或断开（拆除）控制回路或电压互感器回路的空气开关（熔断器）",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "切换保护回路和检验是否确无电压等",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "设备检修",
+                "type": "活动"
+            },
+            "object": {
+                "name": "送电范围内接地开关（装置）",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "检查",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "设备检修",
+                "type": "活动"
+            },
+            "object": {
+                "name": "送电范围内接地线",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "检查",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "启停系统",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "调节功率",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "转换状态",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "改变控制方式",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "转换主控站",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "投退控制保护系统",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "停电操作",
+                "type": "活动"
+            },
+            "object": {
+                "name": "断路器",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "按照顺序执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "主体实体文本",
+                "type": "主体实体类型"
+            },
+            "object": {
+                "name": "负荷侧隔离开关",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "按照顺序执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "主体实体文本",
+                "type": "主体实体类型"
+            },
+            "object": {
+                "name": "电源侧隔离开关",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "按照顺序执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "不应带负荷拉（合）隔离开关或操作手车",
+                "type": "活动"
+            },
+            "object": {
+                "name": "带电间隔",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "不应进入",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "不应带负荷拉（合）隔离开关或操作手车",
+                "type": "活动"
+            },
+            "object": {
+                "name": "接地开关（接地线）",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "误操作",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "不应带负荷拉（合）隔离开关或操作手车",
+                "type": "活动"
+            },
+            "object": {
+                "name": "断路器（隔离开关）",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "误操作",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "不应带负荷拉（合）隔离开关或操作手车",
+                "type": "活动"
+            },
+            "object": {
+                "name": "断路器",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "误操作",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "雨天",
+                "type": "环境",
+                "meta": [
+                    "操作室外高压设备的条件"
+                ]
+            },
+            "object": {
+                "name": "绝缘棒",
+                "type": "工具",
+                "meta": [
+                    "使用有防雨罩"
+                ]
+            },
+            "relation": {
+                "name": "使用",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "操作室外高压设备的人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "绝缘靴",
+                "type": "装备",
+                "meta": [
+                    "穿"
+                ]
+            },
+            "relation": {
+                "name": "穿戴",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "操作室外高压设备的人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "绝缘手套",
+                "type": "装备",
+                "meta": [
+                    "戴"
+                ]
+            },
+            "relation": {
+                "name": "穿戴",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "接地网电阻不符合要求的室外高压设备",
+                "type": "设备"
+            },
+            "object": {
+                "name": "晴天操作人员",
+                "type": "人员"
+            },
+            "relation": {
+                "name": "避免",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "绝缘棒",
+                "type": "设备"
+            },
+            "object": {
+                "name": "隔离开关、高压熔断器",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "使用",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "绝缘手套",
+                "type": "设备"
+            },
+            "object": {
+                "name": "用绝缘棒拉合隔离开关、高压熔断器,或经传动机构拉合断路器和隔离开关",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "佩戴",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "高压熔断器",
+                "type": "设备"
+            },
+            "object": {
+                "name": "主体实体文本",
+                "type": "人员"
+            },
+            "relation": {
+                "name": "戴护目眼镜和绝缘手套",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "高压熔断器",
+                "type": "设备"
+            },
+            "object": {
+                "name": "绝缘夹钳",
+                "type": "工具"
+            },
+            "relation": {
+                "name": "使用",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "主体实体文本",
+                "type": "人员"
+            },
+            "object": {
+                "name": "绝缘物或绝缘台",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "站在",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "断路器",
+                "type": "设备"
+            },
+            "object": {
+                "name": "操动机构",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "用墙或金属板隔开",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "断路器",
+                "type": "设备"
+            },
+            "object": {
+                "name": "重合闸装置",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "退出",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "高压开关柜的手车",
+                "type": "设备"
+            },
+            "object": {
+                "name": "检修位置",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "操作至",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "手车",
+                "type": "设备"
+            },
+            "object": {
+                "name": "隔离挡板",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "确认封闭",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "操作后应检查各相的实际位置",
+                "type": "活动"
+            },
+            "object": {
+                "name": "无法观察实际位置时,可通过间接方式确认该设备已操作到位",
+                "type": "结果/跟随"
+            },
+            "relation": {
+                "name": "执行条件",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "远方操作",
+                "type": "活动"
+            },
+            "object": {
+                "name": "一次设备",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "提醒远离",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "电气设备",
+                "type": "设备"
+            },
+            "object": {
+                "name": "隔离开关和安全措施",
+                "type": "作业关系"
+            },
+            "relation": {
+                "name": "在未拉开",
+                "type": "物理关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "主体实体文本",
+                "type": "活动"
+            },
+            "object": {
+                "name": "触及设备或进入遮栏",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "以防突然来电",
+                "type": "避免"
+            }
+        },
+        {
+            "subject": {
+                "name": "人身触电或严重危及人身安全情况",
+                "type": "事件"
+            },
+            "object": {
+                "name": "立即断开有关设备的电源",
+                "type": "响应行动"
+            },
+            "relation": {
+                "name": "触发-反应",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "断路器",
+                "type": "设备"
+            },
+            "object": {
+                "name": "线路隔离开关、母线隔离开关",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "操作至",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "所有断路器、线路隔离开关、母线隔离开关",
+                "type": "设备"
+            },
+            "object": {
+                "name": "拉开",
+                "type": "动作"
+            },
+            "relation": {
+                "name": "操作至",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "所有线路上可能来电的各端",
+                "type": "环境"
+            },
+            "object": {
+                "name": "装设接地线",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "在...上进行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "线路隔离开关操作把手上",
+                "type": "环境"
+            },
+            "object": {
+                "name": "挂‘禁止合闸，线路有人工作!’标示牌",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "在...上进行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "值班调度员或有关单位",
+                "type": "人员"
+            },
+            "object": {
+                "name": "所有工作负责人",
+                "type": "人员"
+            },
+            "relation": {
+                "name": "接收工作结束报告",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "所有工作负责人",
+                "type": "人员"
+            },
+            "object": {
+                "name": "各自的工作班组",
+                "type": "组织"
+            },
+            "relation": {
+                "name": "完成工作",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "所有工作负责人",
+                "type": "人员"
+            },
+            "object": {
+                "name": "接地线",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "拆除",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "所有工作负责人",
+                "type": "人员"
+            },
+            "object": {
+                "name": "作业人员",
+                "type": "组织"
+            },
+            "relation": {
+                "name": "撤离线路",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "用户管辖的线路",
+                "type": "设备"
+            },
+            "object": {
+                "name": "停电操作",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "要求",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "用户停送电联系人",
+                "type": "人员"
+            },
+            "object": {
+                "name": "书面申请",
+                "type": "文件"
+            },
+            "relation": {
+                "name": "提供",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "书面申请",
+                "type": "文件"
+            },
+            "object": {
+                "name": "批准",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "经过",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "安全措施",
+                "type": "活动"
+            },
+            "object": {
+                "name": "做好",
+                "type": "动作"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "原申请人",
+                "type": "人员"
+            },
+            "object": {
+                "name": "工作结束报告",
+                "type": "文件"
+            },
+            "relation": {
+                "name": "提供",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "工作结束报告",
+                "type": "文件"
+            },
+            "object": {
+                "name": "恢复送电",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "在...之后进行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "发电机、同期调相机、高压电动机、储能设备和光伏设备",
+                "type": "设备"
+            },
+            "object": {},
+            "relation": {
+                "name": "作业",
+                "type": "活动"
+            }
+        },
+        {
+            "subject": {
+                "name": "发电机、同期调相机、高压电动机、储能设备、光伏设备",
+                "type": "设备"
+            },
+            "object": {
+                "name": "工作负责人",
+                "type": "人员"
+            },
+            "relation": {
+                "name": "检查现场",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "工作票",
+                "type": "文件"
+            },
+            "object": {
+                "name": "工作负责人",
+                "type": "人员"
+            },
+            "relation": {
+                "name": "保存",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "储能设备、光伏设备、发电机、同期调相机及其连接在出口母线上的各类变压器、电压互感器、启动母线、储能组件（含蓄电池组、储能变流器PCS）和光伏组件（含直流汇线箱、交流汇流箱、DC/AC逆变器）",
+                "type": "设备",
+                "meta": [
+                    "断开"
+                ]
+            },
+            "object": {
+                "name": "出口母线上的可能送电至停电检修设备的断路器和隔离开关或熔断器",
+                "type": "设备",
+                "meta": [
+                    "断开"
+                ]
+            }
+        },
+        {
+            "subject": {
+                "name": "储能设备、光伏设备、发电机和同期调相机所有来源的励磁电源",
+                "type": "设备"
+            },
+            "object": {
+                "name": "断路器、隔离开关或熔断器",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "断开",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "断开断路器、隔离开关、励磁装置、同期装置的操作电源及能源",
+                "type": "活动"
+            },
+            "object": {
+                "name": "",
+                "type": ""
+            },
+            "relation": {
+                "name": "断开",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "如调相机有启动用的电动机，还应断开此电动机的断路器和隔离开关",
+                "type": "活动"
+            },
+            "object": {
+                "name": "",
+                "type": ""
+            },
+            "relation": {
+                "name": "断开",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "断开发电机检修区域内的空气加热器、空气循环风机等辅助装置的电源",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "断开",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "发电机和同期调相机",
+                "type": "设备"
+            },
+            "object": {
+                "name": "操作把手、按钮和机组的启动装置、同期并车装置、盘车装置的操作把手上,断开的断路器、隔离开关或熔断器操作处",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "在...悬挂标示牌",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "经验明无电压后",
+                "type": "活动"
+            },
+            "object": {
+                "name": "在发电机、同期调相机出口母线处装设接地线或合上接地开关",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "光伏设备作业之前",
+                "type": "活动"
+            },
+            "object": {
+                "name": "进行光伏支架接地连接导通测试、检查采用金属箱体的汇流箱已可靠接地，并验明确无电压",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检修的发电机",
+                "type": "设备"
+            },
+            "object": {
+                "name": "其他发电机的中性点",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "连接",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检修发电机",
+                "type": "活动"
+            },
+            "object": {
+                "name": "工作前",
+                "type": "时间"
+            },
+            "relation": {
+                "name": "在...之前",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检修机组",
+                "type": "活动"
+            },
+            "object": {
+                "name": "灭火装置",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "装有",
+                "type": "设备关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检修机组",
+                "type": "活动"
+            },
+            "object": {
+                "name": "防止灭火装置误动的必要措施",
+                "type": "作业关系"
+            },
+            "relation": {
+                "name": "采取",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检修机组",
+                "type": "活动"
+            },
+            "object": {
+                "name": "自动闸板风门",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "采取措施防止关闭",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "发电机、同期调相机本体油、气管路系统",
+                "type": "设备"
+            },
+            "object": {
+                "name": "冷却介质（包括水和氢气）",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "从各方面隔离",
+                "type": "设备关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "氢冷机组",
+                "type": "设备"
+            },
+            "object": {
+                "name": "空气",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "置换",
+                "type": "物理关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "补氢管路阀门至发电机间",
+                "type": "设备"
+            },
+            "object": {
+                "name": "明显的断开点",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "有",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "发电机、同期调相机区域",
+                "type": "环境"
+            },
+            "object": {
+                "name": "氢气",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "检测",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "电动阀门",
+                "type": "设备"
+            },
+            "object": {
+                "name": "电源",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "切断",
+                "type": "物理关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "检修排水阀",
+                "type": "设备"
+            },
+            "object": {
+                "name": "可靠打开",
+                "type": "状态"
+            },
+            "relation": {
+                "name": "保持",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "发电机、同期调相机罩内部",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "进入",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "主体实体文本",
+                "type": "设备"
+            },
+            "object": {
+                "name": "防止启动装置突然转动的措施",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "做好",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "穿转子前",
+                "type": "活动"
+            },
+            "object": {
+                "name": "严格检查定子内部、转子零件紧固牢靠，零件防松装置完整，定子内部及转子已彻底清理干净，不应遗留任何物件",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "前提",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "穿转子前",
+                "type": "活动"
+            },
+            "object": {
+                "name": "防止抽、穿转子过程中定转子碰撞",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "避免",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "转动着的发电机、同期调相机",
+                "type": "设备"
+            },
+            "object": {},
+            "relation": {
+                "name": "认为有电压",
+                "type": "物理关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "在转动着的发电机、同期调相机的定子回路和与其直接连接的设备回路上的工作",
+                "type": "活动"
+            },
+            "object": {},
+            "relation": {
+                "name": "禁止进行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "必须不停机进行紧急修理时",
+                "type": "活动"
+            },
+            "object": {
+                "name": "确认发电机所有可能来电侧的断路器和隔离开关已断开，将励磁回路切断，投入自动灭磁装置，然后将定子引出线与中性点短路接地",
+                "type": "作业步骤"
+            },
+            "relation": {
+                "name": "前提条件",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "在拆装短路接地线时",
+                "type": "活动"
+            },
+            "object": {
+                "name": "应戴缘绝手套，穿绝缘靴或站在绝缘垫上，并戴防护眼镜",
+                "type": "安全措施"
+            },
+            "relation": {
+                "name": "执行要求",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "专用电刷或铜编织带",
+                "type": "设备"
+            },
+            "object": {
+                "name": "测量轴电压和在转动着的发电机上用电压表测量转子绝缘的工作",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "使用于",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "绝缘柄",
+                "type": "设备"
+            },
+            "object": {
+                "name": "电刷上",
+                "type": "物理位置"
+            },
+            "relation": {
+                "name": "装有",
+                "type": "设备关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "有经验的电工",
+                "type": "人员"
+            },
+            "object": {
+                "name": "转动着的电机上调整、清扫电刷及滑环时的操作",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "绝缘手套",
+                "type": "设备",
+                "meta": [
+                    "戴在手上"
+                ]
+            },
+            "object": {
+                "name": "工作时",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "使用",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "绝缘垫",
+                "type": "设备",
+                "meta": [
+                    "站立于上"
+                ]
+            },
+            "object": {
+                "name": "工作时",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "静止变频器机柜和机架装置",
+                "type": "设备"
+            },
+            "object": {
+                "name": "接地系统",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "连接于",
+                "type": "空间关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "静止变频器机柜和机架装置",
+                "type": "设备"
+            },
+            "object": {
+                "name": "易接触到的部件",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "确保不带电",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "静止变频器机柜和机架装置",
+                "type": "设备"
+            },
+            "object": {
+                "name": "危险的电压源",
+                "type": "环境"
+            },
+            "relation": {
+                "name": "未与连接",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "断开电源断路器、隔离开关及其操作电源及能源",
+                "type": "活动"
+            },
+            "object": {
+                "name": "经验明确无电压后装设接地线或在隔离开关间装设绝缘隔板",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "手车",
+                "type": "设备"
+            },
+            "object": {
+                "name": "操作至“试验”或“检修”位置",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "状态转换",
+                "type": "设备关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "电动机",
+                "type": "设备"
+            },
+            "object": {
+                "name": "有独立供电的变频器或有其他软启动装置时,还应断开变频器和软启动装置的操作电源",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "禁止合闸，有人工作!",
+                "type": "文件"
+            },
+            "object": {
+                "name": "断路器、隔离开关操作把手",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "悬挂于",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "拆开后的电缆头",
+                "type": "设备"
+            },
+            "object": {
+                "name": "三相短路接地",
+                "type": "作业"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "防止措施",
+                "type": "活动",
+                "meta": [
+                    "防止被其带动的机械引起电动机转动"
+                ]
+            },
+            "object": {
+                "name": "阀门",
+                "type": "环境",
+                "meta": []
+            },
+            "relation": {
+                "name": "悬挂标示牌",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "高压电动机及其附属装置回路",
+                "type": "设备"
+            },
+            "object": {
+                "name": "转动着的高压电动机",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "在...上进行工作",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "工作人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "转动着的高压电动机及其附属装置回路",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "在...上进行工作",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "工作人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "绝缘手套或使用有绝缘把手的工具",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "使用",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "工作人员",
+                "type": "人员"
+            },
+            "object": {
+                "name": "穿绝缘靴或站在绝缘垫上",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "进行",
+                "type": "作业关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "电动机的引出线和电缆头",
+                "type": "设备"
+            },
+            "object": {
+                "name": "牢固、可靠的遮栏或护罩",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "装设"
+            }
+        },
+        {
+            "subject": {
+                "name": "电动机及其附属装置的外壳",
+                "type": "设备"
+            },
+            "object": {
+                "name": "接地线",
+                "type": "设备"
+            },
+            "relation": {
+                "name": "连接",
+                "type": "设备关系"
+            }
+        },
+        {
+            "subject": {
+                "name": "工作票",
+                "type": "文件"
+            },
+            "object": {
+                "name": "送电试验电动机及其附属装置",
+                "type": "活动"
+            },
+            "relation": {
+                "name": "执行",
+                "type": "作业关系"
+            }
+        }
+    ]
+}

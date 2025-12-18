@@ -1,0 +1,1886 @@
+[
+  {
+    "handle": "3DA",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "end": [
+        4200.000000000002,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        300.0,
+        74.0,
+        74.0
+      ],
+      "slope": null,
+      "note": " (multi-partial)"
+    }
+  },
+  {
+    "handle": "3DB",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        0.0,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        4200.000000000002,
+        1200.0000000000002,
+        0.0
+      ],
+      "partial_lengths": [
+        1200.0,
+        400.0
+      ],
+      "slope": null,
+      "note": " (multi-partial)"
+    }
+  },
+  {
+    "handle": "3DC",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        0.0,
+        1000.0000000000002,
+        0.0
+      ],
+      "end": [
+        4200.000000000002,
+        1000.0000000000002,
+        0.0
+      ],
+      "partial_lengths": 74.0,
+      "slope": null
+    }
+  },
+  {
+    "handle": "3DD",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        0.0,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "3DE",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        2100.0000000000005,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        2100.0000000000005,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "3DF",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        2300.0000000000005,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        2300.0000000000005,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "3E0",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        1899.9999999997672,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        1899.9999999997672,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "3E1",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        4200.000000000002,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        4200.000000000002,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "3E2",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        1899.9999999997672,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        1402.258717648686,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        68.0,
+        1400.0,
+        300.0
+      ],
+      "slope": null
+    }
+  },
+  {
+    "handle": "3E3",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        2300.0000000000005,
+        1200.0000000000002,
+        0.0
+      ],
+      "end": [
+        2799.9999999997685,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        300.0,
+        1400.0,
+        68.0
+      ],
+      "slope": null,
+      "note": " (multi-partial)"
+    }
+  },
+  {
+    "handle": "3E4",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 400.0,
+      "text": "",
+      "block_texts": [
+        "400"
+      ],
+      "defpoint": [
+        2306.8612396817193,
+        1385.986555222189,
+        0.0
+      ],
+      "defpoint2": [
+        1906.8612396817193,
+        1174.3435611835441,
+        0.0
+      ],
+      "defpoint3": [
+        2306.8612396817193,
+        1174.3435611835441,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        2106.8612396817193,
+        1451.8323942399243,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3E5",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        0.0,
+        1000.0000000000002,
+        0.0
+      ],
+      "end": [
+        300.0000000000009,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        400.0,
+        300.0
+      ],
+      "slope": null
+    }
+  },
+  {
+    "handle": "3E6",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        4200.000000000002,
+        1000.0000000000002,
+        0.0
+      ],
+      "end": [
+        3900.0000000000005,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        300.0,
+        400.0,
+        74.0,
+        1000.0
+      ],
+      "slope": null
+    }
+  },
+  {
+    "handle": "3E7",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        700.0000000000009,
+        1000.0000000000002,
+        0.0
+      ],
+      "end": [
+        700.0000000000009,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        400.0,
+        400.0
+      ],
+      "slope": null
+    }
+  },
+  {
+    "handle": "3E8",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        3500.0000000000005,
+        1000.0000000000002,
+        0.0
+      ],
+      "end": [
+        3500.0000000000005,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        400.0,
+        400.0
+      ],
+      "slope": null
+    }
+  },
+  {
+    "handle": "3E9",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        1100.000000000001,
+        1000.0000000000002,
+        0.0
+      ],
+      "end": [
+        1100.000000000001,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        300.0,
+        400.0
+      ],
+      "slope": null
+    }
+  },
+  {
+    "handle": "3EA",
+    "type": "LINE",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "start": [
+        3100.0000000000005,
+        1000.0000000000002,
+        0.0
+      ],
+      "end": [
+        3100.0000000000005,
+        0.0,
+        0.0
+      ],
+      "partial_lengths": [
+        400.0,
+        300.0
+      ],
+      "slope": null
+    }
+  },
+  {
+    "handle": "3EB",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 75.87391610470203,
+      "text": "74¡ã",
+      "block_texts": [
+        "74¡ã"
+      ],
+      "defpoint": [
+        4673.619297751924,
+        16.94985003501631,
+        0.0
+      ],
+      "defpoint2": [
+        -26.380702248075977,
+        1216.9498500350162,
+        0.0
+      ],
+      "defpoint3": [
+        275.61929775192493,
+        16.94985003501631,
+        0.0
+      ],
+      "defpoint4": [
+        -26.380702248075977,
+        16.94985003501631,
+        0.0
+      ],
+      "defpoint5": [
+        14.222701363064061,
+        334.98243199244826,
+        0.0
+      ],
+      "text_midpoint": [
+        -100.32514460122502,
+        310.0042697770432,
+        0.0
+      ],
+      "dimtype": 2
+    }
+  },
+  {
+    "handle": "3EC",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 1004.8783091668732,
+      "text": "1000",
+      "block_texts": [
+        "1000"
+      ],
+      "defpoint": [
+        4508.139324549013,
+        999.3337088590501,
+        0.0
+      ],
+      "defpoint2": [
+        4148.905271853902,
+        -5.5446003078250214,
+        0.0
+      ],
+      "defpoint3": [
+        4136.473634415306,
+        999.3337088590481,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        4442.293485531274,
+        496.89455427561006,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3ED",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 1205.5446003078255,
+      "text": "1200",
+      "block_texts": [
+        "1200"
+      ],
+      "defpoint": [
+        4777.584968478428,
+        -5.54460030782468,
+        0.0
+      ],
+      "defpoint2": [
+        4200.000000000002,
+        1200.0000000000002,
+        0.0
+      ],
+      "defpoint3": [
+        4268.90527185367,
+        -5.5446003078250214,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        4711.73912946069,
+        597.2276998460861,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3EE",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 111.80140948634796,
+      "text": "68¡ã",
+      "block_texts": [
+        "68¡ã"
+      ],
+      "defpoint": [
+        4552.258717648569,
+        0.0,
+        0.0
+      ],
+      "defpoint2": [
+        2002.258717648569,
+        1500.0,
+        0.0
+      ],
+      "defpoint3": [
+        1402.258717648686,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -147.74128235143098,
+        0.0,
+        0.0
+      ],
+      "defpoint5": [
+        1839.933631850049,
+        183.378420967976,
+        0.0
+      ],
+      "text_midpoint": [
+        1849.733444516677,
+        302.95513949515214,
+        0.0
+      ],
+      "dimtype": 2
+    }
+  },
+  {
+    "handle": "3EF",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 291.8014094863518,
+      "text": "68¡ã",
+      "block_texts": [
+        "68¡ã"
+      ],
+      "defpoint": [
+        2789.354457511567,
+        0.0,
+        0.0
+      ],
+      "defpoint2": [
+        -360.64554248843297,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        4339.354457511567,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        2189.354457511567,
+        1500.0,
+        0.0
+      ],
+      "defpoint5": [
+        2461.0010639745265,
+        333.7352798042782,
+        0.0
+      ],
+      "text_midpoint": [
+        2347.1427938158217,
+        299.3918722494461,
+        0.0
+      ],
+      "dimtype": 2
+    }
+  },
+  {
+    "handle": "3F0",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 300.0000000000009,
+      "text": "300",
+      "block_texts": [
+        "300"
+      ],
+      "defpoint": [
+        4200.000000000002,
+        -154.31277683738165,
+        0.0
+      ],
+      "defpoint2": [
+        3900.0000000000005,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        4200.000000000002,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        4050.0000000000005,
+        -88.43965269004184,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3F3",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 400.0,
+      "text": "",
+      "block_texts": [
+        "400"
+      ],
+      "defpoint": [
+        3500.0000000000005,
+        -159.6704307475593,
+        0.0
+      ],
+      "defpoint2": [
+        3900.0000000000005,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        3500.0000000000005,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        3700.0000000000014,
+        -93.82459172982408,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3F6",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 400.0,
+      "text": "",
+      "block_texts": [
+        "400"
+      ],
+      "defpoint": [
+        3100.0000000000005,
+        -159.6704307475593,
+        0.0
+      ],
+      "defpoint2": [
+        3500.0000000000005,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        3100.0000000000005,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        3300.0000000000005,
+        -93.82459172982408,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3F9",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 300.0000000002319,
+      "text": "",
+      "block_texts": [
+        "300"
+      ],
+      "defpoint": [
+        2799.9999999997685,
+        -168.889071963844,
+        0.0
+      ],
+      "defpoint2": [
+        3100.0000000000005,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        2799.9999999997685,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        2949.999999999883,
+        -103.0159478165042,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3FC",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 1397.7412823510826,
+      "text": "1400",
+      "block_texts": [
+        "1400"
+      ],
+      "defpoint": [
+        1402.258717648686,
+        -167.0019917782629,
+        0.0
+      ],
+      "defpoint2": [
+        2799.9999999997685,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        1402.258717648686,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        2101.1293588242265,
+        -101.15615276052768,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "3FF",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 302.258717648685,
+      "text": "300",
+      "block_texts": [
+        "300"
+      ],
+      "defpoint": [
+        1100.000000000001,
+        -168.28182090015616,
+        0.0
+      ],
+      "defpoint2": [
+        1402.258717648686,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        1100.000000000001,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        1251.129358824343,
+        -102.40869675281647,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "402",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 400.0,
+      "text": "",
+      "block_texts": [
+        "400"
+      ],
+      "defpoint": [
+        700.0000000000009,
+        -165.33975391311117,
+        0.0
+      ],
+      "defpoint2": [
+        1100.000000000001,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        700.0000000000009,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        900.0,
+        -99.49391489537572,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "405",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 400.0,
+      "text": "",
+      "block_texts": [
+        "400"
+      ],
+      "defpoint": [
+        300.0000000000009,
+        -165.33975391311117,
+        0.0
+      ],
+      "defpoint2": [
+        700.0000000000009,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        300.0000000000009,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        500.0,
+        -99.49391489537572,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "408",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 300.0000000000009,
+      "text": "300",
+      "block_texts": [
+        "300"
+      ],
+      "defpoint": [
+        0.0,
+        -168.0238209705567,
+        0.0
+      ],
+      "defpoint2": [
+        300.0000000000009,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "defpoint5": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "text_midpoint": [
+        150.0,
+        -102.150696823217,
+        0.0
+      ],
+      "dimtype": 0
+    }
+  },
+  {
+    "handle": "40B",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U49",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "40C",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U50",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "40D",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U51",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "40E",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U52",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "40F",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U53",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "410",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U54",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "411",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U55",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "412",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U56",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "413",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U57",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "414",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U58",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "415",
+    "type": "LINE",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "start": [
+        3935.390059255879,
+        619.8257368432821,
+        0.0
+      ],
+      "end": [
+        3854.8894026733483,
+        382.7150238848992,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "416",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U59",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "417",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U60",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "418",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U61",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "419",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U62",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "41A",
+    "type": "LINE",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "start": [
+        3404.0097512460793,
+        676.928914321935,
+        0.0
+      ],
+      "end": [
+        3404.0097512460793,
+        324.40627243591007,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "41B",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U63",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "41C",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U64",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "41D",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U65",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "41E",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U66",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "41F",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U67",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "420",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U68",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "421",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U69",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "422",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U70",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "423",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U71",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "424",
+    "type": "LINE",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "start": [
+        276.1667391180531,
+        383.4712654673492,
+        0.0
+      ],
+      "end": [
+        209.79640808026306,
+        591.7881829285761,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "425",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U72",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "426",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U73",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "427",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U74",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "428",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U75",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "429",
+    "type": "LINE",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "start": [
+        588.8203646696643,
+        639.0046094240381,
+        0.0
+      ],
+      "end": [
+        588.8203646696643,
+        353.77204428089317,
+        0.0
+      ]
+    }
+  },
+  {
+    "handle": "42A",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U76",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "42B",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U77",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "42C",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U78",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "42D",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U79",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "42E",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U80",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "42F",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U81",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "430",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U82",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "431",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U83",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "432",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U84",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "433",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U85",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "434",
+    "type": "INSERT",
+    "layer": "0",
+    "group": null,
+    "attributes": {
+      "block_name": "*U86",
+      "insert_point": [
+        -2183.970720627192,
+        -701.7315894178118,
+        0.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation": 0
+    }
+  },
+  {
+    "handle": "435",
+    "type": "DIMENSION",
+    "layer": "15104尾巷图",
+    "group": null,
+    "attributes": {
+      "measurement": 253.30075576600632,
+      "text": "74¡ã",
+      "block_texts": [
+        "74¡ã"
+      ],
+      "defpoint": [
+        3900.0000000000005,
+        0.0,
+        0.0
+      ],
+      "defpoint2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "defpoint3": [
+        4200.000000000002,
+        0.0,
+        0.0
+      ],
+      "defpoint4": [
+        4200.000000000002,
+        1000.0000000000002,
+        0.0
+      ],
+      "defpoint5": [
+        4315.8376477791135,
+        188.92631138170327,
+        0.0
+      ],
+      "text_midpoint": [
+        4318.590659907548,
+        311.4442811479262,
+        0.0
+      ],
+      "dimtype": 2
+    }
+  }
+]

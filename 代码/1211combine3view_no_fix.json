@@ -1,0 +1,2540 @@
+[
+    {
+        "circle_id": 39,
+        "sources": [
+            {
+                "handle": "3BF",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        -95.999378601829,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "39",
+                    "label_distance": 146.68743069999144,
+                    "label_handle": "411"
+                },
+                "source": "top"
+            },
+            {
+                "id": 39,
+                "nearest_line": "377",
+                "line_data": {
+                    "handle": "377",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            2600.0000000001173,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 39,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 38,
+        "sources": [
+            {
+                "handle": "3C0",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        354.0006213979391,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "38",
+                    "label_distance": 52.709480153613484,
+                    "label_handle": "412"
+                },
+                "source": "top"
+            },
+            {
+                "id": 38,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 37,
+        "sources": [
+            {
+                "handle": "3C1",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        804.0006213979382,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "37",
+                    "label_distance": 60.71210905942977,
+                    "label_handle": "413"
+                },
+                "source": "top"
+            },
+            {
+                "id": 37,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 36,
+        "sources": [
+            {
+                "handle": "3C2",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1254.000621398171,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "36",
+                    "label_distance": 47.10527685550915,
+                    "label_handle": "414"
+                },
+                "source": "top"
+            },
+            {
+                "id": 36,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 35,
+        "sources": [
+            {
+                "handle": "3C3",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1704.000621398171,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "35",
+                    "label_distance": 62.060107431938434,
+                    "label_handle": "415"
+                },
+                "source": "top"
+            },
+            {
+                "id": 35,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 34,
+        "sources": [
+            {
+                "handle": "3C4",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2154.000621397938,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "34",
+                    "label_distance": 67.11071886670929,
+                    "label_handle": "416"
+                },
+                "source": "top"
+            },
+            {
+                "id": 34,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 33,
+        "sources": [
+            {
+                "handle": "3C5",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2604.0006213979373,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "33",
+                    "label_distance": 49.931789070690556,
+                    "label_handle": "417"
+                },
+                "source": "top"
+            },
+            {
+                "id": 33,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 32,
+        "sources": [
+            {
+                "handle": "3C6",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3054.0006213979373,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "32",
+                    "label_distance": 69.81446177804848,
+                    "label_handle": "418"
+                },
+                "source": "top"
+            },
+            {
+                "id": 32,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 31,
+        "sources": [
+            {
+                "handle": "3C7",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3504.000621398171,
+                        2823.905574199446,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "31",
+                    "label_distance": 66.16732450493534,
+                    "label_handle": "419"
+                },
+                "source": "top"
+            },
+            {
+                "id": 31,
+                "nearest_line": "377",
+                "line_data": {
+                    "handle": "377",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            2600.0000000001173,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 31,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 27,
+        "sources": [
+            {
+                "handle": "3C8",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3504.000621398171,
+                        2363.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "27",
+                    "label_distance": 50.04779849632714,
+                    "label_handle": "41A"
+                },
+                "source": "top"
+            },
+            {
+                "id": 27,
+                "nearest_line": "36B",
+                "line_data": {
+                    "handle": "36B",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            2200.0,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            2200.0,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 27,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 28,
+        "sources": [
+            {
+                "handle": "3C9",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3504.000621398171,
+                        1903.9055741992133,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "28",
+                    "label_distance": 60.12742902092685,
+                    "label_handle": "41B"
+                },
+                "source": "top"
+            },
+            {
+                "id": 28,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            }
+        ]
+    },
+    {
+        "circle_id": 29,
+        "sources": [
+            {
+                "handle": "3CA",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3504.000621398171,
+                        1443.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "29",
+                    "label_distance": 43.20092333724616,
+                    "label_handle": "41C"
+                },
+                "source": "top"
+            }
+        ]
+    },
+    {
+        "circle_id": 30,
+        "sources": [
+            {
+                "handle": "3CB",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3504.000621398171,
+                        983.9055741992122,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "30",
+                    "label_distance": 58.49014265878774,
+                    "label_handle": "41D"
+                },
+                "source": "top"
+            },
+            {
+                "id": 30,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 30,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 48,
+        "sources": [
+            {
+                "handle": "3CC",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3504.000621398171,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "48",
+                    "label_distance": 58.68509097863578,
+                    "label_handle": "41E"
+                },
+                "source": "top"
+            },
+            {
+                "id": 48,
+                "nearest_line": "390",
+                "line_data": {
+                    "handle": "390",
+                    "type": "LINE",
+                    "layer": "0",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1114.2462015688648,
+                            320.04823405225784,
+                            0.0
+                        ],
+                        "end": [
+                            671.0192798129278,
+                            205.85386420728196,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 48,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 40,
+        "sources": [
+            {
+                "handle": "3CD",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        -95.999378601829,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "40",
+                    "label_distance": 128.89727653548778,
+                    "label_handle": "426"
+                },
+                "source": "top"
+            },
+            {
+                "id": 40,
+                "nearest_line": "378",
+                "line_data": {
+                    "handle": "378",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            300.00000000011687,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 40,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 23,
+        "sources": [
+            {
+                "handle": "3CE",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        -95.999378601829,
+                        983.9055741992122,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "23",
+                    "label_distance": 175.67892940798183,
+                    "label_handle": "40D"
+                },
+                "source": "top"
+            },
+            {
+                "id": 23,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 23,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 24,
+        "sources": [
+            {
+                "handle": "3CF",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        -95.999378601829,
+                        1443.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "24",
+                    "label_distance": 166.1529488180957,
+                    "label_handle": "40E"
+                },
+                "source": "top"
+            }
+        ]
+    },
+    {
+        "circle_id": 25,
+        "sources": [
+            {
+                "handle": "3D0",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        -95.999378601829,
+                        1903.9055741992133,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "25",
+                    "label_distance": 186.6227125396828,
+                    "label_handle": "40F"
+                },
+                "source": "top"
+            },
+            {
+                "id": 25,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            }
+        ]
+    },
+    {
+        "circle_id": 26,
+        "sources": [
+            {
+                "handle": "3D1",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        -95.999378601829,
+                        2363.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "26",
+                    "label_distance": 173.13468993467933,
+                    "label_handle": "410"
+                },
+                "source": "top"
+            },
+            {
+                "id": 26,
+                "nearest_line": "36B",
+                "line_data": {
+                    "handle": "36B",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            2200.0,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            2200.0,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 26,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 41,
+        "sources": [
+            {
+                "handle": "3D2",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        354.0006213979391,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "41",
+                    "label_distance": 117.6858902181884,
+                    "label_handle": "425"
+                },
+                "source": "top"
+            },
+            {
+                "id": 41,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 42,
+        "sources": [
+            {
+                "handle": "3D3",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        804.0006213979382,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "42",
+                    "label_distance": 123.3487449026008,
+                    "label_handle": "424"
+                },
+                "source": "top"
+            },
+            {
+                "id": 42,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 43,
+        "sources": [
+            {
+                "handle": "3D4",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1254.000621398171,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "43",
+                    "label_distance": 95.83658777934204,
+                    "label_handle": "423"
+                },
+                "source": "top"
+            },
+            {
+                "id": 43,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 44,
+        "sources": [
+            {
+                "handle": "3D5",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1704.000621398171,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "44",
+                    "label_distance": 123.27918255120092,
+                    "label_handle": "422"
+                },
+                "source": "top"
+            },
+            {
+                "id": 44,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 45,
+        "sources": [
+            {
+                "handle": "3D6",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2154.000621397938,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "45",
+                    "label_distance": 88.00034403092732,
+                    "label_handle": "421"
+                },
+                "source": "top"
+            },
+            {
+                "id": 45,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 46,
+        "sources": [
+            {
+                "handle": "3D7",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2604.0006213979373,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "46",
+                    "label_distance": 111.59744083159472,
+                    "label_handle": "420"
+                },
+                "source": "top"
+            },
+            {
+                "id": 46,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 47,
+        "sources": [
+            {
+                "handle": "3D8",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3054.0006213979373,
+                        523.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "47",
+                    "label_distance": 72.99796920616853,
+                    "label_handle": "41F"
+                },
+                "source": "top"
+            },
+            {
+                "id": 47,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 6,
+        "sources": [
+            {
+                "handle": "3D9",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1004.000621398171,
+                        923.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "6",
+                    "label_distance": 122.12755080561274,
+                    "label_handle": "3FC"
+                },
+                "source": "top"
+            },
+            {
+                "id": 6,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 6,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 1,
+        "sources": [
+            {
+                "handle": "3DA",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2404.000621397938,
+                        923.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "1",
+                    "label_distance": 77.89341868793302,
+                    "label_handle": "3F7"
+                },
+                "source": "top"
+            },
+            {
+                "id": 1,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 1,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 2,
+        "sources": [
+            {
+                "handle": "3DB",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2404.000621397938,
+                        1423.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "2",
+                    "label_distance": 97.87296675811615,
+                    "label_handle": "3F8"
+                },
+                "source": "top"
+            },
+            {
+                "id": 2,
+                "nearest_line": "369",
+                "line_data": {
+                    "handle": "369",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            1200.000000000117,
+                            0.0
+                        ],
+                        "end": [
+                            0.0,
+                            1200.000000000117,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 2,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 3,
+        "sources": [
+            {
+                "handle": "3DC",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2404.000621397938,
+                        1923.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "3",
+                    "label_distance": 92.25239568998639,
+                    "label_handle": "3F9"
+                },
+                "source": "top"
+            },
+            {
+                "id": 3,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 3,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 5,
+        "sources": [
+            {
+                "handle": "3DD",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1004.000621398171,
+                        1423.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "5",
+                    "label_distance": 107.14262460244883,
+                    "label_handle": "3FB"
+                },
+                "source": "top"
+            },
+            {
+                "id": 5,
+                "nearest_line": "369",
+                "line_data": {
+                    "handle": "369",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            1200.000000000117,
+                            0.0
+                        ],
+                        "end": [
+                            0.0,
+                            1200.000000000117,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 5,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 4,
+        "sources": [
+            {
+                "handle": "3DE",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1004.000621398171,
+                        1923.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "4",
+                    "label_distance": 119.9932833749406,
+                    "label_handle": "3FA"
+                },
+                "source": "top"
+            },
+            {
+                "id": 4,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 4,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 7,
+        "sources": [
+            {
+                "handle": "3DF",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        704.000621398171,
+                        1173.905574199329,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "7",
+                    "label_distance": 105.15767682094497,
+                    "label_handle": "3FD"
+                },
+                "source": "top"
+            },
+            {
+                "id": 7,
+                "nearest_line": "380",
+                "line_data": {
+                    "handle": "380",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            949.9999999999998,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            949.9999999999998,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 7,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 8,
+        "sources": [
+            {
+                "handle": "3E0",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        704.000621398171,
+                        1673.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "8",
+                    "label_distance": 103.33235105957012,
+                    "label_handle": "3FE"
+                },
+                "source": "top"
+            },
+            {
+                "id": 8,
+                "nearest_line": "37F",
+                "line_data": {
+                    "handle": "37F",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            1449.9999999998838,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            1449.9999999998838,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 8,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 9,
+        "sources": [
+            {
+                "handle": "3E1",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2704.00062139817,
+                        1673.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "9",
+                    "label_distance": 79.39226802037098,
+                    "label_handle": "3FF"
+                },
+                "source": "top"
+            },
+            {
+                "id": 9,
+                "nearest_line": "37F",
+                "line_data": {
+                    "handle": "37F",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            1449.9999999998838,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            1449.9999999998838,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 9,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 10,
+        "sources": [
+            {
+                "handle": "3E2",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2704.00062139817,
+                        1173.905574199329,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "10",
+                    "label_distance": 60.33194909109863,
+                    "label_handle": "400"
+                },
+                "source": "top"
+            },
+            {
+                "id": 10,
+                "nearest_line": "380",
+                "line_data": {
+                    "handle": "380",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            949.9999999999998,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            949.9999999999998,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 10,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 22,
+        "sources": [
+            {
+                "handle": "3E3",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        304.000621398171,
+                        923.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "22",
+                    "label_distance": 165.1209403017657,
+                    "label_handle": "40C"
+                },
+                "source": "top"
+            },
+            {
+                "id": 22,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 22,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 21,
+        "sources": [
+            {
+                "handle": "3E4",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        304.000621398171,
+                        1423.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "21",
+                    "label_distance": 120.08942749249407,
+                    "label_handle": "40B"
+                },
+                "source": "top"
+            }
+        ]
+    },
+    {
+        "circle_id": 20,
+        "sources": [
+            {
+                "handle": "3E5",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        304.000621398171,
+                        1923.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "20",
+                    "label_distance": 156.44797929014115,
+                    "label_handle": "40A"
+                },
+                "source": "top"
+            },
+            {
+                "id": 20,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            }
+        ]
+    },
+    {
+        "circle_id": 19,
+        "sources": [
+            {
+                "handle": "3E6",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        304.000621398171,
+                        2373.9055741994453,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "19",
+                    "label_distance": 48.72646414579589,
+                    "label_handle": "409"
+                },
+                "source": "top"
+            },
+            {
+                "id": 19,
+                "nearest_line": "36B",
+                "line_data": {
+                    "handle": "36B",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            2200.0,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            2200.0,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 19,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 18,
+        "sources": [
+            {
+                "handle": "3E7",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        864.000621398171,
+                        2373.9055741994453,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "18",
+                    "label_distance": 54.75202685107617,
+                    "label_handle": "408"
+                },
+                "source": "top"
+            },
+            {
+                "id": 18,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 17,
+        "sources": [
+            {
+                "handle": "3E8",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1424.0006213979382,
+                        2373.9055741994453,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "17",
+                    "label_distance": 44.52366935150651,
+                    "label_handle": "407"
+                },
+                "source": "top"
+            }
+        ]
+    },
+    {
+        "circle_id": 11,
+        "sources": [
+            {
+                "handle": "3E9",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3104.000621398171,
+                        923.9055741993291,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "11",
+                    "label_distance": 51.71239533341961,
+                    "label_handle": "401"
+                },
+                "source": "top"
+            },
+            {
+                "id": 11,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 11,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 12,
+        "sources": [
+            {
+                "handle": "3EA",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3104.000621398171,
+                        1423.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "12",
+                    "label_distance": 43.51209448387046,
+                    "label_handle": "402"
+                },
+                "source": "top"
+            }
+        ]
+    },
+    {
+        "circle_id": 13,
+        "sources": [
+            {
+                "handle": "3EB",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3104.000621398171,
+                        1923.9055741993293,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "13",
+                    "label_distance": 47.46426456917057,
+                    "label_handle": "403"
+                },
+                "source": "top"
+            },
+            {
+                "id": 13,
+                "nearest_line": "36D",
+                "line_data": {
+                    "handle": "36D",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            0.0,
+                            0.0
+                        ],
+                        "end": [
+                            1500.0000000001146,
+                            2900.0000000001155,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            }
+        ]
+    },
+    {
+        "circle_id": 14,
+        "sources": [
+            {
+                "handle": "3EC",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        3104.000621398171,
+                        2373.9055741994453,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "14",
+                    "label_distance": 49.74065361412303,
+                    "label_handle": "404"
+                },
+                "source": "top"
+            },
+            {
+                "id": 14,
+                "nearest_line": "36B",
+                "line_data": {
+                    "handle": "36B",
+                    "type": "LINE",
+                    "layer": "15104尾巷图",
+                    "group": null,
+                    "attributes": {
+                        "start": [
+                            1500.0000000001146,
+                            2200.0,
+                            0.0
+                        ],
+                        "end": [
+                            300.00000000011596,
+                            2200.0,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "left"
+            },
+            {
+                "id": 14,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 15,
+        "sources": [
+            {
+                "handle": "3ED",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        2544.00062139817,
+                        2373.9055741994453,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "15",
+                    "label_distance": 54.779572573938694,
+                    "label_handle": "405"
+                },
+                "source": "top"
+            },
+            {
+                "id": 15,
+                "nearest_line": "3DA",
+                "line_data": {
+                    "handle": "3DA",
+                    "type": "LINE",
+                    "layer": "15104Î²ÏïÍ¼",
+                    "attributes": {
+                        "start": [
+                            2183.970720627192,
+                            701.7315894178118,
+                            0.0
+                        ],
+                        "end": [
+                            6383.970720627193,
+                            701.7315894178118,
+                            0.0
+                        ]
+                    }
+                },
+                "source": "front"
+            }
+        ]
+    },
+    {
+        "circle_id": 16,
+        "sources": [
+            {
+                "handle": "3EE",
+                "type": "CIRCLE",
+                "layer": "15104尾巷图",
+                "group": null,
+                "attributes": {
+                    "center": [
+                        1984.0006213979382,
+                        2373.9055741994453,
+                        0.0
+                    ],
+                    "radius": 40.0,
+                    "associated_label": "16",
+                    "label_distance": 68.06408135434185,
+                    "label_handle": "406"
+                },
+                "source": "top"
+            }
+        ]
+    }
+]

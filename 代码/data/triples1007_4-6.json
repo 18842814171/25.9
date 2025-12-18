@@ -1,0 +1,1251 @@
+{"triples": [
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": ["无妨碍工作的病症"]},
+        "object": {"name": "安全生产知识", "type": "知识", "meta": ["必要"]},
+        "relation": {"name": "具备", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": []},
+        "object": {"name": "DL/T 692的紧急救护法", "type": "文件", "meta": ["掌握"]},
+        "relation": {"name": "掌握", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": []},
+        "object": {"name": "触电急救", "type": "活动", "meta": ["熟练掌握"]},
+        "relation": {"name": "熟练掌握", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": []},
+        "object": {"name": "电气知识和业务技能", "type": "知识", "meta": ["必要"]},
+        "relation": {"name": "具备", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": []},
+        "object": {"name": "本文件相关部分", "type": "文件", "meta": ["熟悉"]},
+        "relation": {"name": "熟悉", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": ["间断电气工作连续三个月及以上"]},
+        "object": {"name": "本文件", "type": "文件", "meta": ["重新学习"]},
+        "relation": {"name": "恢复工作前", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "特种作业人员", "type": "人员", "meta": []},
+        "object": {"name": "专门的安全作业培训", "type": "活动", "meta": ["参加工作前"]},
+        "relation": {"name": "经", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "新参加电气工作的人员", "type": "人员", "meta": []},
+        "object": {"name": "安全生产知识教育", "type": "活动", "meta": ["下现场参加指定的工作前"]},
+        "relation": {"name": "经过", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "新参加电气工作的人员", "type": "人员", "meta": ["实习人员和临时参加劳动的人员"]},
+        "object": {"name": "单独工作", "type": "活动", "meta": ["不应"]},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": []},
+        "object": {"name": "劳动防护用品", "type": "设备", "meta": ["正确佩戴和使用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "各单位", "type": "组织", "meta": []},
+        "object": {"name": "可单人操作或作业的人员名单及工作范围", "type": "文件", "meta": []},
+        "relation": {"name": "发布", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "安全工器具和劳动防护用品", "type": "设备", "meta": ["在使用前确认合格、齐备"]},
+        "object": {"name": "DL/T1476的要求", "type": "文件", "meta": ["电力安全工器具预防性试验符合"]},
+        "relation": {"name": "符合", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "急救箱", "type": "设备", "meta": ["存放急救用品"]},
+        "object": {"name": "经常有人工作的场所及施工车辆", "type": "环境", "meta": []},
+        "relation": {"name": "配备", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "急救箱", "type": "设备", "meta": []},
+        "object": {"name": "专人", "type": "人员", "meta": ["检查、补充或更换"]},
+        "relation": {"name": "指定", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "作业人员", "type": "人员", "meta": []},
+        "object": {"name": "安全风险辨识", "type": "活动", "meta": ["作业前做好"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "作业人员", "type": "人员", "meta": []},
+        "object": {"name": "作业场所和工作岗位存在的危险因素、防范措施及应急措施", "type": "知识", "meta": ["被告知"]},
+        "relation": {"name": "被告知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "作业人员", "type": "人员", "meta": []},
+        "object": {"name": "违章指挥和强令冒险作业", "type": "活动", "meta": ["有权拒绝"]},
+        "relation": {"name": "拒绝", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "作业人员", "type": "人员", "meta": []},
+        "object": {"name": "直接危及人身安全的紧急情况", "type": "环境", "meta": ["发现时有权停止作业或撤离"]},
+        "relation": {"name": "处理", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "现场负责人", "type": "人员", "meta": []},
+        "object": {"name": "人员撤离作业现场", "type": "活动", "meta": ["组织"]},
+        "relation": {"name": "组织", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "任何人", "type": "人员", "meta": []},
+        "object": {"name": "违反本文件的情况", "type": "活动", "meta": ["发现应立即制止"]},
+        "relation": {"name": "制止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "新工艺、新技术、新材料或者使用新设备", "type": "活动", "meta": []},
+        "object": {"name": "安全技术特性", "type": "知识", "meta": ["了解、掌握"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "从业人员", "type": "人员", "meta": []},
+        "object": {"name": "专门的安全生产教育和培训", "type": "活动", "meta": []},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "安全组织措施", "type": "活动", "meta": ["包括现场勘察、工作票、工作的许可、监护、间断、转移和终结"]},
+        "object": {"name": "保证安全", "type": "目标", "meta": ["制度措施之一"]},
+        "relation": {"name": "作为", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票签发人、工作负责人（监护人）、工作许可人、专责监护人和工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "各自的安全职责", "type": "责任", "meta": ["在整个作业流程中履行"]},
+        "relation": {"name": "履行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "发电厂和变电站电气作业", "type": "活动", "meta": ["工作票签发人或工作负责人认为有必要"]},
+        "object": {"name": "现场勘察", "type": "活动", "meta": ["组织"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "现场勘察", "type": "活动", "meta": []},
+        "object": {"name": "现场勘察记录", "type": "文件", "meta": ["填写", "附录A"]},
+        "relation": {"name": "填写", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "现场勘察", "type": "活动", "meta": ["查看现场检修（施工）作业范围内设施情况"]},
+        "object": {"name": "需要停电的设备范围、保留或邻近的带电部位、现场作业条件、环境及其他危险点", "type": "环境", "meta": []},
+        "relation": {"name": "查看", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "现场勘察结果", "type": "结果", "meta": []},
+        "object": {"name": "填写、签发工作票", "type": "活动", "meta": ["作为依据"]},
+        "relation": {"name": "作为", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票", "type": "文件", "meta": ["准许在运用中的电气设备及相关场所上工作的书面安全要求之一"]},
+        "object": {"name": "编号、工作地点、工作范围、工作内容、计划工作时间、工作许可时间、工作终结时间、停电范围和安全措施、工作票签发人、工作许可人、工作负责人和工作班成员", "type": "内容", "meta": ["包含"]},
+        "relation": {"name": "包含", "type": "文件关系"}
+    },
+    {
+        "subject": {"name": "需要高压设备全部停电、部分停电或做安全技术措施的工作", "type": "活动", "meta": []},
+        "object": {"name": "电气第一种工作票", "type": "文件", "meta": ["填用", "附录B"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作中人员与设备带电部分最小距离大于表1安全距离的相关场所和带电设备外壳上的工作以及不可能触及带电设备导电部分的工作", "type": "活动", "meta": []},
+        "object": {"name": "电气第二种工作票", "type": "文件", "meta": ["填用", "附录C"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压电力电缆不需要停电的工作", "type": "活动", "meta": []},
+        "object": {"name": "电气第二种工作票", "type": "文件", "meta": ["填用", "附录C"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压带电作业", "type": "活动", "meta": []},
+        "object": {"name": "带电作业工作票", "type": "文件", "meta": ["填用", "附录D"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "故障紧急抢修工作", "type": "活动", "meta": []},
+        "object": {"name": "故障紧急抢修单", "type": "文件", "meta": ["填用", "附录E"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "非连续进行的故障修复工作", "type": "活动", "meta": []},
+        "object": {"name": "工作票", "type": "文件", "meta": ["填用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "使用其他书面记录、电子信息、口头或电话命令等形式布置工作", "type": "活动", "meta": []},
+        "object": {"name": "录音或书面记录", "type": "文件", "meta": ["按口头或电话命令执行时留有"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票", "type": "文件", "meta": ["使用统一的票面格式"]},
+        "object": {"name": "内容正确、填写清楚", "type": "要求", "meta": []},
+        "relation": {"name": "满足", "type": "文件关系"}
+    },
+    {
+        "subject": {"name": "工作票", "type": "文件", "meta": []},
+        "object": {"name": "工作负责人或工作票签发人", "type": "人员", "meta": ["由填写"]},
+        "relation": {"name": "填写", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "一张工作票", "type": "文件", "meta": []},
+        "object": {"name": "一个电气连接部分", "type": "设备", "meta": ["工作地点以限"]},
+        "relation": {"name": "限制", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "同一电压等级、工作中不会触及带电导体的几个电气连接部分", "type": "设备", "meta": []},
+        "object": {"name": "一张电气第一种工作票", "type": "文件", "meta": ["同时停、送电可填用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "一台变压器停电检修", "type": "活动", "meta": []},
+        "object": {"name": "其断路器也配合检修", "type": "活动", "meta": []},
+        "relation": {"name": "包括", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "同一发电厂、变电站内几个电气连接部分上依次进行的同一电压等级、同一类型的不停电工作", "type": "活动", "meta": []},
+        "object": {"name": "一张电气第二种工作票", "type": "文件", "meta": ["可填用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "同一发电厂、变电站内依次进行的同一电压等级、同一类型的带电作业", "type": "活动", "meta": []},
+        "object": {"name": "一张带电作业工作票", "type": "文件", "meta": ["可填用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "同时停、送电的检修作业", "type": "活动", "meta": []},
+        "object": {"name": "一张工作票", "type": "文件", "meta": ["填用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "开工前", "type": "时间", "meta": []},
+        "object": {"name": "工作票内的全部安全措施", "type": "措施", "meta": ["完成"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "检修作业无法同时完成", "type": "活动", "meta": []},
+        "object": {"name": "新的工作票", "type": "文件", "meta": ["剩余的检修作业填用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票", "type": "文件", "meta": []},
+        "object": {"name": "设备运行管理单位", "type": "组织", "meta": ["由签发或经审核合格并批准的其他单位签发"]},
+        "relation": {"name": "签发", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "承发包工程中", "type": "环境", "meta": []},
+        "object": {"name": "双签发形式", "type": "形式", "meta": ["工作票可实行"]},
+        "relation": {"name": "采用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "承包方、发包方工作票签发人", "type": "人员", "meta": []},
+        "object": {"name": "各自相应的安全责任", "type": "责任", "meta": ["履行并承担"]},
+        "relation": {"name": "承担", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "第一种工作票所列工作地点超过两个，或有两个及以上不同工作单位（班组）在一起工作", "type": "活动", "meta": []},
+        "object": {"name": "总票和分票", "type": "文件", "meta": ["可采用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票", "type": "文件", "meta": ["一式两份"]},
+        "object": {"name": "工作负责人执行、工作许可人收执", "type": "分配", "meta": []},
+        "relation": {"name": "分配", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "一个工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "两张及以上工作票", "type": "文件", "meta": ["不应同时执行"]},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "持线路工作票进入发电厂、变电站进行架空线路、电缆等工作", "type": "活动", "meta": []},
+        "object": {"name": "发电厂或变电站工作许可人许可", "type": "许可", "meta": ["得到后方可开始"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票", "type": "文件", "meta": []},
+        "object": {"name": "许可部门（单位）", "type": "组织", "meta": ["工作前规定时间内送达"]},
+        "relation": {"name": "送达", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票停电范围内增加工作任务", "type": "活动", "meta": ["无需变更安全措施范围"]},
+        "object": {"name": "原工作票上增填工作项目", "type": "文件", "meta": ["由工作负责人征得工作票签发人和工作许可人同意"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "需变更或增设安全措施", "type": "措施", "meta": []},
+        "object": {"name": "新的工作票", "type": "文件", "meta": ["填用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票的有效时间", "type": "时间", "meta": []},
+        "object": {"name": "批准的检修计划工作时间", "type": "时间", "meta": ["以限"]},
+        "relation": {"name": "限制", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "延期", "type": "活动", "meta": []},
+        "object": {"name": "手续", "type": "程序", "meta": ["办理"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票签发", "type": "活动", "meta": []},
+        "object": {"name": "熟悉人员技术水平、熟悉设备情况、熟悉本文件、具有相关工作经验的人员", "type": "人员", "meta": ["由担任"]},
+        "relation": {"name": "由", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人（监护人）、工作许可人", "type": "人员", "meta": ["有一定工作经验、熟悉本文件、熟悉工作范围内设备情况"]},
+        "object": {"name": "工作负责人", "type": "人员", "meta": ["熟悉工作班成员的工作能力"]},
+        "relation": {"name": "担任", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人", "type": "人员", "meta": ["具有相关工作经验、熟悉设备情况和本文件"]},
+        "object": {"name": "担任", "type": "作业关系"},
+        "relation": {"name": "由", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票签发人", "type": "人员", "meta": []},
+        "object": {"name": "工作必要性和安全性", "type": "要求", "meta": ["确认"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票签发人", "type": "人员", "meta": []},
+        "object": {"name": "工作票上所填安全措施", "type": "措施", "meta": ["审核正确、完备"]},
+        "relation": {"name": "审核", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票签发人", "type": "人员", "meta": []},
+        "object": {"name": "所作负责人合适、工作班人员适当、充足", "type": "人员", "meta": ["确认"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人（监护人）", "type": "人员", "meta": []},
+        "object": {"name": "工作票列安全措施", "type": "措施", "meta": ["确认正确、完备、符合现场实际条件"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人（监护人）", "type": "人员", "meta": []},
+        "object": {"name": "工作", "type": "活动", "meta": ["正确、安全地组织"]},
+        "relation": {"name": "组织", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "全体成员", "type": "人员", "meta": ["工作任务、安全措施、技术措施交底、告知危险点、确认每个工作班成员签名"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作票所列由其负责的安全措施", "type": "措施", "meta": ["组织实施"]},
+        "relation": {"name": "实施", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作班成员", "type": "人员", "meta": ["督促、监护执行现场安全措施和技术措施"]},
+        "relation": {"name": "监护", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作人员变动", "type": "活动", "meta": ["确认是否合适"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作许可人", "type": "人员", "meta": []},
+        "object": {"name": "工作票所列安全措施", "type": "措施", "meta": ["确认正确、完备、符合现场条件"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作许可人", "type": "人员", "meta": []},
+        "object": {"name": "工作票所列内容", "type": "内容", "meta": ["有疑问向工作票签发人询问清楚、必要时要求补充"]},
+        "relation": {"name": "处理", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作许可人", "type": "人员", "meta": []},
+        "object": {"name": "工作现场安全措施", "type": "措施", "meta": ["确认由其布置完善、检修设备无突然来电的危险"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作许可人", "type": "人员", "meta": []},
+        "object": {"name": "许可工作的命令", "type": "命令", "meta": ["确认正确"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人", "type": "人员", "meta": []},
+        "object": {"name": "被监护人员和监护范围", "type": "范围", "meta": ["明确"]},
+        "relation": {"name": "明确", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人", "type": "人员", "meta": []},
+        "object": {"name": "被监护人员", "type": "人员", "meta": ["工作前交代监护范围内的安全措施、告知危险点和安全注意事项"]},
+        "relation": {"name": "交代", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人", "type": "人员", "meta": []},
+        "object": {"name": "被监护人员", "type": "人员", "meta": ["监督执行本文件和现场安全措施、及时纠正不安全行为"]},
+        "relation": {"name": "监督", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "工作内容、工作流程、安全措施、工作中的危险点", "type": "知识", "meta": ["熟悉、掌握、明确"]},
+        "relation": {"name": "熟悉", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "签名确认手续", "type": "手续", "meta": ["履行"]},
+        "relation": {"name": "履行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "安全规章制度、技术规程和劳动纪律、安全规程", "type": "规则", "meta": ["遵守、执行"]},
+        "relation": {"name": "遵守", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "工作负责人、专责监护人指挥", "type": "指挥", "meta": ["服从"]},
+        "relation": {"name": "服从", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "指定范围内工作", "type": "活动", "meta": ["在进行"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "工作中的行为", "type": "行为", "meta": ["对自己负责"]},
+        "relation": {"name": "负责", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "工作安全", "type": "安全", "meta": ["互相关心"]},
+        "relation": {"name": "关心", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "安全工器具和劳动防护用品", "type": "设备", "meta": ["正确使用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "许可开始工作的命令", "type": "命令", "meta": []},
+        "object": {"name": "工作负责人", "type": "人员", "meta": ["通知"]},
+        "relation": {"name": "通知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "许可开始工作的命令", "type": "命令", "meta": ["方法：电话下达、电子信息下达、当面下达、派人送达"]},
+        "object": {"name": "下达", "type": "活动", "meta": []},
+        "relation": {"name": "采用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "当面许可", "type": "活动", "meta": []},
+        "object": {"name": "作业现场的安全措施", "type": "措施", "meta": ["工作许可人在完成作业现场的安全措施后，会同工作负责人到现场再次检查"]},
+        "relation": {"name": "检查", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作许可人", "type": "人员", "meta": []},
+        "object": {"name": "带电设备的位置和注意事项", "type": "知识", "meta": ["对工作负责人指明"]},
+        "relation": {"name": "指明", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作许可人、工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作票", "type": "文件", "meta": ["分别确认、签名"]},
+        "relation": {"name": "签名", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "遥控操作至热备用或冷备用", "type": "活动", "meta": []},
+        "object": {"name": "检修作业人员操作", "type": "人员", "meta": ["后续由"]},
+        "relation": {"name": "后", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作所需安全措施", "type": "措施", "meta": []},
+        "object": {"name": "工作班组自行布置", "type": "活动", "meta": []},
+        "relation": {"name": "由", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "所有的安全措施", "type": "措施", "meta": ["确认正确、完备、符合现场实际条件"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "电气第二种工作票", "type": "文件", "meta": []},
+        "object": {"name": "电话许可方式", "type": "方式", "meta": ["可采取"]},
+        "relation": {"name": "采用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "采取电话许可的工作票", "type": "文件", "meta": []},
+        "object": {"name": "工作所需安全措施", "type": "措施", "meta": ["由工作班组自行布置"]},
+        "relation": {"name": "布置", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作结束后", "type": "时间", "meta": []},
+        "object": {"name": "工作许可人", "type": "人员", "meta": ["汇报"]},
+        "relation": {"name": "汇报", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作许可后", "type": "时间", "meta": []},
+        "object": {"name": "安全措施和检修设备的运行接线方式", "type": "措施", "meta": ["任何人不得擅自变更"]},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作中特殊情况需要变更", "type": "活动", "meta": []},
+        "object": {"name": "同意", "type": "许可", "meta": ["事先取得"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "变更", "type": "活动", "meta": []},
+        "object": {"name": "记录", "type": "文件", "meta": ["做好"]},
+        "relation": {"name": "做好", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作班成员", "type": "人员", "meta": ["交代工作内容、人员分工、现场安全措施、带电部位和其他注意事项"]},
+        "relation": {"name": "交代", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班成员", "type": "人员", "meta": []},
+        "object": {"name": "确认手续", "type": "手续", "meta": ["履行"]},
+        "relation": {"name": "履行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "开始工作的命令", "type": "命令", "meta": ["发出前确认工作票所列安全措施已全部完成"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "约时停、送电", "type": "活动", "meta": []},
+        "object": {"name": "禁止", "type": "规则", "meta": []},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票签发人或工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "专责监护人", "type": "人员", "meta": ["根据现场的安全条件、作业范围、工作需要等具体情况增设并确定被监护的人员"]},
+        "relation": {"name": "增设", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人", "type": "人员", "meta": []},
+        "object": {"name": "其他工作", "type": "活动", "meta": ["不应兼做"]},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人、专责监护人", "type": "人员", "meta": []},
+        "object": {"name": "工作现场", "type": "环境", "meta": ["始终在"]},
+        "relation": {"name": "在", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "工作负责人、专责监护人", "type": "人员", "meta": []},
+        "object": {"name": "工作班成员", "type": "人员", "meta": ["对进行监护"]},
+        "relation": {"name": "监护", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": ["全部停电时"]},
+        "object": {"name": "工作班工作", "type": "活动", "meta": ["可参加"]},
+        "relation": {"name": "参加", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": ["部分停电时"]},
+        "object": {"name": "工作班工作", "type": "活动", "meta": ["只有在安全措施可靠、人员集中在一个工作地点、不致误碰有电部分的情况下方可参加"]},
+        "relation": {"name": "参加", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": ["因故暂时离开工作现场"]},
+        "object": {"name": "能胜任的人员", "type": "人员", "meta": ["指定临时代替"]},
+        "relation": {"name": "指定", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作现场", "type": "环境", "meta": ["离开前交代清楚"]},
+        "relation": {"name": "交代", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作班成员", "type": "人员", "meta": ["告知"]},
+        "relation": {"name": "告知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "原工作负责人返回工作现场", "type": "活动", "meta": []},
+        "object": {"name": "交接变更手续", "type": "手续", "meta": ["履行"]},
+        "relation": {"name": "履行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "原工作负责人返回工作现场", "type": "活动", "meta": []},
+        "object": {"name": "工作班成员", "type": "人员", "meta": ["告知"]},
+        "relation": {"name": "告知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人需要长时间离开工作现场", "type": "活动", "meta": []},
+        "object": {"name": "原工作票签发人", "type": "人员", "meta": ["由变更"]},
+        "relation": {"name": "变更", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "变更工作负责人", "type": "活动", "meta": []},
+        "object": {"name": "手续", "type": "手续", "meta": ["履行"]},
+        "relation": {"name": "履行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "变更工作负责人", "type": "活动", "meta": []},
+        "object": {"name": "全体作业人员及工作许可人", "type": "人员", "meta": ["告知"]},
+        "relation": {"name": "告知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "原工作负责人与变更后的工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "必要的交接", "type": "活动", "meta": ["做好"]},
+        "relation": {"name": "做好", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人临时离开", "type": "活动", "meta": []},
+        "object": {"name": "被监护人员", "type": "人员", "meta": ["通知停止工作或离开工作现场"]},
+        "relation": {"name": "通知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人回来后", "type": "时间", "meta": []},
+        "object": {"name": "工作", "type": "活动", "meta": ["恢复"]},
+        "relation": {"name": "恢复", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "专责监护人必须长时间离开工作现场", "type": "活动", "meta": []},
+        "object": {"name": "工作负责人", "type": "人员", "meta": ["由变更"]},
+        "relation": {"name": "变更", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "变更专责监护人", "type": "活动", "meta": []},
+        "object": {"name": "手续", "type": "手续", "meta": ["履行"]},
+        "relation": {"name": "履行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "变更专责监护人", "type": "活动", "meta": []},
+        "object": {"name": "全体被监护人员", "type": "人员", "meta": ["告知"]},
+        "relation": {"name": "告知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作间断", "type": "活动", "meta": []},
+        "object": {"name": "工作班成员", "type": "人员", "meta": ["从工作现场撤出"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作间断", "type": "活动", "meta": []},
+        "object": {"name": "所有安全措施", "type": "措施", "meta": ["保持不变"]},
+        "relation": {"name": "保持", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "隔日复工", "type": "活动", "meta": []},
+        "object": {"name": "工作负责人", "type": "人员", "meta": ["重新检查安全措施"]},
+        "relation": {"name": "由", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "作业人员", "type": "人员", "meta": []},
+        "object": {"name": "工作地点", "type": "环境", "meta": ["在工作负责人或专责监护人的带领下进入"]},
+        "relation": {"name": "进入", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "工作间断期间紧急需要", "type": "活动", "meta": []},
+        "object": {"name": "运行人员", "type": "人员", "meta": ["可在工作票未交回的情况下合闸送电"]},
+        "relation": {"name": "允许", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "合闸送电", "type": "活动", "meta": []},
+        "object": {"name": "工作负责人", "type": "人员", "meta": ["先通知"]},
+        "relation": {"name": "通知", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作班全体人员已离开工作地点、可送电的答复", "type": "答复", "meta": ["得到"]},
+        "relation": {"name": "得到", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "合闸送电", "type": "活动", "meta": []},
+        "object": {"name": "必要措施", "type": "措施", "meta": ["采取后方可执行"]},
+        "relation": {"name": "执行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "检修工作结束以前", "type": "时间", "meta": []},
+        "object": {"name": "设备试加工作电压", "type": "活动", "meta": ["需将"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "全体工作人员", "type": "人员", "meta": []},
+        "object": {"name": "工作地点", "type": "环境", "meta": ["撤离"]},
+        "relation": {"name": "撤离", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "该系统的所有工作票", "type": "文件", "meta": []},
+        "object": {"name": "收回", "type": "活动", "meta": []},
+        "relation": {"name": "收回", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "临时遮栏、接地线和标示牌", "type": "设备", "meta": []},
+        "object": {"name": "拆除", "type": "活动", "meta": []},
+        "relation": {"name": "拆除", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "常设遮栏", "type": "设备", "meta": []},
+        "object": {"name": "恢复", "type": "活动", "meta": []},
+        "relation": {"name": "恢复", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人和运行人员", "type": "人员", "meta": []},
+        "object": {"name": "全面检查", "type": "活动", "meta": ["进行无误后"]},
+        "relation": {"name": "检查", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "运行人员", "type": "人员", "meta": []},
+        "object": {"name": "加压试验", "type": "活动", "meta": ["由进行"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作班需继续工作", "type": "活动", "meta": []},
+        "object": {"name": "工作许可手续", "type": "手续", "meta": ["重新履行"]},
+        "relation": {"name": "履行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "填用同一工作票依次在几个工作地点转移工作", "type": "活动", "meta": []},
+        "object": {"name": "工作负责人", "type": "人员", "meta": ["向工作人员交代带电范围、安全措施和注意事项"]},
+        "relation": {"name": "交代", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "全部工作完毕后", "type": "时间", "meta": []},
+        "object": {"name": "工作班", "type": "人员", "meta": ["清扫、整理现场"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "周密检查", "type": "活动", "meta": ["先进行"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "全体工作人员", "type": "人员", "meta": []},
+        "object": {"name": "工作地点", "type": "环境", "meta": ["撤离后"]},
+        "relation": {"name": "撤离", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "运行人员", "type": "人员", "meta": ["交代所修项目、发现的问题、试验结果和存在问题"]},
+        "relation": {"name": "交代", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人、运行人员", "type": "人员", "meta": []},
+        "object": {"name": "设备状况、有无遗留物件、是否清洁", "type": "状态", "meta": ["共同确认"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作负责人", "type": "人员", "meta": []},
+        "object": {"name": "工作票", "type": "文件", "meta": ["填明工作结束时间"]},
+        "relation": {"name": "填写", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "双方", "type": "人员", "meta": []},
+        "object": {"name": "工作票", "type": "文件", "meta": ["经签名后"]},
+        "relation": {"name": "签名", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作方", "type": "方", "meta": []},
+        "object": {"name": "告终结", "type": "状态", "meta": []},
+        "relation": {"name": "终结", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票上的临时遮栏", "type": "设备", "meta": []},
+        "object": {"name": "拆除", "type": "活动", "meta": ["待"]},
+        "relation": {"name": "拆除", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "标示牌", "type": "设备", "meta": []},
+        "object": {"name": "取下", "type": "活动", "meta": ["已"]},
+        "relation": {"name": "取下", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "常设遮栏", "type": "设备", "meta": []},
+        "object": {"name": "恢复", "type": "活动", "meta": ["未拆除的接地线、未拉开的接地开关（装置）等设备运行方式已汇报调度"]},
+        "relation": {"name": "恢复", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作票", "type": "文件", "meta": ["告终结"]},
+        "relation": {"name": "终结", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "已终结的工作票、故障紧急抢修单", "type": "文件", "meta": []},
+        "object": {"name": "一年", "type": "时间", "meta": ["保存"]},
+        "relation": {"name": "保存", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压电气设备上停电工作", "type": "活动", "meta": []},
+        "object": {"name": "停电、验电、接地、悬挂标示牌和装设遮栏（围栏）等安全技术措施", "type": "措施", "meta": ["应有"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "需要停电检修的设备", "type": "设备", "meta": []},
+        "object": {"name": "停电", "type": "活动", "meta": ["应"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "与作业人员在工作中正常活动范围的距离小于表1规定的设备", "type": "设备", "meta": []},
+        "object": {"name": "停电", "type": "活动", "meta": ["应"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "带电部分邻近工作人员，且无可靠安全措施的设备", "type": "设备", "meta": []},
+        "object": {"name": "停电", "type": "活动", "meta": ["应"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "其他需要停电的设备", "type": "设备", "meta": []},
+        "object": {"name": "停电", "type": "活动", "meta": ["应"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "检修设备停电", "type": "活动", "meta": []},
+        "object": {"name": "断开各端的电源", "type": "活动", "meta": ["采取"]},
+        "relation": {"name": "采取", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "任何运行中的星形接线设备的中性点", "type": "设备", "meta": []},
+        "object": {"name": "带电设备", "type": "设备", "meta": ["视为"]},
+        "relation": {"name": "视为", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "只经断路器断开电源或只经换流器闭锁隔离电源的设备上工作", "type": "活动", "meta": []},
+        "object": {"name": "禁止", "type": "规则", "meta": []},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "检修设备停电", "type": "活动", "meta": []},
+        "object": {"name": "拉开隔离开关", "type": "活动", "meta": ["采取"]},
+        "relation": {"name": "采取", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压开关柜的手车", "type": "设备", "meta": []},
+        "object": {"name": "试验或检修位置", "type": "位置", "meta": ["操作至"]},
+        "relation": {"name": "操作", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "停电设备的各端", "type": "设备", "meta": []},
+        "object": {"name": "明显断开点", "type": "状态", "meta": ["有"]},
+        "relation": {"name": "有", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "与停电设备有关的电压互感器", "type": "设备", "meta": []},
+        "object": {"name": "高、低压两侧断开", "type": "活动", "meta": []},
+        "relation": {"name": "断开", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "无明显断开点的设备", "type": "设备", "meta": []},
+        "object": {"name": "设备断开状态的电气和机械指示", "type": "指示", "meta": ["即时确认"]},
+        "relation": {"name": "确认", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "无电气、机械等状态指示", "type": "指示", "meta": []},
+        "object": {"name": "上一级电源", "type": "电源", "meta": ["断开"]},
+        "relation": {"name": "断开", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "不能做到与电源完全断开的检修设备", "type": "设备", "meta": []},
+        "object": {"name": "设备与电源之间的电气连接", "type": "连接", "meta": ["可拆除"]},
+        "relation": {"name": "拆除", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "断开断路器和隔离开关", "type": "活动", "meta": []},
+        "object": {"name": "操作能源", "type": "能源", "meta": ["断开"]},
+        "relation": {"name": "断开", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "隔离开关的操作把手", "type": "设备", "meta": []},
+        "object": {"name": "锁住", "type": "状态", "meta": ["应"]},
+        "relation": {"name": "锁住", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "停电设备", "type": "设备", "meta": []},
+        "object": {"name": "接地处", "type": "位置", "meta": ["在验明确无电压"]},
+        "relation": {"name": "验电", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "直接验电", "type": "活动", "meta": []},
+        "object": {"name": "相应电压等级、试验合格的验电器", "type": "设备", "meta": ["使用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "设备的接地处", "type": "位置", "meta": []},
+        "object": {"name": "逐相（逐极）验电", "type": "活动", "meta": []},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "验电前", "type": "时间", "meta": []},
+        "object": {"name": "相应电压等级的有电设备", "type": "设备", "meta": ["先在确证验电器良好"]},
+        "relation": {"name": "确证", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "无法在有电设备上进行试验", "type": "活动", "meta": []},
+        "object": {"name": "工频高压发生器等", "type": "设备", "meta": ["可用确证验电器良好"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压验电", "type": "活动", "meta": []},
+        "object": {"name": "绝缘手套", "type": "设备", "meta": ["戴"]},
+        "relation": {"name": "戴", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压验电", "type": "活动", "meta": []},
+        "object": {"name": "人体与被验电设备的距离", "type": "距离", "meta": ["符合表1的规定"]},
+        "relation": {"name": "符合", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "高压验电", "type": "活动", "meta": []},
+        "object": {"name": "专人监护", "type": "人员", "meta": ["有"]},
+        "relation": {"name": "有", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压直流设备、330kV及以上的交流设备、雨雪天气时的户外设备及其他无法直接验电的设备", "type": "设备", "meta": []},
+        "object": {"name": "间接验电方法", "type": "方法", "meta": ["可采用进行验电"]},
+        "relation": {"name": "采用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "表示设备断开和允许进入间隔的信号、经常接入的电压表等", "type": "设备", "meta": []},
+        "object": {"name": "有电", "type": "状态", "meta": ["指示"]},
+        "relation": {"name": "指示", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "设备上工作", "type": "活动", "meta": ["指示有电则不应"]},
+        "object": {"name": "禁止", "type": "规则", "meta": []},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "验明设备确无电压后", "type": "时间", "meta": []},
+        "object": {"name": "检修设备", "type": "设备", "meta": ["立即将接地（装设接地线或合接地开关）并三相短路"]},
+        "relation": {"name": "接地", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "电缆及电容器", "type": "设备", "meta": []},
+        "object": {"name": "逐相充分放电", "type": "活动", "meta": ["接地前"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "星形接线电容器的中性点", "type": "设备", "meta": []},
+        "object": {"name": "接地", "type": "活动", "meta": ["应"]},
+        "relation": {"name": "接地", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "可能送电至停电设备的各侧", "type": "侧", "meta": []},
+        "object": {"name": "接地", "type": "活动", "meta": ["都应"]},
+        "relation": {"name": "接地", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "所装接地线", "type": "设备", "meta": []},
+        "object": {"name": "带电部分", "type": "部分", "meta": ["与符合安全距离的规定"]},
+        "relation": {"name": "符合", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "检修母线", "type": "活动", "meta": []},
+        "object": {"name": "母线的长短和有无感应电压等实际情况", "type": "情况", "meta": ["根据确定接地线数量"]},
+        "relation": {"name": "确定", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "检修10m及以下的母线", "type": "活动", "meta": []},
+        "object": {"name": "一组接地线", "type": "设备", "meta": ["可以只装设"]},
+        "relation": {"name": "装设", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "线路侧设备停电检修", "type": "活动", "meta": ["工作地点与所装接地线或接地开关的距离小于10m"]},
+        "object": {"name": "另装设接地线", "type": "设备", "meta": ["工作地点虽在接地线外侧、可不"]},
+        "relation": {"name": "不需", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "检修部分分为几个在电气上不相连接的部分", "type": "部分", "meta": ["如分段母线以隔离开关或断路器隔开分成几段"]},
+        "object": {"name": "各段", "type": "段", "meta": ["分别验电接地短路"]},
+        "relation": {"name": "分别", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "厂站全部停电", "type": "状态", "meta": []},
+        "object": {"name": "各个可能来电侧的部分", "type": "部分", "meta": ["接地短路"]},
+        "relation": {"name": "接地", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "其余部分", "type": "部分", "meta": []},
+        "object": {"name": "每段都接地", "type": "活动", "meta": ["不必"]},
+        "relation": {"name": "不必", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "电缆、电容器设备", "type": "设备", "meta": []},
+        "object": {"name": "逐相充分放电", "type": "活动", "meta": ["应对"]},
+        "relation": {"name": "进行", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "配电装置上", "type": "环境", "meta": []},
+        "object": {"name": "接地线", "type": "设备", "meta": ["应装在该装置导电部分的适当部位"]},
+        "relation": {"name": "装设", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "所有配电装置的适当地点", "type": "位置", "meta": []},
+        "object": {"name": "与接地网相连的接地端", "type": "端", "meta": ["均应设有"]},
+        "relation": {"name": "设有", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "接地电阻", "type": "电阻", "meta": []},
+        "object": {"name": "合格", "type": "状态", "meta": ["应"]},
+        "relation": {"name": "合格", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "装设接地线", "type": "活动", "meta": []},
+        "object": {"name": "先装接地端，后装导体端", "type": "顺序", "meta": []},
+        "relation": {"name": "顺序", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "接地线", "type": "设备", "meta": ["接触良好、连接可靠"]},
+        "object": {"name": "应", "type": "要求", "meta": []},
+        "relation": {"name": "满足", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "拆除接地线的顺序", "type": "顺序", "meta": []},
+        "object": {"name": "装设接地线的顺序相反", "type": "顺序", "meta": []},
+        "relation": {"name": "相反", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "装、拆接地线", "type": "活动", "meta": []},
+        "object": {"name": "绝缘棒和戴绝缘手套", "type": "设备", "meta": ["使用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "装、拆接地线", "type": "活动", "meta": []},
+        "object": {"name": "有人监护", "type": "人员", "meta": ["应"]},
+        "relation": {"name": "有", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "人体", "type": "人员", "meta": []},
+        "object": {"name": "接地线或未接地的导线和设备", "type": "设备", "meta": ["不应碰触"]},
+        "relation": {"name": "禁止", "type": "物理关系"}
+    },
+    {
+        "subject": {"name": "接地线", "type": "设备", "meta": ["采用三相短路式"]},
+        "object": {"name": "应", "type": "要求", "meta": []},
+        "relation": {"name": "采用", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "使用分相式接地线", "type": "设备", "meta": []},
+        "object": {"name": "三相合一的接地端", "type": "端", "meta": ["应设置"]},
+        "relation": {"name": "设置", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "成套接地线", "type": "设备", "meta": ["由有透明护套的多股软铜线和专用线夹组成"]},
+        "object": {"name": "应", "type": "要求", "meta": []},
+        "relation": {"name": "组成", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "接地线截面积", "type": "面积", "meta": []},
+        "object": {"name": "25 mm²", "type": "数值", "meta": ["不应小于"]},
+        "relation": {"name": "不小于", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "接地线", "type": "设备", "meta": ["满足装设地点短路电流的要求"]},
+        "object": {"name": "应", "type": "要求", "meta": []},
+        "relation": {"name": "满足", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "接地线", "type": "设备", "meta": ["在每次装设前进行检查"]},
+        "object": {"name": "应", "type": "要求", "meta": []},
+        "relation": {"name": "检查", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "不符合规定的导线作接地线或短路线", "type": "设备", "meta": []},
+        "object": {"name": "不应使用", "type": "规则", "meta": []},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "接地线", "type": "设备", "meta": []},
+        "object": {"name": "专用的线夹固定在导体上", "type": "固定", "meta": ["使用"]},
+        "relation": {"name": "固定", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "缠绕的方法进行接地或短路", "type": "方法", "meta": []},
+        "object": {"name": "不应采用", "type": "规则", "meta": []},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "接地线、接地开关", "type": "设备", "meta": []},
+        "object": {"name": "检修设备之间", "type": "设备", "meta": ["不应连有断路器或熔断器"]},
+        "relation": {"name": "禁止", "type": "物理关系"}
+    },
+    {
+        "subject": {"name": "设备原因接地开关与检修设备之间连有断路器", "type": "情况", "meta": []},
+        "object": {"name": "保证断路器不会分闸的措施", "type": "措施", "meta": ["在接地开关和断路器合上后应有"]},
+        "relation": {"name": "有", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "平行或邻近带电设备导致检修设备可能产生感应电压", "type": "情况", "meta": []},
+        "object": {"name": "加装接地线或使用个人保安线", "type": "措施", "meta": ["应"]},
+        "relation": {"name": "采取", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "个人保安线截面积", "type": "面积", "meta": []},
+        "object": {"name": "16 mm²", "type": "数值", "meta": ["不应小于"]},
+        "relation": {"name": "不小于", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "作业人员", "type": "人员", "meta": []},
+        "object": {"name": "接地线", "type": "设备", "meta": ["不应擅自移动或拆除"]},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "高压回路上的工作", "type": "活动", "meta": ["需要拆除全部或一部分接地线后才能进行"]},
+        "object": {"name": "运行人员的许可", "type": "许可", "meta": ["征得"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "根据调控人员指令装设的接地线", "type": "设备", "meta": []},
+        "object": {"name": "调控人员的许可", "type": "许可", "meta": ["征得"]},
+        "relation": {"name": "要求", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "工作完毕后", "type": "时间", "meta": []},
+        "object": {"name": "立即恢复", "type": "活动", "meta": []},
+        "relation": {"name": "恢复", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "装、拆接地线", "type": "活动", "meta": []},
+        "object": {"name": "记录", "type": "文件", "meta": ["做好"]},
+        "relation": {"name": "做好", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "装、拆接地线", "type": "活动", "meta": []},
+        "object": {"name": "交接清楚", "type": "活动", "meta": []},
+        "relation": {"name": "交接", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "一经合闸即可送电到工作地点的断路器和隔离开关的操作把手", "type": "设备", "meta": []},
+        "object": {"name": "禁止合闸，有人工作! 或 禁止合闸，线路有人工作! 的标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "电压互感器低压侧开关（熔断器）操作处", "type": "位置", "meta": []},
+        "object": {"name": "禁止合闸，有人工作! 或 禁止合闸，线路有人工作! 的标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "计算机监控系统显示屏上操作的断路器和隔离开关操作处", "type": "位置", "meta": []},
+        "object": {"name": "禁止合闸，有人工作! 或 禁止合闸，线路有人工作! 的标记", "type": "标记", "meta": ["设置"]},
+        "relation": {"name": "设置", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "部分停电的工作", "type": "活动", "meta": []},
+        "object": {"name": "工作人员与未停电设备安全距离", "type": "距离", "meta": ["10kV及以下小于0.7m、20kV(35kV)小于1.0 m 时应装设临时遮栏"]},
+        "relation": {"name": "要求", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "装设的临时遮栏", "type": "设备", "meta": []},
+        "object": {"name": "带电部分的距离", "type": "距离", "meta": ["10 kV 及以下大于 0.35 m、20 kV(35 kV)大于0.6 m"]},
+        "relation": {"name": "符合", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "临时遮栏", "type": "设备", "meta": ["装设牢固"]},
+        "object": {"name": "应", "type": "要求", "meta": []},
+        "relation": {"name": "牢固", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "临时遮栏", "type": "设备", "meta": []},
+        "object": {"name": "止步，高压危险! 的标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "35 kV 及以下设备", "type": "设备", "meta": []},
+        "object": {"name": "与带电部分直接接触的绝缘隔板", "type": "设备", "meta": ["可用代替临时遮栏"]},
+        "relation": {"name": "代替", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "绝缘隔板", "type": "设备", "meta": []},
+        "object": {"name": "外观良好", "type": "状态", "meta": ["装设前检查"]},
+        "relation": {"name": "检查", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "绝缘隔板绝缘性能", "type": "性能", "meta": []},
+        "object": {"name": "预防性试验要求", "type": "要求", "meta": ["符合"]},
+        "relation": {"name": "符合", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "装设绝缘隔板", "type": "活动", "meta": []},
+        "object": {"name": "专用绝缘工器具、戴绝缘手套", "type": "设备", "meta": ["使用"]},
+        "relation": {"name": "使用", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "装设绝缘隔板", "type": "活动", "meta": []},
+        "object": {"name": "人体与带电部分的距离", "type": "距离", "meta": ["符合表1的规定"]},
+        "relation": {"name": "符合", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "装设绝缘隔板", "type": "活动", "meta": []},
+        "object": {"name": "有人监护", "type": "人员", "meta": ["应"]},
+        "relation": {"name": "有", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "绝缘隔板", "type": "设备", "meta": []},
+        "object": {"name": "带电部位", "type": "部分", "meta": ["完全遮蔽"]},
+        "relation": {"name": "遮蔽", "type": "物理关系"}
+    },
+    {
+        "subject": {"name": "室内高压设备上工作", "type": "活动", "meta": []},
+        "object": {"name": "工作地点两旁及对侧运行设备间隔的遮栏（围栏）上和禁止通行的过道遮栏（围栏）上", "type": "位置", "meta": ["止步，高压危险! 的标示牌"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "高压开关柜内手车操作至检修位置", "type": "活动", "meta": []},
+        "object": {"name": "隔离带电部位的挡板封闭后", "type": "状态", "meta": ["不应开户"]},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "隔离带电部位的挡板封闭后", "type": "状态", "meta": []},
+        "object": {"name": "止步，高压危险! 的标示牌", "type": "设备", "meta": ["设置"]},
+        "relation": {"name": "设置", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "室外高压设备上工作", "type": "活动", "meta": []},
+        "object": {"name": "工作地点四周围栏", "type": "设备", "meta": ["装设"]},
+        "relation": {"name": "装设", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "围栏", "type": "设备", "meta": []},
+        "object": {"name": "适当数量朝向里面的止步，高压危险! 标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "围栏", "type": "设备", "meta": []},
+        "object": {"name": "临近道路旁边", "type": "位置", "meta": ["至"]},
+        "relation": {"name": "至", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "从此进的标示牌", "type": "设备", "meta": []},
+        "object": {"name": "设有", "type": "要求", "meta": []},
+        "relation": {"name": "设有", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "室外大部分设备停电、个别地点设备带电", "type": "状态", "meta": []},
+        "object": {"name": "带电设备四周全封闭围栏", "type": "设备", "meta": ["可在装设"]},
+        "relation": {"name": "装设", "type": "空间关系"}
+    },
+    {
+        "subject": {"name": "围栏", "type": "设备", "meta": []},
+        "object": {"name": "适当数量朝向外面的高压危险! 标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "工作地点", "type": "环境", "meta": []},
+        "object": {"name": "在此工作! 标示牌", "type": "设备", "meta": ["应"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "室外构架上工作地点邻近带电部分的横梁", "type": "位置", "meta": []},
+        "object": {"name": "止步，高压危险! 的标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "工作人员上下的梯子", "type": "设备", "meta": []},
+        "object": {"name": "从此上下! 的标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "邻近其他可能误登的带电构架", "type": "设备", "meta": []},
+        "object": {"name": "禁止攀登，高压危险! 的标示牌", "type": "设备", "meta": ["悬挂"]},
+        "relation": {"name": "悬挂", "type": "设备关系"}
+    },
+    {
+        "subject": {"name": "工作人员", "type": "人员", "meta": []},
+        "object": {"name": "遮栏（围栏）、标示牌", "type": "设备", "meta": ["不应擅自移动或拆除"]},
+        "relation": {"name": "禁止", "type": "作业关系"}
+    },
+    {
+        "subject": {"name": "标示牌式样", "type": "式样", "meta": []},
+        "object": {"name": "附录F要求", "type": "要求", "meta": ["按照"]},
+        "relation": {"name": "按照", "type": "文件关系"}
+    }
+]}
