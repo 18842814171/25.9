@@ -1,0 +1,44 @@
+============================================================
+DIMENSION CONSTRAINT ANALYSIS REPORT
+============================================================
+
+ROW CONSTRAINTS (5 total):
+----------------------------------------
+  Constraint: row_11 → row_8 = 500.0 (handle: 427)
+  Constraint: row_3 → row_1 = 300.0 (handle: 431)
+  Constraint: row_8 → row_11 = 500.0 (handle: 434)
+  Constraint: row_11 → row_11 = 300.0 (handle: 43C)
+  Constraint: row_10 → row_7 = 500.0 (handle: 440)
+
+COLUMN CONSTRAINTS (2 total):
+----------------------------------------
+  Constraint: col_11 → col_9 = 300.0 (handle: 42A)
+  Constraint: col_18 → col_18 = 560.0 (handle: 439)
+
+SOLVED ROW COORDINATES (2 rows):
+----------------------------------------
+  Row 1: y = 0.00
+  Row 3: y = -300.00
+
+SOLVED COLUMN COORDINATES (2 columns):
+----------------------------------------
+  Column 9: x = 0.00
+  Column 11: x = -300.00
+
+GRID POINTS (4 total):
+----------------------------------------
+Format: R{row_id}_C{col_id}: (x, y)
+
+  R1_C9: (0.00, 0.00)
+  R1_C11: (-300.00, 0.00)
+  R3_C9: (0.00, -300.00)
+  R3_C11: (-300.00, -300.00)
+
+============================================================
+SUMMARY
+============================================================
+Total row constraints: 5
+Total column constraints: 2
+Total rows solved: 2
+Total columns solved: 2
+Total grid points: 4

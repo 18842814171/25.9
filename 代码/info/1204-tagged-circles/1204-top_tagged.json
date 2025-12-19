@@ -354,9 +354,9 @@
                 0.0
             ],
             "radius": 40.0,
-            "associated_label": "23",
-            "label_distance": 175.67892940798183,
-            "label_handle": "40D"
+            "associated_label": null,
+            "label_distance": null,
+            "label_handle": null
         }
     },
     {
@@ -371,9 +371,9 @@
                 0.0
             ],
             "radius": 40.0,
-            "associated_label": "24",
-            "label_distance": 166.1529488180957,
-            "label_handle": "40E"
+            "associated_label": null,
+            "label_distance": null,
+            "label_handle": null
         }
     },
     {
@@ -388,9 +388,9 @@
                 0.0
             ],
             "radius": 40.0,
-            "associated_label": "25",
-            "label_distance": 186.6227125396828,
-            "label_handle": "40F"
+            "associated_label": null,
+            "label_distance": null,
+            "label_handle": null
         }
     },
     {
@@ -405,9 +405,9 @@
                 0.0
             ],
             "radius": 40.0,
-            "associated_label": "26",
-            "label_distance": 173.13468993467933,
-            "label_handle": "410"
+            "associated_label": null,
+            "label_distance": null,
+            "label_handle": null
         }
     },
     {
@@ -423,7 +423,7 @@
             ],
             "radius": 40.0,
             "associated_label": "41",
-            "label_distance": 117.6858902181884,
+            "label_distance": 117.68589021818839,
             "label_handle": "425"
         }
     },
@@ -440,7 +440,7 @@
             ],
             "radius": 40.0,
             "associated_label": "42",
-            "label_distance": 123.3487449026008,
+            "label_distance": 123.34874490260079,
             "label_handle": "424"
         }
     },
@@ -457,7 +457,7 @@
             ],
             "radius": 40.0,
             "associated_label": "43",
-            "label_distance": 95.83658777934204,
+            "label_distance": 95.83658777934203,
             "label_handle": "423"
         }
     },
@@ -576,7 +576,7 @@
             ],
             "radius": 40.0,
             "associated_label": "2",
-            "label_distance": 97.87296675811615,
+            "label_distance": 97.87296675811614,
             "label_handle": "3F8"
         }
     },
@@ -593,7 +593,7 @@
             ],
             "radius": 40.0,
             "associated_label": "3",
-            "label_distance": 92.25239568998639,
+            "label_distance": 92.25239568998637,
             "label_handle": "3F9"
         }
     },
@@ -627,7 +627,7 @@
             ],
             "radius": 40.0,
             "associated_label": "4",
-            "label_distance": 119.9932833749406,
+            "label_distance": 119.99328337494062,
             "label_handle": "3FA"
         }
     },
@@ -711,9 +711,9 @@
                 0.0
             ],
             "radius": 40.0,
-            "associated_label": "22",
-            "label_distance": 165.1209403017657,
-            "label_handle": "40C"
+            "associated_label": null,
+            "label_distance": null,
+            "label_handle": null
         }
     },
     {
@@ -729,7 +729,7 @@
             ],
             "radius": 40.0,
             "associated_label": "21",
-            "label_distance": 120.08942749249407,
+            "label_distance": 120.08942749249408,
             "label_handle": "40B"
         }
     },
@@ -745,9 +745,9 @@
                 0.0
             ],
             "radius": 40.0,
-            "associated_label": "20",
-            "label_distance": 156.44797929014115,
-            "label_handle": "40A"
+            "associated_label": null,
+            "label_distance": null,
+            "label_handle": null
         }
     },
     {
@@ -814,7 +814,7 @@
             ],
             "radius": 40.0,
             "associated_label": "11",
-            "label_distance": 51.71239533341961,
+            "label_distance": 51.712395333419614,
             "label_handle": "401"
         }
     },
@@ -865,7 +865,7 @@
             ],
             "radius": 40.0,
             "associated_label": "14",
-            "label_distance": 49.74065361412303,
+            "label_distance": 49.74065361412304,
             "label_handle": "404"
         }
     },

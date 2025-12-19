@@ -33,6 +33,16 @@ def associate_labels(circles: List[Dict[str, Any]], mtexts: List[Dict[str, Any]]
         
         for mpos, text, handle in mtext_info:
             dist = distance(center, mpos)
+            dx = abs(center[0] - mpos[0])
+            dy = abs(center[1] - mpos[1])
+
+            # labels are usually closer vertically than horizontally
+           # HARD geometric gate (engineering rule)
+            if dy > 80 or dx > 200:
+                continue 
+
+            dist = math.hypot(dx, dy)
+
             if dist < min_dist and dist < threshold:
                 min_dist = dist
                 nearest_label = text
@@ -60,14 +70,14 @@ def update_json(entities: List[Dict[str, Any]], output_filename: str):
 # Usage
 if __name__ == "__main__":
     input_file = r"info\1204-translated_top.json"
-    output_file = 'info/1204-top_tagged.json'
+    output_file = r'info\1204-tagged-circles\1204-top_tagged.json'
     
     entities = load_entities(input_file)
     circles, mtexts = extract_circles_and_mtexts(entities)
     
     print(f"Found {len(circles)} CIRCLEs and {len(mtexts)} MTEXTs.")
     
-    tagged_circles = associate_labels(circles, mtexts, threshold=300.0)  # Adjust threshold if needed
+    tagged_circles = associate_labels(circles, mtexts, threshold=150.0)  # Adjust threshold if needed
     
     # Replace original circles in entities
     circle_handles = {c['handle'] for c in circles}

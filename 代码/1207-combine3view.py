@@ -35,7 +35,7 @@ def integrate_circle_views(input_file, output_file):
     print(f"Merged circles saved to {output_file}")
 
 if __name__ == "__main__":
-    integrate_three_views(
+    integrate_circle_views(
         "file1_top.json",
         "file2_left.json",
         "file3_front.json",
