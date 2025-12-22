@@ -1,24 +1,35 @@
+"""
+Goal,               Variable Name,      Recommended Value for your CAD
+Vertical alignment, TOL,                3.0 (keeps X-coords tight)
+Vertical gap limit, MAX_Y_GAP,          600 (allows ~500 unit spacing)
+Horizontal row height,  max_row_height,   200 (standard for row alignment)
+Row skip limit,     max_rows,           10 (allows long vertical columns)
+"""
 import json
 from collections import defaultdict
 
 def extract_top_circles(entities):
     """
-    Extract circles from a flat TOP-view entity list.
+    Extract circles and use their CAD labels as the circle_id.
     """
     circles = []
-    cid = 1
 
     for e in entities:
         if e.get("type") == "CIRCLE":
+            # Use the actual tag (e.g., "20", "46") as the ID
+            tag = e["attributes"].get("associated_label")
+            
+            # Fallback: if a circle wasn't tagged, use its CAD handle so it's still unique
+            circle_id = tag if tag else f"h{e['handle']}"
+            
             x, y, _ = e["attributes"]["center"]
             circles.append({
-                "circle_id": cid,
+                "circle_id": circle_id, 
                 "handle": e["handle"],
                 "x": float(x),
                 "y": float(y),
-                "label": e["attributes"].get("associated_label") 
+                "label": tag 
             })
-            cid += 1
 
     return circles
 
@@ -40,7 +51,9 @@ def split_rows_by_y(circles, max_row_height):
     current = [circles[0]]
 
     for p in circles[1:]:
-        if abs(p["y"] - current[-1]["y"]) <= max_row_height:
+        ys = [pt["y"] for pt in current]
+        if max(ys + [p["y"]]) - min(ys + [p["y"]]) <= max_row_height:
+
             current.append(p)
         else:
             rows.append(current)
@@ -67,11 +80,11 @@ def cluster_1d(points, axis, tol, ortho_axis=None, max_ortho_gap=None):
                 ys = sorted(pt[ortho_axis] for pt in g) 
                 if min(abs(p[ortho_axis] - ys[0]), abs(p[ortho_axis] - ys[-1])) > max_ortho_gap: 
                     continue 
-                g.append(p) 
-                placed = True 
-                break 
-            if not placed: 
-                groups.append([p]) 
+            g.append(p) 
+            placed = True 
+            break 
+        if not placed: 
+            groups.append([p]) 
             
     return groups
 
@@ -107,49 +120,32 @@ def split_vertical_groups_by_rows(v_groups, circle_index, max_rows=2):
             new_groups.append(current)
 
     return new_groups
-
 def group_top_circles(circles, tol=TOL):
-    # 水平和垂直方向的分组
-    h_groups = [
-    g for g in split_rows_by_y(circles, max_row_height=200)
-    if len(g) >= MIN_GROUP_SIZE
-]
-    v_groups_raw = [
-    g for g in cluster_1d(
-        circles,
-        axis="x",
-        tol=tol,
-        ortho_axis="y",
-        max_ortho_gap=MAX_Y_GAP
-    )
-    if len(g) >= MIN_GROUP_SIZE
-]
+    # 1. Initialize result structure first so it's accessible
     result = {
         "horizontal": [],
         "vertical": [],
         "circle_index": {}
     }
 
-    v_groups = [
-    g for g in split_vertical_groups_by_rows(
-        v_groups_raw,
-        result["circle_index"],
-        max_rows=2
-    )
-    if len(g) >= MIN_GROUP_SIZE
-]
+    # 2. Perform horizontal grouping
+    # split_rows_by_y must come first to establish the 'rows' for circle_index
+    h_groups = [
+        g for g in split_rows_by_y(circles, max_row_height=200)
+        if len(g) >= MIN_GROUP_SIZE
+    ]
+    for g in h_groups:
+        ys = [p["y"] for p in g]
+        if max(ys) - min(ys) > 200:
+            raise ValueError(f"Row height violation: {ys}")
 
-    """Order matters:
-
-    horizontal groups  →  circle_index
-                ↓
-    vertical grouping →  row-constrained
-    """
-
-    # 处理水平分组（相同的 y 坐标）
+    
+    # 3. Populate circle_index with horizontal info
+    # This is the step your script was missing/misordering
     for i, g in enumerate(h_groups):
-        y0 = y0 = sorted(p["y"] for p in g)[len(g)//2]  # median, not mean
-        ids = [p["circle_id"] for p in g]
+        y0 = sorted(p["y"] for p in g)[len(g)//2] 
+        # 在 group_top_circles 函数内：
+        ids = [p["circle_id"] for p in g] # 增加 sorted()
         result["horizontal"].append({
             "group_id": i,
             "y": y0,
@@ -158,9 +154,32 @@ def group_top_circles(circles, tol=TOL):
         for cid in ids:
             result["circle_index"].setdefault(cid, {})["horizontal"] = i
 
-    # 处理垂直分组（相同的 x 坐标）
+    # 4. Perform raw vertical clustering by X-coordinate
+    v_groups_raw = [
+        g for g in cluster_1d(
+            circles,
+            axis="x",
+            tol=tol,
+            ortho_axis="y",
+            max_ortho_gap=MAX_Y_GAP
+        )
+        if len(g) >= MIN_GROUP_SIZE
+    ]
+    
+    # 5. Split vertical groups using the NOW-populated circle_index
+    # This will now find vertical groups because it can see which row each circle belongs to
+    v_groups = [
+        g for g in split_vertical_groups_by_rows(
+            v_groups_raw,
+            result["circle_index"], 
+            max_rows=10
+        )
+        if len(g) >= MIN_GROUP_SIZE
+    ]
+
+    # 6. Finalize vertical group data
     for i, g in enumerate(v_groups):
-        x0 = group_center(g, "x")
+        x0 = sorted(p["x"] for p in g)[len(g)//2]
         ids = [p["circle_id"] for p in g]
         result["vertical"].append({
             "group_id": i,
@@ -176,7 +195,7 @@ def group_top_circles(circles, tol=TOL):
 # RUN
 # =========================
 if __name__ == "__main__":
-    with open(r"info\1221rewrite\1221-top_tagged_fixed.json", "r", encoding="utf-8") as f:
+    with open(r"info\1221rewrite\1221-top_tagged_2.json", "r", encoding="utf-8") as f:
         entities = json.load(f)
 
     circles = extract_top_circles(entities)
@@ -189,7 +208,7 @@ if __name__ == "__main__":
     print(f"Horizontal groups: {len(grouped['horizontal'])}")
     print(f"Vertical groups: {len(grouped['vertical'])}")
     
-    with open(r"info\1221rewrite\1221-grouptop.json", "w", encoding="utf-8") as f:
+    with open(r"info\1221rewrite\1222-grouptop.json", "w", encoding="utf-8") as f:
         json.dump(grouped, f, indent=2, ensure_ascii=False)
 
     print("All circles grouped!")

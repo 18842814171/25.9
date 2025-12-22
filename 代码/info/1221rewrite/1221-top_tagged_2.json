@@ -1,0 +1,2246 @@
+[
+    {
+        "handle": "2A3",
+        "type": "MTEXT",
+        "layer": "0",
+        "group": null,
+        "attributes": {
+            "text": "desired_types = 'LINE ARC CIRCLE DIMENSION HATCH INSERT LEADER  LWPOLYLINE POINT POLYLINE SPLINE TEXT MTEXT'",
+            "insert_point": [
+                2315.964270386548,
+                2024.936133811834,
+                0.0
+            ],
+            "char_height": 2.5,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3BB",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                1787.971342025363,
+                3825.637163617024,
+                0.0
+            ],
+            "end": [
+                5987.971342025363,
+                3825.637163617024,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3BC",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                1787.971342025363,
+                925.6371636171406,
+                0.0
+            ],
+            "end": [
+                5987.971342025363,
+                925.6371636171406,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3BD",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                1787.971342025363,
+                3825.637163617024,
+                0.0
+            ],
+            "end": [
+                1787.971342025363,
+                925.6371636171406,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3BE",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                5987.971342025363,
+                3825.637163617024,
+                0.0
+            ],
+            "end": [
+                5987.971342025363,
+                925.6371636171406,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3BF",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2087.971342025363,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "39",
+            "label_handle": "411"
+        }
+    },
+    {
+        "handle": "3C0",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2537.971342025131,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "38",
+            "label_handle": "412"
+        }
+    },
+    {
+        "handle": "3C1",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2987.97134202513,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "37",
+            "label_handle": "413"
+        }
+    },
+    {
+        "handle": "3C2",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3437.971342025363,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "36",
+            "label_handle": "414"
+        }
+    },
+    {
+        "handle": "3C3",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3887.971342025363,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "35",
+            "label_handle": "415"
+        }
+    },
+    {
+        "handle": "3C4",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4337.97134202513,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "34",
+            "label_handle": "416"
+        }
+    },
+    {
+        "handle": "3C5",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4787.971342025129,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "33",
+            "label_handle": "417"
+        }
+    },
+    {
+        "handle": "3C6",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5237.971342025129,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "32",
+            "label_handle": "418"
+        }
+    },
+    {
+        "handle": "3C7",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5687.971342025363,
+                3525.637163617258,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "31",
+            "label_handle": "419"
+        }
+    },
+    {
+        "handle": "3C8",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5687.971342025363,
+                3065.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "27",
+            "label_handle": "41A"
+        }
+    },
+    {
+        "handle": "3C9",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5687.971342025363,
+                2605.637163617025,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "28",
+            "label_handle": "41B"
+        }
+    },
+    {
+        "handle": "3CA",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5687.971342025363,
+                2145.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "29",
+            "label_handle": "41C"
+        }
+    },
+    {
+        "handle": "3CB",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5687.971342025363,
+                1685.637163617024,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "30",
+            "label_handle": "41D"
+        }
+    },
+    {
+        "handle": "3CC",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5687.971342025363,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "48",
+            "label_handle": "41E"
+        }
+    },
+    {
+        "handle": "3CD",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2087.971342025363,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "40",
+            "label_handle": "426"
+        }
+    },
+    {
+        "handle": "3CE",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2087.971342025363,
+                1685.637163617024,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "23",
+            "label_handle": "40D"
+        }
+    },
+    {
+        "handle": "3CF",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2087.971342025363,
+                2145.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "24",
+            "label_handle": "40E"
+        }
+    },
+    {
+        "handle": "3D0",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2087.971342025363,
+                2605.637163617025,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "25",
+            "label_handle": "40F"
+        }
+    },
+    {
+        "handle": "3D1",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2087.971342025363,
+                3065.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "26",
+            "label_handle": "410"
+        }
+    },
+    {
+        "handle": "3D2",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2537.971342025131,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "41",
+            "label_handle": "425"
+        }
+    },
+    {
+        "handle": "3D3",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2987.97134202513,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "42",
+            "label_handle": "424"
+        }
+    },
+    {
+        "handle": "3D4",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3437.971342025363,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "43",
+            "label_handle": "423"
+        }
+    },
+    {
+        "handle": "3D5",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3887.971342025363,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "44",
+            "label_handle": "422"
+        }
+    },
+    {
+        "handle": "3D6",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4337.97134202513,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "45",
+            "label_handle": "421"
+        }
+    },
+    {
+        "handle": "3D7",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4787.971342025129,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "46",
+            "label_handle": "420"
+        }
+    },
+    {
+        "handle": "3D8",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5237.971342025129,
+                1225.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "47",
+            "label_handle": "41F"
+        }
+    },
+    {
+        "handle": "3D9",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3187.971342025363,
+                1625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "6",
+            "label_handle": "3FC"
+        }
+    },
+    {
+        "handle": "3DA",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4587.97134202513,
+                1625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "1",
+            "label_handle": "3F7"
+        }
+    },
+    {
+        "handle": "3DB",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4587.97134202513,
+                2125.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "2",
+            "label_handle": "3F8"
+        }
+    },
+    {
+        "handle": "3DC",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4587.97134202513,
+                2625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "3",
+            "label_handle": "3F9"
+        }
+    },
+    {
+        "handle": "3DD",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3187.971342025363,
+                2125.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "5",
+            "label_handle": "3FB"
+        }
+    },
+    {
+        "handle": "3DE",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3187.971342025363,
+                2625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "4",
+            "label_handle": "3FA"
+        }
+    },
+    {
+        "handle": "3DF",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2887.971342025363,
+                1875.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "7",
+            "label_handle": "3FD"
+        }
+    },
+    {
+        "handle": "3E0",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2887.971342025363,
+                2375.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "8",
+            "label_handle": "3FE"
+        }
+    },
+    {
+        "handle": "3E1",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4887.971342025362,
+                2375.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "9",
+            "label_handle": "3FF"
+        }
+    },
+    {
+        "handle": "3E2",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4887.971342025362,
+                1875.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "10",
+            "label_handle": "400"
+        }
+    },
+    {
+        "handle": "3E3",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2487.971342025363,
+                1625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "22",
+            "label_handle": "40C"
+        }
+    },
+    {
+        "handle": "3E4",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2487.971342025363,
+                2125.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "21",
+            "label_handle": "40B"
+        }
+    },
+    {
+        "handle": "3E5",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2487.971342025363,
+                2625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "20",
+            "label_handle": "40A"
+        }
+    },
+    {
+        "handle": "3E6",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                2487.971342025363,
+                3075.637163617257,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "19",
+            "label_handle": "409"
+        }
+    },
+    {
+        "handle": "3E7",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3047.971342025363,
+                3075.637163617257,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "18",
+            "label_handle": "408"
+        }
+    },
+    {
+        "handle": "3E8",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                3607.97134202513,
+                3075.637163617257,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "17",
+            "label_handle": "407"
+        }
+    },
+    {
+        "handle": "3E9",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5287.971342025363,
+                1625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "11",
+            "label_handle": "401"
+        }
+    },
+    {
+        "handle": "3EA",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5287.971342025363,
+                2125.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "12",
+            "label_handle": "402"
+        }
+    },
+    {
+        "handle": "3EB",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5287.971342025363,
+                2625.637163617141,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "13",
+            "label_handle": "403"
+        }
+    },
+    {
+        "handle": "3EC",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                5287.971342025363,
+                3075.637163617257,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "14",
+            "label_handle": "404"
+        }
+    },
+    {
+        "handle": "3ED",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4727.971342025362,
+                3075.637163617257,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "15",
+            "label_handle": "405"
+        }
+    },
+    {
+        "handle": "3EE",
+        "type": "CIRCLE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "center": [
+                4167.97134202513,
+                3075.637163617257,
+                0.0
+            ],
+            "radius": 40.0,
+            "associated_label": "16",
+            "label_handle": "406"
+        }
+    },
+    {
+        "handle": "3EF",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                4190.804643087127,
+                2625.637163617141,
+                0.0
+            ],
+            "end": [
+                4587.97134202513,
+                2625.637163617141,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3F0",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                4190.804643087127,
+                2125.637163617141,
+                0.0
+            ],
+            "end": [
+                4587.97134202513,
+                2125.637163617141,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3F1",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                4190.804643087127,
+                1625.637163617141,
+                0.0
+            ],
+            "end": [
+                4587.97134202513,
+                1625.637163617141,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3F2",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                3190.230059674048,
+                2625.139459367916,
+                0.0
+            ],
+            "end": [
+                3587.396758612167,
+                2625.139459367916,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3F3",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                3190.230059674048,
+                2125.139459367916,
+                0.0
+            ],
+            "end": [
+                3587.396758612167,
+                2125.139459367916,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3F4",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                3190.230059674048,
+                1625.139459367916,
+                0.0
+            ],
+            "end": [
+                3587.396758612167,
+                1625.139459367916,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "3F5",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 2900.0000000001164,
+            "text": "",
+            "block_texts": [
+                "2900"
+            ],
+            "defpoint": [
+                6177.283076069595,
+                926.5894937589351,
+                0.0
+            ],
+            "defpoint2": [
+                6086.219606865701,
+                3826.589493759051,
+                0.0
+            ],
+            "defpoint3": [
+                6091.851321752222,
+                926.5894937589346,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                6178.256853890644,
+                2389.370657255482,
+                0.0
+            ],
+            "dimtype": 160
+        }
+    },
+    {
+        "handle": "3F6",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 4200.0,
+            "text": "4200",
+            "block_texts": [
+                "4200"
+            ],
+            "defpoint": [
+                5987.971342025363,
+                548.6263689584611,
+                0.0
+            ],
+            "defpoint2": [
+                1787.971342025363,
+                712.1317662879173,
+                0.0
+            ],
+            "defpoint3": [
+                5987.971342025363,
+                781.0013187398017,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                3887.971342025363,
+                614.4722079761964,
+                0.0
+            ],
+            "dimtype": 32
+        }
+    },
+    {
+        "handle": "3F7",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "1",
+            "insert_point": [
+                4652.308670765991,
+                1669.547217196976,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3F8",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "2",
+            "insert_point": [
+                4668.830067047422,
+                2180.782283163704,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3F9",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "3",
+            "insert_point": [
+                4667.720354845203,
+                2672.011719838907,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3FA",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "4",
+            "insert_point": [
+                3073.942289199136,
+                2662.997077517636,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3FB",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "5",
+            "insert_point": [
+                3083.57964366946,
+                2149.76008468967,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3FC",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "6",
+            "insert_point": [
+                3069.763796432448,
+                1656.331052759387,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3FD",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "7",
+            "insert_point": [
+                2813.798459103951,
+                1801.095092050107,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3FE",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "8",
+            "insert_point": [
+                2796.094628299625,
+                2328.348219344118,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "3FF",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "9",
+            "insert_point": [
+                4934.111336325798,
+                2311.028858056833,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "400",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "10",
+            "insert_point": [
+                4924.216539773663,
+                1827.40615988181,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "401",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "11",
+            "insert_point": [
+                5329.573034009701,
+                1594.921189675881,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "402",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "12",
+            "insert_point": [
+                5319.742724671998,
+                2095.907017114065,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "403",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "13",
+            "insert_point": [
+                5316.477821891584,
+                2587.686708854004,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "404",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "14",
+            "insert_point": [
+                5304.153288997865,
+                3028.602312558289,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "405",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "15",
+            "insert_point": [
+                4729.478075051718,
+                3020.878316597157,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "406",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "16",
+            "insert_point": [
+                4137.654456525147,
+                3014.697803395875,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "407",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "17",
+            "insert_point": [
+                3593.206895841324,
+                3033.632779781665,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "408",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "18",
+            "insert_point": [
+                3049.014623442237,
+                3020.895077356445,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "409",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "19",
+            "insert_point": [
+                2504.725050098883,
+                3029.88149102971,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "40A",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "20",
+            "insert_point": [
+                2337.492219382703,
+                2582.835249259677,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "40B",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "21",
+            "insert_point": [
+                2384.077833746598,
+                2065.407523629796,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "40C",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "22",
+            "insert_point": [
+                2346.369156837618,
+                1540.703388967742,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "40D",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "23",
+            "insert_point": [
+                1924.631136427439,
+                1620.960556770633,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "40E",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "24",
+            "insert_point": [
+                1928.647714341563,
+                2098.490752697299,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "40F",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "25",
+            "insert_point": [
+                1906.190960456073,
+                2563.400571517372,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "410",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "26",
+            "insert_point": [
+                1926.235461763377,
+                3003.854270396945,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "411",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "39",
+            "insert_point": [
+                1947.828669768098,
+                3482.31010812121,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "412",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "38",
+            "insert_point": [
+                2515.913518451192,
+                3477.765024358132,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "413",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "37",
+            "insert_point": [
+                2989.930778795775,
+                3464.956682455801,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "414",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "36",
+            "insert_point": [
+                3447.77859861815,
+                3479.564125669263,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "415",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "35",
+            "insert_point": [
+                3893.761531153732,
+                3463.847758017904,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "416",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "34",
+            "insert_point": [
+                4320.687921710002,
+                3460.790174720185,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "417",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "33",
+            "insert_point": [
+                4783.156776224301,
+                3475.938033685745,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "418",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "32",
+            "insert_point": [
+                5250.712899122426,
+                3456.995253707241,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "419",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "31",
+            "insert_point": [
+                5733.137695881692,
+                3477.283101621741,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "41A",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "27",
+            "insert_point": [
+                5724.842917071693,
+                3031.795339081046,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "41B",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "28",
+            "insert_point": [
+                5721.726119504581,
+                2555.878518961096,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "41C",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "29",
+            "insert_point": [
+                5713.70221233395,
+                2110.93497218269,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "41D",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "30",
+            "insert_point": [
+                5729.800704250616,
+                1644.754389199503,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "41E",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "48",
+            "insert_point": [
+                5717.842950307104,
+                1175.123532567364,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "41F",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "47",
+            "insert_point": [
+                5202.615699385098,
+                1161.772603478241,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "420",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "46",
+            "insert_point": [
+                4690.635994173973,
+                1171.04944651104,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "421",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "45",
+            "insert_point": [
+                4267.804985161326,
+                1172.526496948167,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "422",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "44",
+            "insert_point": [
+                3776.329426864433,
+                1173.351031328626,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "423",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "43",
+            "insert_point": [
+                3364.146156476965,
+                1164.526660952442,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "424",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "42",
+            "insert_point": [
+                2885.716526356448,
+                1156.652632440864,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "425",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "41",
+            "insert_point": [
+                2447.47814085839,
+                1150.397883323911,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "426",
+        "type": "MTEXT",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "text": "40",
+            "insert_point": [
+                1974.906458345629,
+                1163.743383826646,
+                0.0
+            ],
+            "char_height": 100.0,
+            "rotation": 0
+        }
+    },
+    {
+        "handle": "427",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 500.0,
+            "text": "",
+            "block_texts": [
+                "500"
+            ],
+            "defpoint": [
+                3371.155360440415,
+                2125.139459367917,
+                0.0
+            ],
+            "defpoint2": [
+                3190.230059674048,
+                2625.139459367916,
+                0.0
+            ],
+            "defpoint3": [
+                3190.230059674048,
+                2125.139459367916,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                3305.309521422679,
+                2375.139459367916,
+                0.0
+            ],
+            "dimtype": 32
+        }
+    },
+    {
+        "handle": "42A",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 300.0,
+            "text": "300",
+            "block_texts": [
+                "300"
+            ],
+            "defpoint": [
+                1787.971342025363,
+                2219.638921206775,
+                0.0
+            ],
+            "defpoint2": [
+                2087.971342025363,
+                2145.637163617141,
+                0.0
+            ],
+            "defpoint3": [
+                1787.971342025363,
+                2145.637163617141,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                1937.971342025363,
+                2285.512045354115,
+                0.0
+            ],
+            "dimtype": 32
+        }
+    },
+    {
+        "handle": "42D",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                2087.971342025363,
+                2145.637163617141,
+                0.0
+            ],
+            "end": [
+                2087.971342025363,
+                2219.638921206775,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "42E",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 400.0,
+            "text": "",
+            "block_texts": [
+                "400"
+            ],
+            "defpoint": [
+                2487.971342025363,
+                2072.473798961104,
+                0.0
+            ],
+            "defpoint2": [
+                2887.971342025363,
+                2375.637163617141,
+                0.0
+            ],
+            "defpoint3": [
+                2487.971342025363,
+                2125.637163617141,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                2687.971342025363,
+                2138.319637978839,
+                0.0
+            ],
+            "dimtype": 32
+        }
+    },
+    {
+        "handle": "431",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 300.00000000000045,
+            "text": "",
+            "block_texts": [
+                "300"
+            ],
+            "defpoint": [
+                1935.043314628691,
+                925.6371636171413,
+                0.0
+            ],
+            "defpoint2": [
+                2087.971342025363,
+                1225.637163617141,
+                0.0
+            ],
+            "defpoint3": [
+                2087.971342025363,
+                925.6371636171406,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                1869.170190481352,
+                1075.63716361714,
+                0.0
+            ],
+            "dimtype": 32
+        }
+    },
+    {
+        "handle": "434",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 0.0,
+            "text": "",
+            "block_texts": [
+                "500"
+            ],
+            "defpoint": [
+                5215.019626294303,
+                2625.637163617142,
+                0.0
+            ],
+            "defpoint2": [
+                5287.971342025363,
+                2125.637163617141,
+                0.0
+            ],
+            "defpoint3": [
+                5287.971342025363,
+                2625.637163617141,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                5149.173787276566,
+                2375.63716361714,
+                0.0
+            ],
+            "dimtype": 33
+        }
+    },
+    {
+        "handle": "437",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                5287.971342025363,
+                2625.637163617141,
+                0.0
+            ],
+            "end": [
+                5167.971342025363,
+                2625.637163617141,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "438",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                5287.971342025363,
+                2125.637163617141,
+                0.0
+            ],
+            "end": [
+                5167.971342025363,
+                2125.637163617141,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "439",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 560.0,
+            "text": "",
+            "block_texts": [
+                "560"
+            ],
+            "defpoint": [
+                4167.97134202513,
+                3168.340737392269,
+                0.0
+            ],
+            "defpoint2": [
+                3607.97134202513,
+                3075.637163617257,
+                0.0
+            ],
+            "defpoint3": [
+                4167.97134202513,
+                3075.637163617257,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                3887.97134202513,
+                3234.186576410004,
+                0.0
+            ],
+            "dimtype": 33
+        }
+    },
+    {
+        "handle": "43C",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 299.9999999997658,
+            "text": "",
+            "block_texts": [
+                "300"
+            ],
+            "defpoint": [
+                2436.591465631772,
+                3825.637163617026,
+                0.0
+            ],
+            "defpoint2": [
+                2537.971342025131,
+                3525.637163617258,
+                0.0
+            ],
+            "defpoint3": [
+                2537.971342025131,
+                3825.637163617024,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                2370.718341484433,
+                3675.637163617142,
+                0.0
+            ],
+            "dimtype": 32
+        }
+    },
+    {
+        "handle": "43F",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "start": [
+                2436.591465631771,
+                3525.637163617258,
+                0.0
+            ],
+            "end": [
+                2537.971342025131,
+                3525.637163617258,
+                0.0
+            ]
+        }
+    },
+    {
+        "handle": "440",
+        "type": "DIMENSION",
+        "layer": "15104尾巷图",
+        "group": null,
+        "attributes": {
+            "measurement": 500.00000000000045,
+            "text": "",
+            "block_texts": [
+                "500"
+            ],
+            "defpoint": [
+                4887.971342025365,
+                1875.637163617141,
+                0.0
+            ],
+            "defpoint2": [
+                4887.971342025362,
+                2375.637163617141,
+                0.0
+            ],
+            "defpoint3": [
+                4887.971342025362,
+                1875.637163617141,
+                0.0
+            ],
+            "defpoint4": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "defpoint5": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "text_midpoint": [
+                4822.125503007629,
+                2125.63716361714,
+                0.0
+            ],
+            "dimtype": 32
+        }
+    }
+]

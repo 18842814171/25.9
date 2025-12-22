@@ -26,6 +26,50 @@ def snap_to_nearest(point_coord, groups, axis_key):
     # Find the group with coordinate closest to point_coord
     return min(groups, key=lambda g: abs(g[axis_key] - point_coord))
 
+def get_boundaries(entities):
+    """Extract unique boundary coordinates from LINE entities."""
+    h_boundaries = [] # Y-coordinates for horizontal boundaries
+    v_boundaries = [] # X-coordinates for vertical boundaries
+    
+    for ent in entities:
+        if ent["type"] == "LINE":
+            start = ent["attributes"]["start"]
+            end = ent["attributes"]["end"]
+            
+            # If Y is the same, it's a horizontal line (defines a Y boundary)
+            if abs(start[1] - end[1]) < 1e-3:
+                h_boundaries.append(start[1])
+            # If X is the same, it's a vertical line (defines an X boundary)
+            elif abs(start[0] - end[0]) < 1e-3:
+                v_boundaries.append(start[0])
+                
+    return sorted(list(set(h_boundaries))), sorted(list(set(v_boundaries)))
+
+# --- Integration into your snap logic ---
+
+def snap_dimension_with_boundaries(dim, h_groups, v_groups, h_bounds, v_bounds):
+    kind = classify_dimension(dim)
+    p2 = dim["attributes"]["defpoint2"]
+    p3 = dim["attributes"]["defpoint3"]
+    
+    # Combine circle groups with boundary coordinates
+    # We create a unified list of 'targets' for the snapping function
+    h_targets = h_groups + [{"y": b, "group_id": "BOUNDARY"} for b in h_bounds]
+    v_targets = v_groups + [{"x": b, "group_id": "BOUNDARY"} for b in v_bounds]
+
+    if kind == "vertical":
+        # Vertical dimensions measure Y-distance
+        start_node = snap_to_nearest(p2[1], h_targets, "y")
+        end_node = snap_to_nearest(p3[1], h_targets, "y")
+        return {"type": "v_dist", "from": start_node, "to": end_node}
+    
+    elif kind == "horizontal":
+        # Horizontal dimensions measure X-distance
+        start_node = snap_to_nearest(p2[0], v_targets, "x")
+        end_node = snap_to_nearest(p3[0], v_targets, "x")
+        return {"type": "h_dist", "from": start_node, "to": end_node}
+    
+    
 def snap_dimension(dim, h_groups, v_groups):
     kind = classify_dimension(dim)
     val = get_dim_value(dim)
