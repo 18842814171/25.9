@@ -1,0 +1,26 @@
+# IDE / cache
+.vs/
+**/.vs/
+*.ipch
+*.suo
+*.db
+
+# Build output
+build/
+out/
+Debug/
+Release/
+x64/
+x86/
+图纸/
+交作业文档/
+# Documents / binaries
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.zip
+*.exe
+*.mp3
+*.xlsx

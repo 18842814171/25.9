@@ -1,0 +1,9 @@
+https://www.sciencedirect.com/science/article/pii/S1474034625006548 Ontology-based reasoning in automatic floor plan analysis
+https://www.mdpi.com/2220-9964/13/2/52 Generating Spatial Knowledge Graphs with 2D Indoor Floorplan Data: A Case Study on the Jeonju Express Bus Terminal
+https://mediatum.ub.tum.de/doc/1720434/1720434.pdf  A Novel Method of Graph-Based
+Representation Learning for Floorplan
+CAD Drawings
+
+https://www.diva-portal.org/smash/get/diva2:1238848/FULLTEXT02.pdf ng Design Content in CAD-Models and
+Knowledge Bases Using Graph Theory and
+Filtering
