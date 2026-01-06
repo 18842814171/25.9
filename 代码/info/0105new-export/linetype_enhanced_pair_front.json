@@ -1,0 +1,1093 @@
+{
+  "groups": [
+    {
+      "line_handle": "3DE",
+      "line_orientation": "vertical",
+      "line_leaning": "vertical",
+      "line_data": {
+        "handle": "3DE",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            4464.205960478469,
+            2192.039144222539,
+            0.0
+          ],
+          "end": [
+            4464.205960478469,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 44,
+          "label_data": {
+            "handle": "430",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "44",
+              "insert_point": [
+                4328.068044051597,
+                1152.618676201587,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.7865380011510148,
+          "param": 1152.618676201587
+        },
+        {
+          "id": 35,
+          "label_data": {
+            "handle": "433",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "35",
+              "insert_point": [
+                4304.600517688271,
+                1982.037957034454,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.3088680258615641,
+          "param": 1982.037957034454
+        }
+      ],
+      "label_count": 2,
+      "label_ids": [
+        44,
+        35
+      ]
+    },
+    {
+      "line_handle": "3E2",
+      "line_orientation": "diagonal",
+      "line_leaning": "left",
+      "line_data": {
+        "handle": "3E2",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            4264.205960478469,
+            2192.039144222539,
+            0.0
+          ],
+          "end": [
+            3766.464678127155,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 36,
+          "label_data": {
+            "handle": "434",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "36",
+              "insert_point": [
+                3984.396742666093,
+                1986.965597276025,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 296.6292707133722,
+          "distance": 179.88728077896658
+        },
+        {
+          "id": 4,
+          "label_data": {
+            "handle": "40D",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "4",
+              "insert_point": [
+                4033.491824037464,
+                1869.531661263349,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.9821203989795235,
+          "param": 386.29220763947114
+        },
+        {
+          "id": 5,
+          "label_data": {
+            "handle": "40C",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "5",
+              "insert_point": [
+                3918.547228525346,
+                1621.721317324236,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 659.2320072560132,
+          "distance": 100.77471539355338
+        },
+        {
+          "id": 6,
+          "label_data": {
+            "handle": "40B",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "6",
+              "insert_point": [
+                3797.552870783209,
+                1321.528306228721,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 982.8751761713485,
+          "distance": 97.52237308932018
+        },
+        {
+          "id": 43,
+          "label_data": {
+            "handle": "42F",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "43",
+              "insert_point": [
+                3648.119006075035,
+                1146.149759012422,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 1202.1242247621904,
+          "distance": 168.36000035993902
+        }
+      ],
+      "label_count": 5,
+      "label_ids": [
+        36,
+        4,
+        5,
+        6,
+        43
+      ]
+    },
+    {
+      "line_handle": "3E3",
+      "line_orientation": "diagonal",
+      "line_leaning": "right",
+      "line_data": {
+        "handle": "3E3",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            4664.20596047847,
+            2192.039144222539,
+            0.0
+          ],
+          "end": [
+            5164.20596047847,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 34,
+          "label_data": {
+            "handle": "432",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "34",
+              "insert_point": [
+                4782.437862122384,
+                1986.965597276025,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 234.7724670444416,
+          "distance": 30.26269884572284
+        },
+        {
+          "id": 3,
+          "label_data": {
+            "handle": "410",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "3",
+              "insert_point": [
+                4878.533928624424,
+                1890.624907791995,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 360.66235983817717,
+          "distance": 81.9126488922102
+        },
+        {
+          "id": 2,
+          "label_data": {
+            "handle": "40F",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "2",
+              "insert_point": [
+                4980.325792970554,
+                1649.091570173305,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 622.766927003941,
+          "distance": 82.97693228144907
+        },
+        {
+          "id": 1,
+          "label_data": {
+            "handle": "40E",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "1",
+              "insert_point": [
+                5064.303982868394,
+                1366.878918587377,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 915.5702168901205,
+          "distance": 51.95193388486803
+        },
+        {
+          "id": 45,
+          "label_data": {
+            "handle": "431",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "45",
+              "insert_point": [
+                5145.000669982353,
+                1135.457150187491,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 1160.2274981492305,
+          "distance": 37.43281106702748
+        }
+      ],
+      "label_count": 5,
+      "label_ids": [
+        34,
+        3,
+        2,
+        1,
+        45
+      ]
+    },
+    {
+      "line_handle": "3E5",
+      "line_orientation": "diagonal",
+      "line_leaning": "right",
+      "line_data": {
+        "handle": "3E5",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            2364.20596047847,
+            1992.039144222539,
+            0.0
+          ],
+          "end": [
+            2664.20596047847,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 39,
+          "label_data": {
+            "handle": "420",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "39",
+              "insert_point": [
+                2446.674256140552,
+                1923.347692820623,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 89.49156810750608,
+          "distance": 59.2519579657079
+        },
+        {
+          "id": 26,
+          "label_data": {
+            "handle": "421",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "26",
+              "insert_point": [
+                2475.317617574078,
+                1721.66695390377,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 290.8972904083286,
+          "distance": 28.73478855661283
+        },
+        {
+          "id": 23,
+          "label_data": {
+            "handle": "422",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "23",
+              "insert_point": [
+                2591.574081212468,
+                1334.145408442857,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 695.4816617502266,
+          "distance": 28.7347885567244
+        },
+        {
+          "id": 40,
+          "label_data": {
+            "handle": "423",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "40",
+              "insert_point": [
+                2645.761054136511,
+                1152.33528301507,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 885.19469089928,
+          "distance": 28.39374042371259
+        }
+      ],
+      "label_count": 4,
+      "label_ids": [
+        39,
+        26,
+        23,
+        40
+      ]
+    },
+    {
+      "line_handle": "3E6",
+      "line_orientation": "diagonal",
+      "line_leaning": "left",
+      "line_data": {
+        "handle": "3E6",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            6564.205960478471,
+            1992.039144222539,
+            0.0
+          ],
+          "end": [
+            6264.20596047847,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 31,
+          "label_data": {
+            "handle": "411",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "31",
+              "insert_point": [
+                6326.638682820903,
+                1937.095479993297,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 120.89094071978835,
+          "distance": 211.7602373073099
+        },
+        {
+          "id": 27,
+          "label_data": {
+            "handle": "412",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "27",
+              "insert_point": [
+                6266.225325540709,
+                1730.124706562756,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 336.49263825854007,
+          "distance": 210.15312476943956
+        },
+        {
+          "id": 30,
+          "label_data": {
+            "handle": "413",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "30",
+              "insert_point": [
+                6145.417543397354,
+                1342.062115279174,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 742.9030492598401,
+          "distance": 214.3570288928805
+        },
+        {
+          "id": 48,
+          "label_data": {
+            "handle": "414",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "48",
+              "insert_point": [
+                6067.756750051933,
+                1152.33528301507,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "diagonal",
+          "param": 946.9440609733551,
+          "distance": 234.22497400396185
+        }
+      ],
+      "label_count": 4,
+      "label_ids": [
+        31,
+        27,
+        30,
+        48
+      ]
+    },
+    {
+      "line_handle": "3E7",
+      "line_orientation": "vertical",
+      "line_leaning": "vertical",
+      "line_data": {
+        "handle": "3E7",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            3064.20596047847,
+            1992.039144222539,
+            0.0
+          ],
+          "end": [
+            3064.20596047847,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 41,
+          "label_data": {
+            "handle": "426",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "41",
+              "insert_point": [
+                2892.318606213386,
+                1145.076934059531,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.6149406995275967,
+          "param": 1145.076934059531
+        },
+        {
+          "id": 22,
+          "label_data": {
+            "handle": "427",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "22",
+              "insert_point": [
+                2892.318606213386,
+                1329.281759271778,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_bottom",
+          "param": 1329.281759271778,
+          "y": 1329.281759271778
+        },
+        {
+          "id": 19,
+          "label_data": {
+            "handle": "428",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "19",
+              "insert_point": [
+                2892.318606213386,
+                1739.565236771859,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_top",
+          "param": 1739.565236771859,
+          "y": 1739.565236771859
+        },
+        {
+          "id": 38,
+          "label_data": {
+            "handle": "425",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "38",
+              "insert_point": [
+                2892.318606213386,
+                1936.337397096127,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.555154798184636,
+          "param": 1936.337397096127
+        }
+      ],
+      "label_count": 4,
+      "label_ids": [
+        41,
+        22,
+        19,
+        38
+      ]
+    },
+    {
+      "line_handle": "3E8",
+      "line_orientation": "vertical",
+      "line_leaning": "vertical",
+      "line_data": {
+        "handle": "3E8",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            5864.20596047847,
+            1992.039144222539,
+            0.0
+          ],
+          "end": [
+            5864.20596047847,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 47,
+          "label_data": {
+            "handle": "419",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "47",
+              "insert_point": [
+                5699.040077337947,
+                1136.873651615724,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.6472037609254897,
+          "param": 1136.873651615724
+        },
+        {
+          "id": 11,
+          "label_data": {
+            "handle": "418",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "11",
+              "insert_point": [
+                5706.1965326983,
+                1294.503970088817,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_bottom",
+          "param": 1294.503970088817,
+          "y": 1294.503970088817
+        },
+        {
+          "id": 14,
+          "label_data": {
+            "handle": "417",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "14",
+              "insert_point": [
+                5709.528638897417,
+                1785.908465974413,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_top",
+          "param": 1785.908465974413,
+          "y": 1785.908465974413
+        },
+        {
+          "id": 32,
+          "label_data": {
+            "handle": "416",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "32",
+              "insert_point": [
+                5709.528638897417,
+                1967.269856281027,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.6297316064821052,
+          "param": 1967.269856281027
+        }
+      ],
+      "label_count": 4,
+      "label_ids": [
+        47,
+        11,
+        14,
+        32
+      ]
+    },
+    {
+      "line_handle": "3E9",
+      "line_orientation": "vertical",
+      "line_leaning": "vertical",
+      "line_data": {
+        "handle": "3E9",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            3464.20596047847,
+            1992.039144222539,
+            0.0
+          ],
+          "end": [
+            3464.20596047847,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 42,
+          "label_data": {
+            "handle": "42E",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "42",
+              "insert_point": [
+                3295.52157773422,
+                1145.823796789775,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.4412204739793203,
+          "param": 1145.823796789775
+        },
+        {
+          "id": 7,
+          "label_data": {
+            "handle": "42D",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "7",
+              "insert_point": [
+                3293.279118809569,
+                1399.378674666079,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_bottom",
+          "param": 1399.378674666079,
+          "y": 1399.378674666079
+        },
+        {
+          "id": 8,
+          "label_data": {
+            "handle": "42C",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "8",
+              "insert_point": [
+                3300.006495579797,
+                1585.621245842109,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_middle",
+          "param": 1585.621245842109,
+          "y": 1585.621245842109
+        },
+        {
+          "id": 18,
+          "label_data": {
+            "handle": "42B",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "18",
+              "insert_point": [
+                3300.054893973935,
+                1759.2372020247,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_middle",
+          "param": 1759.2372020247,
+          "y": 1759.2372020247
+        },
+        {
+          "id": 37,
+          "label_data": {
+            "handle": "42A",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "37",
+              "insert_point": [
+                3309.040862470585,
+                1945.47977320073,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_top",
+          "param": 1945.47977320073,
+          "y": 1945.47977320073
+        }
+      ],
+      "label_count": 5,
+      "label_ids": [
+        42,
+        7,
+        8,
+        18,
+        37
+      ]
+    },
+    {
+      "line_handle": "3EA",
+      "line_orientation": "vertical",
+      "line_leaning": "vertical",
+      "line_data": {
+        "handle": "3EA",
+        "type": "LINE",
+        "layer": "15104尾巷图",
+        "attributes": {
+          "start": [
+            5464.205960478469,
+            1992.039144222539,
+            0.0
+          ],
+          "end": [
+            5464.205960478469,
+            992.039144222539,
+            0.0
+          ],
+          "linetype": "BYLAYER"
+        }
+      },
+      "associated_labels": [
+        {
+          "id": 46,
+          "label_data": {
+            "handle": "41E",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "46",
+              "insert_point": [
+                5299.040077337948,
+                1136.873651615724,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.7011374076692901,
+          "param": 1136.873651615724
+        },
+        {
+          "id": 10,
+          "label_data": {
+            "handle": "41D",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "10",
+              "insert_point": [
+                5306.196532698301,
+                1354.228451813951,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_bottom",
+          "param": 1354.228451813951,
+          "y": 1354.228451813951
+        },
+        {
+          "id": 9,
+          "label_data": {
+            "handle": "41F",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "9",
+              "insert_point": [
+                5306.196532698301,
+                1561.530201286458,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_middle",
+          "param": 1561.530201286458,
+          "y": 1561.530201286458
+        },
+        {
+          "id": 15,
+          "label_data": {
+            "handle": "41C",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "15",
+              "insert_point": [
+                5309.528638897416,
+                1785.908465974413,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "vertical_top",
+          "param": 1785.908465974413,
+          "y": 1785.908465974413
+        },
+        {
+          "id": 33,
+          "label_data": {
+            "handle": "41B",
+            "type": "MTEXT",
+            "layer": "15104尾巷图",
+            "attributes": {
+              "text": "33",
+              "insert_point": [
+                5309.528638897416,
+                1967.269856281027,
+                0.0
+              ],
+              "char_height": 100.0,
+              "rotation": 0
+            }
+          },
+          "mode": "fallback",
+          "score": 0.6781724992884209,
+          "param": 1967.269856281027
+        }
+      ],
+      "label_count": 5,
+      "label_ids": [
+        46,
+        10,
+        9,
+        15,
+        33
+      ]
+    }
+  ],
+  "floating": []
+}

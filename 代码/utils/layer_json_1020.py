@@ -6,7 +6,7 @@ import json
 
 # 定义返回数据结构类型 (enhanced for blocks)
 LayerData = Dict[str, Dict[str, List[Dict[str, Any]]]]  # {layer: {group_type: [entities]} } e.g., group_type='direct' or 'block:BlockName'
-from indep_json_1022 import json_indep_dim,json_indep_line,json_indep_arc,json_indep_circle,json_indep_hatch,json_indep_insert,json_indep_leader,json_indep_lwpolyline,json_indep_point,json_indep_polyline,json_indep_spline,json_indep_text,json_indep_mtext,filtered_entities_json_no_layer_or_group
+from utils.indep_json_1226 import json_indep_dim,json_indep_line,json_indep_arc,json_indep_circle,json_indep_hatch,json_indep_insert,json_indep_leader,json_indep_lwpolyline,json_indep_point,json_indep_polyline,json_indep_spline,json_indep_text,json_indep_mtext,filtered_entities_json_no_layer_or_group
 from entities_1019 import define_window_by_corner_and_print, filter_msp,list_entity_from_msp,extract_entities_in_window_by_layer
 import entities_1019
 def extract_entity_attributes(entity: ezdxf.entities.DXFEntity, recurse_blocks: bool = True) -> List[Dict[str, Any]]:

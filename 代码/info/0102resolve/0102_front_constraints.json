@@ -1,0 +1,278 @@
+[
+  {
+    "id": "3E4",
+    "type": "linear_constraint",
+    "value": 400,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DB"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "3EB",
+    "type": "angular_constraint",
+    "value": 74,
+    "view": "front",
+    "between": [
+      "3E5",
+      "3DA"
+    ],
+    "confidence": 0.77,
+    "status": "partial",
+    "raw": {
+      "text": "74°",
+      "measurement": 75.87391610470208,
+      "defpoints": {
+        "vertex": [
+          2639.825258230511,
+          1008.988994257672
+        ],
+        "ray1_end": [
+          2639.825258230511,
+          1008.988994257672
+        ],
+        "ray2_end": [
+          2337.825258230511,
+          1008.988994257672
+        ]
+      }
+    }
+  },
+  {
+    "id": "3EC",
+    "type": "linear_constraint",
+    "value": 1000,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3E1"
+      ]
+    },
+    "confidence": 0.02
+  },
+  {
+    "id": "3ED",
+    "type": "linear_constraint",
+    "value": 1200,
+    "status": "resolved",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3E1"
+      ]
+    },
+    "confidence": 0.01
+  },
+  {
+    "id": "3EE",
+    "type": "angular_constraint",
+    "value": 68,
+    "view": "front",
+    "between": [
+      "3E2",
+      "3DA"
+    ],
+    "confidence": 0.81,
+    "status": "resolved",
+    "raw": {
+      "text": "68°",
+      "measurement": 111.80140948635179,
+      "defpoints": {
+        "vertex": [
+          3766.464678127155,
+          992.0391442225391
+        ],
+        "ray1_end": [
+          3766.464678127155,
+          992.039144222539
+        ],
+        "ray2_end": [
+          2216.464678127155,
+          992.039144222539
+        ]
+      }
+    }
+  },
+  {
+    "id": "3EF",
+    "type": "angular_constraint",
+    "value": 68,
+    "view": "front",
+    "between": [
+      "3DA",
+      "3E3"
+    ],
+    "confidence": 0.81,
+    "status": "resolved",
+    "raw": {
+      "text": "68°",
+      "measurement": 291.8014094863518,
+      "defpoints": {
+        "vertex": [
+          5153.560417990153,
+          992.039144222539
+        ],
+        "ray1_end": [
+          6703.560417990153,
+          992.039144222539
+        ],
+        "ray2_end": [
+          4553.560417990153,
+          2492.039144222539
+        ]
+      }
+    }
+  },
+  {
+    "id": "3F0",
+    "type": "linear_constraint",
+    "value": 300,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "3F3",
+    "type": "linear_constraint",
+    "value": 400,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "3F6",
+    "type": "linear_constraint",
+    "value": 400,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "3F9",
+    "type": "linear_constraint",
+    "value": 300,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "3FC",
+    "type": "linear_constraint",
+    "value": 1400,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "3FF",
+    "type": "linear_constraint",
+    "value": 300,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "402",
+    "type": "linear_constraint",
+    "value": 400,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "405",
+    "type": "linear_constraint",
+    "value": 400,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "408",
+    "type": "linear_constraint",
+    "value": 300,
+    "status": "partial",
+    "applies_to": {
+      "view": "front",
+      "entities": [
+        "3DA"
+      ]
+    },
+    "confidence": 0.03
+  },
+  {
+    "id": "435",
+    "type": "angular_constraint",
+    "value": 74,
+    "view": "front",
+    "between": [
+      "3DA",
+      "3E6"
+    ],
+    "confidence": 0.81,
+    "status": "resolved",
+    "raw": {
+      "text": "74°",
+      "measurement": 253.30075576600632,
+      "defpoints": {
+        "vertex": [
+          6264.20596047847,
+          992.039144222539
+        ],
+        "ray1_end": [
+          6564.205960478471,
+          992.039144222539
+        ],
+        "ray2_end": [
+          6564.205960478471,
+          1992.039144222539
+        ]
+      }
+    }
+  }
+]

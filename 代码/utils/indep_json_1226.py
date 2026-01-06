@@ -3,25 +3,55 @@ from ezdxf import select
 from ezdxf.math import Vec2
 from typing import Dict, List, Any
 import json
-
+import re
 # 定义返回数据结构类型 (enhanced for blocks)
 LayerData = Dict[str, Dict[str, List[Dict[str, Any]]]]  # {layer: {group_type: [entities]} } e.g., group_type='direct' or 'block:BlockName'
-from entities_1019 import define_window_by_corner_and_print, filter_msp, extract_entities_in_window_by_layer, list_entity_from_msp
+from entities_1019 import filter_msp, list_entity_from_msp
 
-def json_indep_dim(dim,attributes):
+def decode_mtext_escapes(s: str) -> str:
+    if not s:
+        return s
+
+    def repl(match):
+        codepoint = int(match.group(1), 16)
+        return chr(codepoint)
+
+    return re.sub(r'\\U\+([0-9A-Fa-f]{4})', repl, s)
+    
+def json_indep_dim(dim, attributes):
     measurement = dim.get_measurement() if hasattr(dim, 'get_measurement') else 'N/A'
     attributes['measurement'] = measurement
     attributes['text'] = dim.dxf.text
+    attributes['dimtype'] = dim.dxf.dimtype
     block = dim.get_geometry_block()
+    block_texts = []
+
     if block:
-        attributes['block_texts'] = [t.dxf.text for t in block.query('TEXT MTEXT') if t.dxf.text]
+        for e in block:
+            if e.dxftype() == 'TEXT':
+                block_texts.append(e.dxf.text)
+
+            elif e.dxftype() == 'MTEXT':
+                raw = e.text  # this is a string with DXF escapes
+                block_texts.append(decode_mtext_escapes(raw))
+
+        attributes['block_texts'] = block_texts
     else:
         attributes['block_texts'] = None
+
     return attributes
 
-def json_indep_line(entity,attributes):
+def json_indep_line(entity, attributes, desired_linetypes=None, desired_layers=None):
     attributes['start'] = list(entity.dxf.start.xyz)
     attributes['end'] = list(entity.dxf.end.xyz)
+    attributes['linetype'] = entity.dxf.linetype  # NEW
+    
+    # Apply filters
+    if desired_linetypes and entity.dxf.linetype not in desired_linetypes:
+        return None
+    if desired_layers and entity.dxf.layer not in desired_layers:
+        return None
+        
     return attributes
 
 def json_indep_arc(entity,attributes):
@@ -94,7 +124,7 @@ def json_indep_mtext(entity,attributes):
      
     return attributes
     
-def filtered_entities_json_no_layer_or_group(filtered_entities,doc=None):
+def filtered_entities_json_no_layer_or_group(filtered_entities,doc=None,desired_linetypes=None,desired_layers=None):
     entities_data = []
     # Initialize counts
     line_count, arc_count, circle_count, dim_count, hatch_count, insert_count, leader_count, lwpline_count, point_count, polyline_count, spline_count, text_count, mtext_count = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
@@ -122,9 +152,10 @@ def filtered_entities_json_no_layer_or_group(filtered_entities,doc=None):
                 attributes=json_indep_dim(entity,attributes)
 
             elif entity_type == 'LINE':
+                attributes = json_indep_line(entity, attributes, desired_linetypes, desired_layers)
+                if attributes is None:
+                    continue  # Skip this entity
                 line_count += 1
-                attributes=json_indep_line(entity,attributes)
-                
             elif entity_type == 'ARC':
                 arc_count += 1
                 attributes=json_indep_arc(entity,attributes)
@@ -184,12 +215,12 @@ def exec():
     # Export to JSON
     dxf_file_path = r"D:\大创\25.9\代码\sepview-8\front.dxf"
     #window_corners = ((583500, 658300), (586000, 654300))  # 右上角
-    desired_types='LINE ARC CIRCLE DIMENSION HATCH INSERT LEADER  LWPOLYLINE POINT POLYLINE SPLINE TEXT MTEXT'
+    desired_types='LINE'
 
     filtered_msp = filter_msp(dxf_file_path,desired_types)# Select all entities in window (bbox_inside handles iteration safely)
     #window=define_window_by_corner_and_print(window_corners)
     filtered_entities = list_entity_from_msp(filtered_msp)
-    output_filename = 'info/1204_export-front-indep.json'
+    output_filename = 'info/0104groupfront/testlines_export-front-indep.json'
 
     entities_data=filtered_entities_json_no_layer_or_group(filtered_entities)
     with open(output_filename, 'w', encoding='utf-8') as f:

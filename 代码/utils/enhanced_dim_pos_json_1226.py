@@ -1,16 +1,17 @@
 import ezdxf
 import json
+import re
 from ezdxf import select
 from ezdxf.math import Vec2
-from utils.indep_json_1226 import (  # Import all the helper functions
+from indep_json_1226 import (  # Import all the helper functions
     json_indep_dim, json_indep_line, json_indep_arc, json_indep_circle,
     json_indep_hatch, json_indep_insert, json_indep_leader, json_indep_lwpolyline,
     json_indep_point, json_indep_polyline, json_indep_spline, json_indep_text,
-    json_indep_mtext,filter_msp,list_entity_from_msp
+    json_indep_mtext,filter_msp,list_entity_from_msp,decode_mtext_escapes
 )
 
-    
-def filtered_entities_json_no_layer_or_group_2(filtered_entities,doc=None):
+
+def filtered_entities_json_no_layer_or_group_2(filtered_entities,doc=None,desired_linetypes=None,desired_layers=None):
     entities_data = []
     # Initialize counts
     line_count, arc_count, circle_count, dim_count, hatch_count, insert_count, leader_count, lwpline_count, point_count, polyline_count, spline_count, text_count, mtext_count = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
@@ -35,11 +36,13 @@ def filtered_entities_json_no_layer_or_group_2(filtered_entities,doc=None):
             # 2. Extract entity-specific attributes
             if entity_type == 'DIMENSION':
                 dim_count += 1        
-                attributes=json_indep_dim(entity,attributes)
+                attributes=json_dim_pos_enhanced(entity,attributes)
 
             elif entity_type == 'LINE':
+                attributes=json_indep_line(entity,attributes,desired_linetypes,desired_layers)
+                if attributes is None:  # Entity filtered out
+                    continue  # Skip this entity
                 line_count += 1
-                attributes=json_indep_line(entity,attributes)
                 
             elif entity_type == 'ARC':
                 arc_count += 1
@@ -116,7 +119,8 @@ def json_indep_insert_with_text(entity, attributes, doc):
                     attributes['actual_text'] = sub_entity.dxf.text
                     break
                 elif sub_entity.dxftype() == 'MTEXT':
-                    attributes['actual_text'] = sub_entity.text
+                    raw = sub_entity.text
+                    attributes['actual_text'] = decode_mtext_escapes(raw)
                     break
     except Exception as e:
         # If we can't extract text, that's OK - just keep INSERT attributes
@@ -129,18 +133,18 @@ def json_dim_pos_enhanced(dim,attributes):
     attributes = json_indep_dim(dim, attributes)
     # ADD THESE CRITICAL GROUP CODES FOR ENTITY LINKING:
     # Definition points that snap to geometry
+    
     if hasattr(dim.dxf, 'defpoint'):  # Point 10
-        attributes['defpoint'] = list(dim.dxf.defpoint.xyz)
+        attributes['vertex_projection'] = list(dim.dxf.defpoint.xyz)
     if hasattr(dim.dxf, 'defpoint2'):  # Point 13 - often snaps to entity
-        attributes['defpoint2'] = list(dim.dxf.defpoint2.xyz)
+        attributes['line1_p1'] = list(dim.dxf.defpoint2.xyz)
     if hasattr(dim.dxf, 'defpoint3'):  # Point 14 - often snaps to entity  
-        attributes['defpoint3'] = list(dim.dxf.defpoint3.xyz)
+        attributes['line1_p2'] = list(dim.dxf.defpoint3.xyz)
     if hasattr(dim.dxf, 'defpoint4'):  # Point 15 - for some dimension types
-        attributes['defpoint4'] = list(dim.dxf.defpoint4.xyz)
+        attributes['line2_p1'] = list(dim.dxf.defpoint4.xyz)
     if hasattr(dim.dxf, 'defpoint5'):  # Point 16 - for some dimension types
-        attributes['defpoint5'] = list(dim.dxf.defpoint5.xyz)
-    if hasattr(dim.dxf, 'defpoint6'):  # Point 17
-        attributes['defpoint6'] = list(dim.dxf.defpoint6.xyz)
+        attributes['arc_point'] = list(dim.dxf.defpoint5.xyz)
+    
     # Text position
     if hasattr(dim.dxf, 'text_midpoint'):
         attributes['text_midpoint'] = list(dim.dxf.text_midpoint.xyz)
@@ -153,7 +157,7 @@ def exec():
     
     # Export to JSON
     dxf_file_path = r"sepview-8\front.dxf"
-    desired_types='LINE ARC CIRCLE DIMENSION HATCH INSERT LEADER  LWPOLYLINE POINT POLYLINE SPLINE TEXT MTEXT'
+    desired_types='LINE'
     
     # FIRST read the DXF file to get doc
     try:
@@ -167,12 +171,10 @@ def exec():
     filtered_msp = filter_msp(dxf_file_path, desired_types)
     filtered_entities = list_entity_from_msp(filtered_msp)
     
-    
-    
     # PASS doc to your processing function
-    entities_data = filtered_entities_json_no_layer_or_group_2(filtered_entities, doc)
+    entities_data = filtered_entities_json_no_layer_or_group_2(filtered_entities, doc,desired_linetypes="BYLAYER")
     
-    output_filename = 'info/1226_export-front.json'
+    output_filename =r"info\0105new-export\LINE_export_front.json"
     with open(output_filename, 'w', encoding='utf-8') as f:
         json.dump(entities_data, f, indent=4, ensure_ascii=False)
 

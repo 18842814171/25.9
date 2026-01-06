@@ -39,19 +39,23 @@ def extract_numbers(text: str) -> List[float]:
     return [float(num) for num in numbers]
 
 def is_slope_dimension(dim: Dict[str, Any]) -> bool:
-    """Check if this dimension represents a slope/angle."""
+    # First: trust DXF semantics
+    if is_angular_dim(dim):
+        return True
+
+    # Fallback: text-based heuristic
     attrs = dim["attributes"]
     dim_text = attrs.get("text", "").lower()
     block_texts = attrs.get("block_texts", [])
-    
-    # Check for degree symbol or slope indicators
-    has_degree = ("°" in dim_text or 
-                 any("°" in str(text).lower() for text in block_texts))
-    
-    has_slope_keyword = ("dip" in dim_text or 
-                        "slope" in dim_text or
-                        "angle" in dim_text)
-    
+
+    has_degree = (
+        "°" in dim_text or
+        any("°" in str(text) for text in block_texts)
+    )
+    has_slope_keyword = any(
+        kw in dim_text for kw in ("dip", "slope", "angle")
+    )
+
     return has_degree or has_slope_keyword
 
 def vector_distance_to_line(pt: np.ndarray, line_start: np.ndarray, line_end: np.ndarray) -> float:
@@ -73,3 +77,43 @@ def calculate_line_orientation(start: np.ndarray, end: np.ndarray) -> str:
     if dx < 1.0: return "vertical"
     if dy < 1.0: return "horizontal"
     return "diagonal"
+
+def is_angular_dim(dim: Dict[str, Any]) -> bool:
+    """
+    DXF dimtype is bitmasked.
+    Bit 2 (value 2) indicates angular dimension.
+    """
+    dimtype = dim["attributes"].get("dimtype")
+    if dimtype is None:
+        return False
+    return (dimtype & 2) != 0
+
+def point_to_infinite_line_distance(p, l0, d):
+    v = p - l0
+    proj = np.dot(v, d) * d
+    return np.linalg.norm(v - proj)
+
+
+def classify_direction(d: np.ndarray) -> str:
+    dx, dy = abs(d[0]), abs(d[1])
+    if dx < 0.3:
+        return "vertical"
+    if dy < 0.3:
+        return "horizontal"
+    return "diagonal"
+
+def fit_line_pca(points: np.ndarray):
+    mean = points.mean(axis=0)
+    _, _, vh = np.linalg.svd(points - mean)
+    d = vh[0]
+    return mean, d / np.linalg.norm(d)
+
+def local_label_orientation(label, labels, radius=400):
+    neighbors = [
+        l["point"] for l in labels
+        if np.linalg.norm(l["point"] - label["point"]) < radius
+    ]
+    if len(neighbors) < 2:
+        return None
+    _, d = fit_line_pca(np.array(neighbors))
+    return classify_direction(d)

@@ -7,7 +7,7 @@ from typing import List, Dict, Any
 # -------------------------------------------------
 # 1. Import everything we need from 1022
 # -------------------------------------------------
-from indep_json_1022 import (
+from utils.indep_json_1226 import (
     filtered_entities_json_no_layer_or_group,
 )
 from entities_1019 import (

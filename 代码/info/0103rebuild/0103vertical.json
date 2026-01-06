@@ -1,0 +1,358 @@
+{
+  "vertical": [
+    {
+      "group_id": 0,
+      "x": 2087.971342,
+      "circles": [
+        {
+          "handle": "3BF",
+          "label": "39",
+          "label_handle": "411"
+        },
+        {
+          "handle": "3CD",
+          "label": "40",
+          "label_handle": "426"
+        },
+        {
+          "handle": "3CE",
+          "label": "23",
+          "label_handle": "40D"
+        },
+        {
+          "handle": "3CF",
+          "label": "24",
+          "label_handle": "40E"
+        },
+        {
+          "handle": "3D0",
+          "label": "25",
+          "label_handle": "40F"
+        },
+        {
+          "handle": "3D1",
+          "label": "26",
+          "label_handle": "410"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "x": 2487.971342,
+      "circles": [
+        {
+          "handle": "3E3",
+          "label": "22",
+          "label_handle": "40C"
+        },
+        {
+          "handle": "3E4",
+          "label": "21",
+          "label_handle": "40B"
+        },
+        {
+          "handle": "3E5",
+          "label": "20",
+          "label_handle": "40A"
+        },
+        {
+          "handle": "3E6",
+          "label": "19",
+          "label_handle": "409"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "x": 2537.971342,
+      "circles": [
+        {
+          "handle": "3C0",
+          "label": "38",
+          "label_handle": "412"
+        },
+        {
+          "handle": "3D2",
+          "label": "41",
+          "label_handle": "425"
+        }
+      ]
+    },
+    {
+      "group_id": 3,
+      "x": 2887.971342,
+      "circles": [
+        {
+          "handle": "3DF",
+          "label": "7",
+          "label_handle": "3FD"
+        },
+        {
+          "handle": "3E0",
+          "label": "8",
+          "label_handle": "3FE"
+        }
+      ]
+    },
+    {
+      "group_id": 4,
+      "x": 2987.971342,
+      "circles": [
+        {
+          "handle": "3C1",
+          "label": "37",
+          "label_handle": "413"
+        },
+        {
+          "handle": "3D3",
+          "label": "42",
+          "label_handle": "424"
+        }
+      ]
+    },
+    {
+      "group_id": 5,
+      "x": 3047.971342,
+      "circles": [
+        {
+          "handle": "3E7",
+          "label": "18",
+          "label_handle": "408"
+        }
+      ]
+    },
+    {
+      "group_id": 6,
+      "x": 3187.971342,
+      "circles": [
+        {
+          "handle": "3D9",
+          "label": "6",
+          "label_handle": "3FC"
+        },
+        {
+          "handle": "3DD",
+          "label": "5",
+          "label_handle": "3FB"
+        },
+        {
+          "handle": "3DE",
+          "label": "4",
+          "label_handle": "3FA"
+        }
+      ]
+    },
+    {
+      "group_id": 7,
+      "x": 3437.971342,
+      "circles": [
+        {
+          "handle": "3C2",
+          "label": "36",
+          "label_handle": "414"
+        },
+        {
+          "handle": "3D4",
+          "label": "43",
+          "label_handle": "423"
+        }
+      ]
+    },
+    {
+      "group_id": 8,
+      "x": 3607.971342,
+      "circles": [
+        {
+          "handle": "3E8",
+          "label": "17",
+          "label_handle": "407"
+        }
+      ]
+    },
+    {
+      "group_id": 9,
+      "x": 3887.971342,
+      "circles": [
+        {
+          "handle": "3C3",
+          "label": "35",
+          "label_handle": "415"
+        },
+        {
+          "handle": "3D5",
+          "label": "44",
+          "label_handle": "422"
+        }
+      ]
+    },
+    {
+      "group_id": 10,
+      "x": 4167.971342,
+      "circles": [
+        {
+          "handle": "3EE",
+          "label": "16",
+          "label_handle": "406"
+        }
+      ]
+    },
+    {
+      "group_id": 11,
+      "x": 4337.971342,
+      "circles": [
+        {
+          "handle": "3C4",
+          "label": "34",
+          "label_handle": "416"
+        },
+        {
+          "handle": "3D6",
+          "label": "45",
+          "label_handle": "421"
+        }
+      ]
+    },
+    {
+      "group_id": 12,
+      "x": 4587.971342,
+      "circles": [
+        {
+          "handle": "3DA",
+          "label": "1",
+          "label_handle": "3F7"
+        },
+        {
+          "handle": "3DB",
+          "label": "2",
+          "label_handle": "3F8"
+        },
+        {
+          "handle": "3DC",
+          "label": "3",
+          "label_handle": "3F9"
+        }
+      ]
+    },
+    {
+      "group_id": 13,
+      "x": 4727.971342,
+      "circles": [
+        {
+          "handle": "3ED",
+          "label": "15",
+          "label_handle": "405"
+        }
+      ]
+    },
+    {
+      "group_id": 14,
+      "x": 4787.971342,
+      "circles": [
+        {
+          "handle": "3C5",
+          "label": "33",
+          "label_handle": "417"
+        },
+        {
+          "handle": "3D7",
+          "label": "46",
+          "label_handle": "420"
+        }
+      ]
+    },
+    {
+      "group_id": 15,
+      "x": 4887.971342,
+      "circles": [
+        {
+          "handle": "3E1",
+          "label": "9",
+          "label_handle": "3FF"
+        },
+        {
+          "handle": "3E2",
+          "label": "10",
+          "label_handle": "400"
+        }
+      ]
+    },
+    {
+      "group_id": 16,
+      "x": 5237.971342,
+      "circles": [
+        {
+          "handle": "3C6",
+          "label": "32",
+          "label_handle": "418"
+        },
+        {
+          "handle": "3D8",
+          "label": "47",
+          "label_handle": "41F"
+        }
+      ]
+    },
+    {
+      "group_id": 17,
+      "x": 5287.971342,
+      "circles": [
+        {
+          "handle": "3E9",
+          "label": "11",
+          "label_handle": "401"
+        },
+        {
+          "handle": "3EA",
+          "label": "12",
+          "label_handle": "402"
+        },
+        {
+          "handle": "3EB",
+          "label": "13",
+          "label_handle": "403"
+        },
+        {
+          "handle": "3EC",
+          "label": "14",
+          "label_handle": "404"
+        }
+      ]
+    },
+    {
+      "group_id": 18,
+      "x": 5687.971342,
+      "circles": [
+        {
+          "handle": "3C7",
+          "label": "31",
+          "label_handle": "419"
+        },
+        {
+          "handle": "3C8",
+          "label": "27",
+          "label_handle": "41A"
+        },
+        {
+          "handle": "3C9",
+          "label": "28",
+          "label_handle": "41B"
+        },
+        {
+          "handle": "3CA",
+          "label": "29",
+          "label_handle": "41C"
+        },
+        {
+          "handle": "3CB",
+          "label": "30",
+          "label_handle": "41D"
+        },
+        {
+          "handle": "3CC",
+          "label": "48",
+          "label_handle": "41E"
+        }
+      ]
+    }
+  ]
+}
