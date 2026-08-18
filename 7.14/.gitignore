@@ -1,0 +1,31 @@
+# IDE / cache
+.vs/
+**/.vs/
+*.ipch
+*.suo
+*.db
+**/.venv/
+# Build output
+build/
+output/
+Debug/
+**/__pycache__/
+x64/
+x86/
+图纸/
+old/
+dxf/
+user/
+# Documents / binaries
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.zip
+*.exe
+*.dxf
+*.dwg
+*.json
+*.pkl
+
