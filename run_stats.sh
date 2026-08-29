@@ -77,21 +77,14 @@ else
 fi
 
 RULES_JSON="${FULL_OUT}/714-stage1/${FULL_STEM}-retrieval_rules.json"
-FACILITY_TMPL="${FULL_OUT}/714-stage2/${FULL_STEM}-facility_templates.json"
 
 if [[ ! -f "$RULES_JSON" ]]; then
   echo "Missing retrieval rules: ${RULES_JSON}"
   echo "Run first: ./run_full_drawing.sh --src ${SRC}"
   exit 1
 fi
-if [[ ! -f "$FACILITY_TMPL" ]]; then
-  echo "Missing facility templates: ${FACILITY_TMPL}"
-  echo "Run first: ./run_full_drawing.sh --src ${SRC}"
-  exit 1
-fi
 
 echo "Using full-drawing rules:     ${RULES_JSON}"
-echo "Using full-drawing templates: ${FACILITY_TMPL}"
 
 run_one() {
   local STEM="$1"
@@ -146,7 +139,7 @@ run_one() {
 
   cd "${CODE_ROOT}/7.14"
 
-  # 局部图：跳过 step1a 脚本1/2 与 stage2 脚本1；规则与设施模板取自整图
+  # 局部图：跳过 step1a 脚本1/2；识别规则取自整图
   python step1a/0_retrieved_elements_graph.py --stem="$STEM" --text-json "$TEXT_JSON" --corridor-json "$GEO_JSON" --output-dir "$S714_1"
   python step1a/3_apply_retrieval_rules.py --stem="$STEM" --corridor-json "$GEO_JSON" --output-dir "$S714_1" --rules-json "$RULES_JSON"
   python step1a/4_final_clusters.py --stem="$STEM" --corridor-json "$GEO_JSON" --output-dir "$S714_1"
@@ -155,7 +148,7 @@ run_one() {
   python step1b/1_visualize.py --stem="$STEM" --output-dir "$S714_1"
 
   python stage2/0_facility_primitives_graph.py --stem="$STEM" --facility-json "$FACILITY_JSON" --output-dir "$S714_2"
-  python stage2/2_build_facility_graph.py --stem="$STEM" --output-dir "$S714_2" --templates-json "$FACILITY_TMPL"
+  python stage2/2_build_facility_graph.py --stem="$STEM" --output-dir "$S714_2"
   python stage2/3_structure_graph_with_facilities.py --stem="$STEM" --structure-pkl "$TEXTS_PKL" --output-dir "$S714_2" --corridor-json "$GEO_JSON"
   python stage2/4_visualize.py --stem="$STEM" --output-dir "$S714_2" --corridor-json "$GEO_JSON"
 

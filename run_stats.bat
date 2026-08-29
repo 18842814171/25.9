@@ -3,7 +3,7 @@ setlocal EnableExtensions EnableDelayedExpansion
 chcp 65001 >nul
 
 rem Local-drawing batch: skip legend extract / rule calibration / facility template extract;
-rem reuse full-drawing retrieval_rules + facility_templates (same as README / run_stats.sh).
+rem reuse full-drawing retrieval_rules (same as README / run_stats.sh).
 rem Full drawing first: run_full_drawing.bat --src <path>
 rem
 rem Usage:
@@ -73,21 +73,14 @@ if "%OUTPUT_ROOT%"=="" (
 )
 
 set "RULES_JSON=%FULL_OUT%\714-stage1\%FULL_STEM%-retrieval_rules.json"
-set "FACILITY_TMPL=%FULL_OUT%\714-stage2\%FULL_STEM%-facility_templates.json"
 
 if not exist "%RULES_JSON%" (
   echo Missing retrieval rules: %RULES_JSON%
   echo Run first: run_full_drawing.bat --src %SRC%
   exit /b 1
 )
-if not exist "%FACILITY_TMPL%" (
-  echo Missing facility templates: %FACILITY_TMPL%
-  echo Run first: run_full_drawing.bat --src %SRC%
-  exit /b 1
-)
 
 echo Using full-drawing rules:     %RULES_JSON%
-echo Using full-drawing templates: %FACILITY_TMPL%
 
 set "COUNT=0"
 for %%F in ("%TEST_INPUT%\*.dxf") do (
@@ -199,7 +192,7 @@ if errorlevel 1 exit /b 1
 
 cd /d "%CODE_ROOT%7.14" || exit /b 1
 
-rem 局部图：跳过 step1a 脚本1/2 与 stage2 脚本1；规则与设施模板取自整图
+rem 局部图：跳过 step1a 脚本1/2；识别规则取自整图
 python step1a\0_retrieved_elements_graph.py --stem=%STEM% --text-json "%TEXT_JSON%" --corridor-json "%GEO_JSON%" --output-dir "%S714_1%"
 if errorlevel 1 exit /b 1
 python step1a\3_apply_retrieval_rules.py --stem=%STEM% --corridor-json "%GEO_JSON%" --output-dir "%S714_1%" --rules-json "%RULES_JSON%"
@@ -214,7 +207,7 @@ if errorlevel 1 exit /b 1
 
 python stage2\0_facility_primitives_graph.py --stem=%STEM% --facility-json "%FACILITY_JSON%" --output-dir "%S714_2%"
 if errorlevel 1 exit /b 1
-python stage2\2_build_facility_graph.py --stem=%STEM% --output-dir "%S714_2%" --templates-json "%FACILITY_TMPL%"
+python stage2\2_build_facility_graph.py --stem=%STEM% --output-dir "%S714_2%"
 if errorlevel 1 exit /b 1
 python stage2\3_structure_graph_with_facilities.py --stem=%STEM% --structure-pkl "%TEXTS_PKL%" --output-dir "%S714_2%" --corridor-json "%GEO_JSON%"
 if errorlevel 1 exit /b 1

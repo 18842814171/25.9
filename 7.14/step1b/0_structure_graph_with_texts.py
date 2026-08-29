@@ -1,4 +1,4 @@
-"""step1b-0：将标注簇与巷道文字挂接到结构图，产出 structure_graph_with_texts。
+"""step1b-0：将标注组与巷道文字关联到结构图，产出 structure_graph_with_texts。
 
 用法（在仓库根目录）：
   python step1b/0_structure_graph_with_texts.py ^

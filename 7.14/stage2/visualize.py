@@ -18,8 +18,8 @@ from utils.plot_font import setup_cjk_font
 from config import Stage2Config
 
 
-def _facility_color(ftype: str, cfg: Stage2Config) -> str:
-    return cfg.color_facility_by_type.get(ftype, cfg.color_facility_default)
+def _facility_color(_ftype: str, cfg: Stage2Config) -> str:
+    return cfg.color_facility_default
 
 
 def _percentile_sorted(values: list[float], pct: float) -> float:
@@ -109,11 +109,24 @@ def draw_corridors(
     corridors: list[dict],
     color: str,
     linewidth: float,
+    *,
+    linestyle: str | tuple = "solid",
+    alpha: float = 1.0,
+    zorder: int = 0,
 ) -> tuple[list[float], list[float]]:
     from matplotlib.patches import Arc
 
     xs: list[float] = []
     ys: list[float] = []
+    dashed = linestyle not in ("solid", "-", None)
+    plot_kw = {
+        "color": color,
+        "linewidth": linewidth,
+        "linestyle": linestyle,
+        "alpha": alpha,
+        "zorder": zorder,
+        "solid_capstyle": "butt",
+    }
     for ent in corridors:
         et = ent.get("type")
         attrs = ent.get("attributes") or {}
@@ -124,7 +137,7 @@ def draw_corridors(
                 continue
             x0, y0 = float(start[0]), float(start[1])
             x1, y1 = float(end[0]), float(end[1])
-            ax.plot([x0, x1], [y0, y1], color=color, linewidth=linewidth, zorder=0)
+            ax.plot([x0, x1], [y0, y1], **plot_kw)
             xs.extend([x0, x1])
             ys.extend([y0, y1])
         elif et == "ARC":
@@ -137,23 +150,37 @@ def draw_corridors(
                 continue
             a0 = float(attrs.get("start_angle") or 0.0)
             a1 = float(attrs.get("end_angle") or 0.0)
-            ax.add_patch(
-                Arc(
-                    (cx, cy),
-                    2 * radius,
-                    2 * radius,
-                    angle=0.0,
-                    theta1=a0,
-                    theta2=a1,
-                    color=color,
-                    linewidth=linewidth,
-                    zorder=0,
+            if dashed:
+                # Arc patch ignores dash; sample polyline so linestyle applies.
+                span = (a1 - a0) % 360.0
+                if span < 1e-9:
+                    span = 360.0
+                n = max(12, int(span / 6.0) + 1)
+                angs = [a0 + span * i / n for i in range(n + 1)]
+                xs_a = [cx + radius * math.cos(math.radians(a)) for a in angs]
+                ys_a = [cy + radius * math.sin(math.radians(a)) for a in angs]
+                ax.plot(xs_a, ys_a, **plot_kw)
+                xs.extend(xs_a)
+                ys.extend(ys_a)
+            else:
+                ax.add_patch(
+                    Arc(
+                        (cx, cy),
+                        2 * radius,
+                        2 * radius,
+                        angle=0.0,
+                        theta1=a0,
+                        theta2=a1,
+                        color=color,
+                        linewidth=linewidth,
+                        alpha=alpha,
+                        zorder=zorder,
+                    )
                 )
-            )
-            for ang in (a0, a1, (a0 + a1) / 2.0):
-                rad = math.radians(ang)
-                xs.append(cx + radius * math.cos(rad))
-                ys.append(cy + radius * math.sin(rad))
+                for ang in (a0, a1, (a0 + a1) / 2.0):
+                    rad = math.radians(ang)
+                    xs.append(cx + radius * math.cos(rad))
+                    ys.append(cy + radius * math.sin(rad))
         elif et == "LWPOLYLINE":
             pts = attrs.get("points") or []
             if len(pts) < 2:
@@ -162,7 +189,7 @@ def draw_corridors(
             ys_p = [float(p[1]) for p in pts if len(p) >= 2]
             if len(xs_p) < 2:
                 continue
-            ax.plot(xs_p, ys_p, color=color, linewidth=linewidth, zorder=0)
+            ax.plot(xs_p, ys_p, **plot_kw)
             xs.extend(xs_p)
             ys.extend(ys_p)
     return xs, ys
@@ -325,7 +352,7 @@ def _draw_facilities_as_geometry(
     for fid, fdata in graph.nodes(data=True):
         if fdata.get("node_kind") != "facility":
             continue
-        ftype = str(fdata.get("facility_type") or "未分型")
+        ftype = str(fdata.get("facility_type") or "通风设施")
         legend_types.add(ftype)
         color = _facility_color(ftype, cfg)
         drew = False
@@ -363,6 +390,7 @@ def draw_facility_graph(
     *,
     corridors: list[dict] | None = None,
 ) -> None:
+    """设施图元拓扑核对图：巷道灰虚线，图元黑点，图元关联边黑实线。"""
     import matplotlib.pyplot as plt
     from matplotlib.lines import Line2D
 
@@ -370,53 +398,95 @@ def draw_facility_graph(
     setup_cjk_font(cfg.figure_font_candidates)
     fig, ax = plt.subplots(figsize=(11, 9), dpi=cfg.figure_dpi)
 
-    if corridors:
-        draw_corridors(ax, corridors, cfg.color_corridor, cfg.corridor_linewidth)
+    corridor_color = "#808080"
+    node_edge_color = "#000000"
+    marker_size = max(8.0, float(cfg.facility_marker_size))
 
+    if corridors:
+        draw_corridors(
+            ax,
+            corridors,
+            corridor_color,
+            cfg.corridor_linewidth,
+            linestyle="--",
+            alpha=0.9,
+            zorder=0,
+        )
+
+    # 图元之间的关联边（端点连接 / 无端点邻近）
+    has_assoc = False
+    for u, v, edata in graph.edges(data=True):
+        kind = edata.get("edge_kind")
+        if kind not in {"endpoint-join", "orphan-near"}:
+            continue
+        udata, vdata = graph.nodes[u], graph.nodes[v]
+        if udata.get("node_kind") != "primitive" or vdata.get("node_kind") != "primitive":
+            continue
+        ux, uy = udata.get("x"), udata.get("y")
+        vx, vy = vdata.get("x"), vdata.get("y")
+        if ux is None or uy is None or vx is None or vy is None:
+            continue
+        has_assoc = True
+        ax.plot(
+            [ux, vx],
+            [uy, vy],
+            color=node_edge_color,
+            linewidth=0.7,
+            zorder=2,
+        )
+
+    # 设施原始图元：一律用点
     has_primitive = False
+    px: list[float] = []
+    py: list[float] = []
     for _, data in graph.nodes(data=True):
         if data.get("node_kind") != "primitive":
             continue
-        if data.get("facility_id"):
+        x, y = data.get("x"), data.get("y")
+        if x is None or y is None:
             continue
         has_primitive = True
-        if draw_primitive_geometry(
-            ax,
-            data,
-            color=cfg.color_primitive,
-            linewidth=max(0.6, cfg.facility_stroke_linewidth * 0.5),
-            hatch_alpha=0.25,
-            zorder=1,
-        ):
-            continue
-        if data.get("x") is None or data.get("y") is None:
-            continue
+        px.append(float(x))
+        py.append(float(y))
+    if px:
         ax.scatter(
-            [data["x"]],
-            [data["y"]],
-            s=4,
-            c=cfg.color_primitive,
-            zorder=1,
+            px,
+            py,
+            s=marker_size,
+            c=node_edge_color,
+            zorder=3,
+            linewidths=0,
         )
-
-    legend_types = _draw_facilities_as_geometry(ax, graph, cfg)
 
     handles = []
     if corridors:
         handles.append(
-            Line2D([0], [0], color=cfg.color_corridor, lw=2, label="巷道")
+            Line2D(
+                [0],
+                [0],
+                color=corridor_color,
+                lw=2,
+                linestyle="--",
+                label="巷道",
+            )
         )
     if has_primitive:
         handles.append(
             Line2D(
                 [0],
                 [0],
-                color=cfg.color_primitive,
-                lw=1.5,
-                label="未入设施图元",
+                marker="o",
+                color="w",
+                markerfacecolor=node_edge_color,
+                markersize=6,
+                linestyle="None",
+                label="设施图元",
             )
         )
-    handles.extend(_facility_legend_handles(legend_types, cfg))
+    if has_assoc:
+        handles.append(
+            Line2D([0], [0], color=node_edge_color, lw=1.5, label="关联边")
+        )
     if handles:
         ax.legend(handles=handles, loc="upper right", fontsize=8, framealpha=0.9)
 
@@ -466,7 +536,7 @@ def _draw_text_annotations(ax, graph: nx.Graph, cfg: Stage2Config) -> dict[str, 
                 if str(mdata.get("shape_type") or "") != "text":
                     continue
                 ax.text(mx, my, text, fontsize=5, color=color, zorder=5)
-                # 成员文字 → 圆点：表明已识别入簇
+                # 成员文字 → 圆点：表明已识别入组
                 ax.plot(
                     [mx, x],
                     [my, y],
@@ -590,7 +660,7 @@ def draw_structure_graph_with_facilities(
         src = u
         if graph.nodes[u].get("node_type") == "centerline":
             src = v
-        # 设施 / 控制点簇 / 钻孔簇 / 巷道名称 → 中心线 的挂接边都画出来
+        # 设施 / 控制点组 / 钻孔组 / 巷道名称 → 中心线 的关联边都画出来
         sdata = graph.nodes[src]
         kind = str(sdata.get("node_kind") or "")
         if kind not in {"facility", "cluster"} and sdata.get("attach_kind") != "巷道名称":
@@ -673,7 +743,7 @@ def draw_structure_graph_with_facilities(
                 color=cfg.color_attach_edge,
                 lw=1,
                 linestyle="--",
-                label="挂接边",
+                label="关联边",
             )
         )
     handles.extend(_facility_legend_handles(legend_types, cfg))

@@ -1,7 +1,7 @@
 """图元形状抽象：按几何特征评为 text / point-like / line-like。
 
 不依赖 DXF 原始类型。line-like 可参与字–线–字绑定与图例分隔线记录；
-锚点聚集仍以 point-like 与 text 为主。
+锚点与文字组合仍以 point-like 与 text 的关联为主。
 
 像点 vs 像线以**长宽比 / 闭合 / 圆度**为主，不以绝对外框尺寸否决：
 正方形大符号（如图块包围盒偏大）仍可为 point-like；细长描边才为 line-like。
@@ -321,5 +321,5 @@ def is_text_shape(rec: dict) -> bool:
 
 
 def is_cluster_symbol(rec: dict) -> bool:
-    """可参与测点/钻孔聚集的符号锚点。"""
+    """可参与测点/钻孔组合的符号锚点。"""
     return is_point_like(rec)

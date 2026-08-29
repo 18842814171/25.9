@@ -166,7 +166,7 @@ if errorlevel 1 exit /b 1
 python step4B\build_corrected_centerlines.py --stem=%STEM% --step3b "%S3B_OUT%" --step4A "%S529_4%" --output "%S529_4%" --no-vis
 if errorlevel 1 exit /b 1
 
-echo [2/2] 7.14 annotation + facility ^(含整图专用：图例模板与识别规则^)
+echo [2/2] 7.14 annotation + facility ^(含整图专用：标注图例模板与识别规则^)
 cd /d "%CODE_ROOT%7.14" || exit /b 1
 
 python step1a\0_retrieved_elements_graph.py --stem=%STEM% --text-json "%TEXT_JSON%" --corridor-json "%GEO_JSON%" --output-dir "%S714_1%" --no-png
@@ -185,8 +185,6 @@ if errorlevel 1 exit /b 1
 
 python stage2\0_facility_primitives_graph.py --stem=%STEM% --facility-json "%FACILITY_JSON%" --output-dir "%S714_2%"
 if errorlevel 1 exit /b 1
-python stage2\1_extract_facility_templates.py --stem=%STEM% --legend-json "%LEGEND_JSON%" --output-dir "%S714_2%"
-if errorlevel 1 exit /b 1
 python stage2\2_build_facility_graph.py --stem=%STEM% --output-dir "%S714_2%"
 if errorlevel 1 exit /b 1
 python stage2\3_structure_graph_with_facilities.py --stem=%STEM% --structure-pkl "%TEXTS_PKL%" --output-dir "%S714_2%" --corridor-json "%GEO_JSON%" --no-png
@@ -199,6 +197,5 @@ if errorlevel 1 exit /b 1
 echo.
 echo Full drawing finished: %STEM%
 echo Rules:     %S714_1%\%STEM%-retrieval_rules.json
-echo Templates: %S714_2%\%STEM%-facility_templates.json
 echo Next: run_stats.bat --src %REL%
 exit /b 0

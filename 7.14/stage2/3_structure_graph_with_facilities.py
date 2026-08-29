@@ -1,4 +1,4 @@
-"""Script 3: 设施实例图挂接到文字+巷道融合图，并输出核对图。
+"""Script 3: 设施实例图关联到文字+巷道融合图，并输出核对图。
 
 用法（仓库根目录）：
   python stage2/3_structure_graph_with_facilities.py --stem 2026.1-1 ^

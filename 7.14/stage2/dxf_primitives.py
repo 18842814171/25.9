@@ -1,4 +1,4 @@
-"""Facility primitive helpers: stats and caption normalize (no DXF I/O)."""
+"""Facility primitive helpers: stats (no DXF I/O)."""
 
 from __future__ import annotations
 
@@ -10,8 +10,6 @@ if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
 
 from utils.stats import median_char_height as _median_char_height
-from utils.text_clean import clean_text
-
 from config import Stage2Config
 
 
@@ -31,7 +29,3 @@ def median_facility_size(primitives: list[dict], facility_layer: str) -> float |
         return None
     sizes.sort()
     return float(sizes[len(sizes) // 2])
-
-
-def normalize_caption(text: str) -> str:
-    return clean_text(text).replace(" ", "")

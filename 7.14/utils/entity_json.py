@@ -429,20 +429,3 @@ def load_legend_annotation_records(
             continue
         records.append(rec)
     return records, json_path
-
-
-def load_legend_facility_records(
-    stem: str,
-    *,
-    path: Path | str | None = None,
-    types: Iterable[str] | None = None,
-) -> tuple[list[dict], Path]:
-    """图例 JSON → stage2 设施图元记录（通风设施图例模板）。"""
-    json_path = Path(path) if path else exported_json_path(stem, "legend")
-    entities = filter_export_entities(load_entity_export(json_path), types=types)
-    records = []
-    for ent in entities:
-        rec = to_facility_record(ent)
-        if rec is not None:
-            records.append(rec)
-    return records, json_path

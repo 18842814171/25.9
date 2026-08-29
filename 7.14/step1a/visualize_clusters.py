@@ -22,25 +22,31 @@ def _axis_limits(
     xs: list[float],
     ys: list[float],
     cfg: Step1aConfig,
+    *,
+    full_extent: bool = False,
 ) -> tuple[float, float, float, float]:
     """
-    按主体坐标分位数裁切视野，避免远距飞点（如错位块参照）把核对图挤到一角。
-    阈值取自顶层配置 view_percentile_* / view_pad_ratio。
+    默认按主体坐标分位数裁切视野，避免远距飞点把核对图挤到一角。
+    ``full_extent=True`` 时用全部点的 min/max（文字组等需与几何全图对齐时用）。
     """
     from geometry_fingerprint import percentile
 
     if not xs or not ys:
         return 0.0, 1.0, 0.0, 1.0
-    lo = float(cfg.view_percentile_low)
-    hi = float(cfg.view_percentile_high)
-    x0 = percentile(xs, lo)
-    x1 = percentile(xs, hi)
-    y0 = percentile(ys, lo)
-    y1 = percentile(ys, hi)
-    if x1 <= x0:
+    if full_extent:
         x0, x1 = min(xs), max(xs)
-    if y1 <= y0:
         y0, y1 = min(ys), max(ys)
+    else:
+        lo = float(cfg.view_percentile_low)
+        hi = float(cfg.view_percentile_high)
+        x0 = percentile(xs, lo)
+        x1 = percentile(xs, hi)
+        y0 = percentile(ys, lo)
+        y1 = percentile(ys, hi)
+        if x1 <= x0:
+            x0, x1 = min(xs), max(xs)
+        if y1 <= y0:
+            y0, y1 = min(ys), max(ys)
     span = max(x1 - x0, y1 - y0, 1.0)
     pad = span * float(cfg.view_pad_ratio)
     return x0 - pad, x1 + pad, y0 - pad, y1 + pad
@@ -364,7 +370,7 @@ def visualize(
     handles = [
         Line2D([0], [0], color=cp_swatch, lw=4, label="测点(蓝绿系·每组一色)"),
         Line2D([0], [0], color=bh_swatch, lw=4, label="钻孔(红色系·每组一色)"),
-        Line2D([0], [0], color=cfg.color_unassigned, lw=4, label="未归入簇"),
+        Line2D([0], [0], color=cfg.color_unassigned, lw=4, label="未归入组"),
     ]
     if corridors:
         handles.append(Line2D([0], [0], color=cfg.color_corridor, lw=2, label="巷道"))
@@ -527,7 +533,7 @@ def visualize_bind_chains(
         fig.savefig(out_png)
         plt.close(fig)
         return
-    x0, x1, y0, y1 = _axis_limits(xs, ys, cfg)
+    x0, x1, y0, y1 = _axis_limits(xs, ys, cfg, full_extent=True)
     ax.set_xlim(x0, x1)
     ax.set_ylim(y0, y1)
     ax.set_aspect("equal")

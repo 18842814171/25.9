@@ -120,7 +120,7 @@ def collect_isolated_text_nodes(
     clusters: nx.Graph,
     cfg: Step1bConfig,
 ) -> list[tuple[str, dict]]:
-    """未入簇的孤立文字（核对图中灰色文字）一律视为巷道名称。"""
+    """未入组的孤立文字（核对图中灰色文字）一律视为巷道名称。"""
     rows: list[tuple[str, dict]] = []
     for nid, data in clusters.nodes(data=True):
         if data.get("node_kind") != "annotation":

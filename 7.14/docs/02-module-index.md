@@ -1,6 +1,6 @@
 # 模块索引
 
-按现行目录与脚本职责列出入口文件。阈值位置见各目录顶层配置；命令见各目录说明文档。聚簇、分类与评分公式的正式表述见 [`03-formulas-clustering-scoring.md`](03-formulas-clustering-scoring.md)。
+按现行目录与脚本职责列出入口文件。阈值位置见各目录顶层配置；命令见各目录说明文档。组合、分类与评分公式的正式表述见 [`03-formulas-clustering-scoring.md`](03-formulas-clustering-scoring.md)。
 
 ## 公共工具（`utils/`）
 
@@ -15,7 +15,7 @@
 | `paths.py` | 仓库根路径、相对路径解析 |
 | `graph_io.py` | 拓扑图读写公共辅助 |
 | `attach_geometry.py` | 点到线段距离、最近中心线 |
-| `attach_centerlines.py` | 中心线目录、挂接距离阈值推断 |
+| `attach_centerlines.py` | 中心线目录、关联距离阈值推断 |
 | `text_clean.py` | 文字清洗、多行文字明文 |
 | `stats.py` | 字高中位数等统计 |
 | `plot_font.py` | 核对图中文字体 |
@@ -28,24 +28,24 @@
 | `0_retrieved_elements_graph.py` | 文字 JSON → 标注关系图；建链核对后暂停 |
 | `1_extract_retrieval_templates.py` | 图例 JSON → 标注用图例模板 |
 | `2_retrieval_rules.py` | 标注关系图 + 图例模板 → 识别规则 |
-| `3_apply_retrieval_rules.py` | 标注关系图 + 识别规则 → 候选簇图 |
-| `4_final_clusters.py` | 候选簇图 → 最终簇图 |
+| `3_apply_retrieval_rules.py` | 标注关系图 + 识别规则 → 候选组图 |
+| `4_final_clusters.py` | 候选组图 → 最终组图 |
 | `graph_nodes.py` | 标注节点与邻接、绑定边构建 |
 | `geometry_fingerprint.py` | 图例几何与距离辅助 |
 | `text_roles.py` | 文字角色与图例标题分类 |
 | `candidate_scoring.py` | 候选成员打分 |
-| `filter_candidates.py` | 候选到最终簇的独占过滤 |
+| `filter_candidates.py` | 候选到最终组的独占过滤 |
 | `graph_io.py` | 本阶段图读写与可读摘要 |
-| `visualize_clusters.py` | 建链与簇核对图 |
+| `visualize_clusters.py` | 建链与组核对图 |
 
 ## 第一阶段乙（`step1b/`）
 
 | 文件 | 职责 |
 |------|------|
-| `config.py` | 挂接统计阈值与产物路径 |
-| `0_structure_graph_with_texts.py` | 中心线结构图 + 最终簇图 → 带标注结构图 |
+| `config.py` | 关联统计阈值与产物路径 |
+| `0_structure_graph_with_texts.py` | 中心线结构图 + 最终组图 → 带标注结构图 |
 | `1_visualize.py` | 带标注结构图核对图 |
-| `build_fusion.py` | 簇与巷道名称挂接实现 |
+| `build_fusion.py` | 组与巷道名称关联实现 |
 | `graph_io.py` | 本阶段图读写 |
 | `visualize.py` | 绘图实现 |
 
@@ -55,13 +55,12 @@
 |------|------|
 | `config.py` | 本阶段全部阈值与产物路径 |
 | `0_facility_primitives_graph.py` | 设施 JSON → 设施图元图 |
-| `1_extract_facility_templates.py` | 图例 JSON → 设施图例模板 |
-| `2_build_facility_graph.py` | 设施图元图 + 图例模板 → 设施实例图 |
+| `2_build_facility_graph.py` | 设施图元图 → 设施实例图 |
 | `3_structure_graph_with_facilities.py` | 带标注结构图 + 设施实例图 → 带设施结构图与核对图 |
 | `4_visualize.py` | 设施实例图与带设施结构图核对图（可单独重绘） |
 | `endpoint_connect.py` | 端点连接与孤立图元并入 |
-| `cluster_facilities.py` | 成簇、指纹与模板打分 |
-| `build_attach.py` | 设施挂接到中心线 |
+| `cluster_facilities.py` | 组合与实例指纹 |
+| `build_attach.py` | 设施关联到中心线 |
 | `dxf_primitives.py` | 设施尺度与图元几何辅助（读 JSON 记录，不读图纸） |
 | `graph_io.py` | 本阶段图读写 |
 | `visualize.py` | 绘图实现 |
@@ -81,6 +80,5 @@
 完整步骤的主产物为逻辑拓扑图（二进制与可读摘要）。下列文件为附属标定结果，不是拓扑图，但现行脚本会读写：
 
 - 标注用图例模板、识别规则（第一阶段甲）
-- 设施图例模板（第二阶段）
 
-挂接类完整步骤当前同时读入「底图拓扑」与「待挂接拓扑」，与《重要原则》第 7 条尚有差距，见 `docs/01-architecture.md` 第六节。
+关联类完整步骤当前同时读入「底图拓扑」与「待关联拓扑」，与《重要原则》第 7 条尚有差距，见 `docs/01-architecture.md` 第六节。

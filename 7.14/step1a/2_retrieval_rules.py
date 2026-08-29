@@ -6,7 +6,6 @@ import argparse
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
-from statistics import median
 
 STEP1A_DIR = Path(__file__).resolve().parent
 if str(STEP1A_DIR) not in sys.path:
@@ -39,22 +38,20 @@ CFG = Step1aConfig()
 
 
 def flatten_kind_template(tmpl: dict) -> dict:
-    """variants 各自独立保留；匹配用约束取并集（半径/块名 OR）。"""
+    """variants 各自独立保留；symbol 仅保留形状抽象。"""
     variants = list(tmpl.get("variants") or [])
     if not variants:
         # 兼容旧版单模板（无 variants）
         return {
             "kind": tmpl.get("kind"),
             "captions": list(tmpl.get("captions") or []),
-            "symbol": dict(tmpl.get("symbol") or {}),
+            "symbol": {"shape_type": "point-like"},
             "fields": list(tmpl.get("fields") or []),
             "separators": list(tmpl.get("separators") or []),
             "search_radius_norm": float(tmpl.get("search_radius_norm") or 7.0),
             "variants": [],
         }
 
-    blocks: list[str] = []
-    r_norms: list[float] = []
     fields: list[dict] = []
     separators: list[dict] = []
     captions: list[str] = []
@@ -63,19 +60,6 @@ def flatten_kind_template(tmpl: dict) -> dict:
         cap = v.get("caption")
         if cap:
             captions.append(str(cap))
-        sym = v.get("symbol") or {}
-        for b in sym.get("block_names") or ([] if not sym.get("block_name") else [sym["block_name"]]):
-            if b and str(b) not in blocks:
-                blocks.append(str(b))
-        for r in sym.get("radius_norms") or (
-            [] if sym.get("radius_norm") is None else [sym["radius_norm"]]
-        ):
-            try:
-                rr = round(float(r), 4)
-            except (TypeError, ValueError):
-                continue
-            if rr not in r_norms:
-                r_norms.append(rr)
         for f in v.get("fields") or []:
             fields.append(f)
         for s in v.get("separators") or []:
@@ -91,11 +75,7 @@ def flatten_kind_template(tmpl: dict) -> dict:
     return {
         "kind": tmpl.get("kind"),
         "captions": list(tmpl.get("captions") or captions),
-        "symbol": {
-            "shape_type": "point-like",
-            "block_names": blocks,
-            "radius_norms": r_norms,
-        },
+        "symbol": {"shape_type": "point-like"},
         "fields": fields,
         "separators": separators,
         "search_radius_norm": search_radius_norm,
@@ -104,7 +84,7 @@ def flatten_kind_template(tmpl: dict) -> dict:
 
 
 def is_symbol_anchor(ent: dict, tmpl: dict, kind: str, char_h: float) -> bool:
-    """锚点：只认 point-like；图块名不参与判定（跨图块名常不一致）。"""
+    """锚点：只认 point-like 形状抽象；块名/半径不参与判定。"""
     del tmpl, char_h
     if str(ent.get("shape_type") or "") != "point-like":
         return False
@@ -320,48 +300,10 @@ def build_rulepack(templates_doc: dict, entities: list[dict]) -> dict:
         search_radius = min(search_radius, cap)
         r_norm = search_radius / max(char_h, 1e-6)
 
-        map_r_norms = []
-        map_blocks = Counter()
-        for a in anchors:
-            if a.get("radius") is not None:
-                try:
-                    map_r_norms.append(
-                        round(float(a["radius"]) / max(char_h, 1e-6), 4)
-                    )
-                except (TypeError, ValueError):
-                    pass
-            if a.get("block_name"):
-                map_blocks[a["block_name"]] += 1
-
-        sym = dict(tmpl.get("symbol") or {})
-        sym["shape_type"] = "point-like"
-        sym.pop("entity_types", None)
-        # 多 variant 半径/块名并集；匹配时逐档 OR，禁止压成单一中位数
-        tmpl_r_norms = [
-            round(float(x), 4)
-            for x in ((tmpl.get("symbol") or {}).get("radius_norms") or [])
-        ]
-        if map_r_norms:
-            observed = sorted(set(map_r_norms))[:12]
-            sym["radius_norms_observed"] = observed
-            merged = sorted(set(tmpl_r_norms + observed))
-            sym["radius_norms"] = merged if merged else [round(median(map_r_norms), 4)]
-        elif tmpl_r_norms:
-            sym["radius_norms"] = tmpl_r_norms
-        if map_blocks:
-            top = [b for b, _ in map_blocks.most_common(5)]
-            # 与图例 variant 块名并集，避免观测块冲掉图例 GPS 块
-            for b in sym.get("block_names") or []:
-                if b not in top:
-                    top.append(b)
-            sym["block_names"] = top
-        elif tmpl.get("symbol", {}).get("block_names"):
-            sym["block_names"] = list(tmpl["symbol"]["block_names"])
-
         kinds[kind] = {
             "kind": kind,
             "captions": tmpl.get("captions") or [],
-            "symbol": sym,
+            "symbol": {"shape_type": "point-like"},
             "fields": tmpl.get("fields") or [],
             "separators": tmpl.get("separators") or [],
             "variants": tmpl.get("variants") or [],

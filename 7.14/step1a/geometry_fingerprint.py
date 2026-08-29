@@ -23,29 +23,6 @@ def norm_radius(radius: float, char_height: float) -> float:
     return float(radius) / h
 
 
-def circle_matches(
-    candidate_radius: float,
-    template_r_norms: list[float],
-    char_height: float,
-    rel_tol: float = 0.55,
-) -> bool:
-    if not template_r_norms:
-        return False
-    rn = norm_radius(candidate_radius, char_height)
-    for tr in template_r_norms:
-        if tr <= 0:
-            continue
-        if abs(rn - tr) / tr <= rel_tol:
-            return True
-    return False
-
-
-def block_matches(block_name: str | None, template_blocks: list[str]) -> bool:
-    if not block_name:
-        return False
-    return block_name in set(template_blocks)
-
-
 def percentile(values: list[float], p: float) -> float:
     if not values:
         return 0.0

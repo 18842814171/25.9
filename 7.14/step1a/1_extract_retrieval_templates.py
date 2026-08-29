@@ -214,14 +214,11 @@ def build_entry(seed: dict, entities: list[dict], char_h: float) -> dict | None:
     )
 
     r_norm = None
-    block_name = None
     if symbol.get("radius") is not None:
         try:
             r_norm = norm_radius(float(symbol["radius"]), char_h)
         except (TypeError, ValueError):
             r_norm = None
-    if symbol.get("block_name"):
-        block_name = symbol.get("block_name")
 
     farthest = max((float(s["dist"]) for s in samples), default=symbol.get("dist", 0.0))
     search_radius_norm = min(farthest / max(char_h, 1e-6), CFG.search_radius_cap_norm)
@@ -254,14 +251,12 @@ def build_entry(seed: dict, entities: list[dict], char_h: float) -> dict | None:
         "kind": kind,
         "symbol": {
             "shape_type": "point-like",
-            "block_name": block_name,
-            "block_names": [block_name] if block_name else [],
-            "radius_norm": r_norm,
-            "radius_norms": [round(r_norm, 4)] if r_norm is not None else [],
             "x": float(symbol["x"]),
             "y": float(symbol["y"]),
             "dist_from_caption": round(float(symbol.get("dist") or 0.0), 4),
         },
+        "radius_norm": round(r_norm, 4) if r_norm is not None else None,
+        "radius_norms": [round(r_norm, 4)] if r_norm is not None else [],
         "sample_texts": [
             {k: v for k, v in t.items() if k not in {"x", "y", "length"}}
             for t in samples
@@ -366,8 +361,7 @@ def main() -> None:
             seps = v.get("separators") or []
             print(
                 f"    - {v['caption']}: "
-                f"block={v['symbol'].get('block_name')} "
-                f"r={v['symbol'].get('radius_norm')} "
+                f"r_norm={v.get('radius_norm')} "
                 f"fields={len(v.get('fields') or [])} "
                 f"separators={len(seps)} "
                 f"R_norm={v['search_radius_norm']}"

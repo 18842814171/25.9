@@ -73,8 +73,8 @@ class Step1aConfig:
     bind_learn_probe_norm: float = 12.0
     bind_distance_percentile: float = 90.0
     #XJH系列：6，4；2026系列：3，2
-    bind_id_value_cap_norm: float = 6
-    bind_value_value_cap_norm: float = 4.0
+    bind_id_value_cap_norm: float = 3.0
+    bind_value_value_cap_norm: float = 2.0
     # 绑定组距离置信度：相对本图推断半径 R
     # 一阶 [0, tier1_ratio*R] 正常衰减；二阶 (tier1, R] 再乘 tier2_factor
     bind_tier1_ratio: float = 0.7
@@ -92,7 +92,9 @@ class Step1aConfig:
     bind_line_dist_slack: float = 1.25
     # 钻孔绑定：同族文字对等联结，不分编号/数值席位；半径为字高倍数
     borehole_bind_floor_norm: float = 2.5
-    borehole_bind_cap_norm: float = 4.0
+    borehole_bind_cap_norm: float = 7.0
+    # 孤立孔号并入最近煤厚/标高绑定组的最大距离（字高倍数）
+    borehole_id_attach_norm: float = 7.0
     # 钻孔密集区：每个文字只保留最近 K 条高置信绑定边，抑制串成超大组
     borehole_bind_top_k: int = 3
 
@@ -107,9 +109,9 @@ class Step1aConfig:
     borehole_search_cap_norm: float = 18.0
     distance_percentile: float = 92.0
 
-    # 最终过滤：候选多归属按 score_total 独占；低于此置信度的簇丢弃
+    # 最终过滤：候选多关联按 score_total 独占；低于此置信度的组丢弃
     min_final_confidence: float = 0.0
-    # 与已入簇孔号/测点号同文且距离 < 系数×字高 的孤立文字并入该簇（避免再当巷道名）
+    # 与已入组孔号/测点号同文且距离 < 系数×字高 的孤立文字并入该组（避免再当巷道名）
     duplicate_id_text_norm: float = 1.5
 
     max_members: dict[str, int] = field(

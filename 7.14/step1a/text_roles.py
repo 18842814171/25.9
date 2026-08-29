@@ -28,6 +28,7 @@ __all__ = [
     "classify_text_role",
     "has_chinese",
     "is_borehole_layer",
+    "is_borehole_symbol_layer",
     "is_control_point_layer",
     "is_excluded_layer",
     "is_elevation_text",
@@ -93,6 +94,18 @@ def is_control_point_layer(layer: str) -> bool:
 
 def is_borehole_layer(layer: str) -> bool:
     return annotation_family(layer) == "borehole"
+
+
+def is_borehole_symbol_layer(layer: str) -> bool:
+    """钻孔符号锚点层：仅「钻孔」类图层；煤厚/底板/孔号等标注层不算。"""
+    if not is_borehole_layer(layer):
+        return False
+    layer = layer or ""
+    if borehole_layer_id_layer(layer):
+        return False
+    if any(tok in layer for tok in ("煤厚", "底板", "标高", "高程", "名称")):
+        return False
+    return "钻孔" in layer
 
 
 def borehole_layer_id_layer(layer: str) -> bool:

@@ -58,7 +58,7 @@ def build_structure_graph_with_facilities(
         if fid in graph:
             skipped["id_collision"] += 1
             continue
-        facility_type = str(fdata.get("facility_type") or "未分型")
+        facility_type = str(fdata.get("facility_type") or "通风设施")
         graph.add_node(
             fid,
             node_kind="facility",

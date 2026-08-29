@@ -17,7 +17,7 @@ from utils.paths import project_root
 class Step1bConfig:
     default_stem: str = "2026.1-1part"
 
-    # 挂接距离：在剔除明显离群点后，取候选最近距离的分位数作为阈值
+    # 关联距离：在剔除明显离群点后，取候选最近距离的分位数作为阈值
     # 离群上界 = outlier_cap_width_factor × 图面中位巷道宽度
     outlier_cap_width_factor: float = 4.0
     attach_distance_percentile: float = 90.0
@@ -25,7 +25,7 @@ class Step1bConfig:
     attach_distance_width_factor: float = 2.5
     attach_distance_fallback: float = 12.0
 
-    # 仅向这些角色的中心线挂接
+    # 仅向这些角色的中心线关联
     attach_centerline_roles: tuple[str, ...] = ("corridor", "auxiliary")
 
     # 核对图

@@ -153,7 +153,7 @@ python step3B/fix_centerlines.py --stem="$STEM" --centerline-dir "$S3A_OUT" --ou
 python step4A/classify_attached_regions.py --stem="$STEM" --step3b "$S3B_OUT" --centerline "$S3A_OUT" --output "$S529_4" --no-vis
 python step4B/build_corrected_centerlines.py --stem="$STEM" --step3b "$S3B_OUT" --step4A "$S529_4" --output "$S529_4" --no-vis
 
-echo "[2/2] 7.14 annotation + facility (含整图专用：图例模板与识别规则)"
+echo "[2/2] 7.14 annotation + facility (含整图专用：标注图例模板与识别规则)"
 cd "${CODE_ROOT}/7.14"
 
 python step1a/0_retrieved_elements_graph.py --stem="$STEM" --text-json "$TEXT_JSON" --corridor-json "$GEO_JSON" --output-dir "$S714_1" --no-png
@@ -165,7 +165,6 @@ python step1a/4_final_clusters.py --stem="$STEM" --corridor-json "$GEO_JSON" --o
 python step1b/0_structure_graph_with_texts.py --stem="$STEM" --structure-pkl "$STRUCTURE_PKL" --step1a-output-dir "$S714_1" --output-dir "$S714_1"
 
 python stage2/0_facility_primitives_graph.py --stem="$STEM" --facility-json "$FACILITY_JSON" --output-dir "$S714_2"
-python stage2/1_extract_facility_templates.py --stem="$STEM" --legend-json "$LEGEND_JSON" --output-dir "$S714_2"
 python stage2/2_build_facility_graph.py --stem="$STEM" --output-dir "$S714_2"
 python stage2/3_structure_graph_with_facilities.py --stem="$STEM" --structure-pkl "$TEXTS_PKL" --output-dir "$S714_2" --corridor-json "$GEO_JSON" --no-png
 
@@ -175,5 +174,4 @@ python collect_pipeline_stats.py --stem="$STEM" --output-root "$OUT"
 echo
 echo "Full drawing finished: ${STEM}"
 echo "Rules:     ${S714_1}/${STEM}-retrieval_rules.json"
-echo "Templates: ${S714_2}/${STEM}-facility_templates.json"
 echo "Next: ./run_stats.sh --src ${REL}"

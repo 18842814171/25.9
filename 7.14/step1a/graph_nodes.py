@@ -680,11 +680,14 @@ def build_text_value_bind_chains(
     # ????????????????????????
     line_r = max(id_val_max, vv_max)
     line_text_r = max(line_r, id_cap) * float(cfg.bind_line_dist_slack)
+    from text_roles import annotation_family
+
     line_ids = [
         str(nid)
         for nid, data in graph.nodes(data=True)
         if data.get("node_kind") == "annotation"
         and _is_line_node(data)
+        and annotation_family(str(data.get("layer") or "")) == "control_point"
         and float(data.get("length") or 0.0) > 1e-12
         and not bool(data.get("closed"))
     ]
@@ -751,6 +754,39 @@ def build_text_value_bind_chains(
                 continue
             link_pairs.append((a, b, d))
             bh_union(a, b)
+
+    # 孤立孔号并入最近的钻孔数值绑定组（同孔号列常见孔号与煤厚分列）
+    id_attach = float(cfg.borehole_id_attach_norm) * max(char_h, 1e-6)
+    multi_roots: dict[str, list[str]] = {}
+    for tid in bh_texts:
+        root = bh_find(tid)
+        multi_roots.setdefault(root, []).append(tid)
+    multi_roots = {r: ms for r, ms in multi_roots.items() if len(ms) >= 2}
+    grouped_ids = {tid for ms in multi_roots.values() for tid in ms}
+    for oid in bh_texts:
+        if kinds[oid] != "id" or oid in grouped_ids:
+            continue
+        ox = float(graph.nodes[oid]["x"])
+        oy = float(graph.nodes[oid]["y"])
+        best_root = ""
+        best_d = float("inf")
+        for root, members in multi_roots.items():
+            xs = [float(graph.nodes[mid]["x"]) for mid in members]
+            ys = [float(graph.nodes[mid]["y"]) for mid in members]
+            cx, cy = sum(xs) / len(xs), sum(ys) / len(ys)
+            d = math.hypot(ox - cx, oy - cy)
+            if d <= id_attach and d < best_d:
+                best_d = d
+                best_root = root
+        if not best_root:
+            continue
+        for mid in multi_roots[best_root]:
+            d = _pair_dist(oid, mid)
+            if d <= id_attach:
+                link_pairs.append((oid, mid, d))
+                bh_union(oid, mid)
+        multi_roots[best_root].append(oid)
+        grouped_ids.add(oid)
 
     components: dict[str, list[str]] = defaultdict(list)
     for tid in cp_texts:

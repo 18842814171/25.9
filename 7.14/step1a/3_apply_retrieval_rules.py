@@ -29,13 +29,11 @@ from candidate_scoring import (
     member_total_score,
     orientation_score,
 )
-from geometry_fingerprint import dist, median_char_height
+from geometry_fingerprint import median_char_height
 from graph_io import load_graph, load_json_doc, save_graph
 from graph_nodes import (
-    adjacent_text_records,
     annotation_records,
     attach_clusters,
-    bind_group_member_ids,
     build_text_value_bind_chains,
     list_bind_groups,
 )
@@ -43,6 +41,7 @@ from text_roles import (
     annotation_family,
     classify_text_role,
     clean_text,
+    is_borehole_symbol_layer,
     is_control_point_layer,
     is_elevation_text,
     is_point_id_candidate,
@@ -63,72 +62,35 @@ _VALUE_ROLES = {"elevation", "collar", "seam_value"}
 
 
 def match_anchor(ent: dict, kind: str, kind_rule: dict, char_h: float) -> bool:
-    """点状符号即可作锚点；图块名不参与判定（图例块名常与图面不一致）。"""
-    del kind_rule, char_h  # 保留签名兼容调用方；块名/半径档不再硬过滤
+    """锚点仅限钻孔 / 测点（控制点）符号图层上的 point-like，其他图块不参与。"""
+    del kind_rule, char_h
     if str(ent.get("shape_type") or "") != "point-like":
         return False
     layer = str(ent.get("layer") or "")
-    if kind == "borehole" and is_control_point_layer(layer):
-        return False
-    if kind == "control_point" and annotation_family(layer) == "borehole":
-        return False
-    return True
+    if kind == "borehole":
+        return is_borehole_symbol_layer(layer)
+    if kind == "control_point":
+        return is_control_point_layer(layer)
+    return False
 
 
 def find_anchors(entities: list[dict], kind: str, kind_rule: dict, char_h: float) -> list[dict]:
-    matched = [e for e in entities if match_anchor(e, kind, kind_rule, char_h)]
-    if kind == "borehole":
-        by_id = {str(e["id"]): e for e in matched}
-        for e in entities:
-            if str(e.get("shape_type") or "") != "point-like":
-                continue
-            layer = str(e.get("layer") or "")
-            if is_control_point_layer(layer):
-                continue
-            if "钻孔" in layer and "名称" not in layer:
-                by_id.setdefault(str(e["id"]), e)
-        matched = list(by_id.values())
-        if matched:
-            return matched
-        return [
-            e
-            for e in entities
-            if str(e.get("shape_type") or "") == "text"
-            and classify_text_role(e.get("text", ""), e.get("layer", "")) == "borehole_id"
-        ]
-    if kind == "control_point":
-        # 半径多档命中 + 控制点族图层回收（永久/临时导线点）
-        by_id = {str(e["id"]): e for e in matched}
-        for e in entities:
-            if str(e.get("shape_type") or "") != "point-like":
-                continue
-            if is_control_point_layer(str(e.get("layer") or "")):
-                by_id.setdefault(str(e["id"]), e)
-        matched = list(by_id.values())
-        if matched:
-            return matched
-        texts = [e for e in entities if str(e.get("shape_type") or "") == "text"]
-        symbols = [
-            e
-            for e in entities
-            if str(e.get("shape_type") or "") == "point-like"
-        ]
-        out = []
-        for c in symbols:
-            for t in texts:
-                if dist(c, t) > 12.0 * char_h:
-                    continue
-                if is_point_id_candidate(t.get("text", ""), t.get("layer", "")):
-                    out.append(c)
-                    break
-        return out
-    if matched:
-        return matched
-    return []
+    """同类锚点：图层已归入钻孔族或测点族符号层的圆/块。"""
+    out: list[dict] = []
+    seen: set[str] = set()
+    for ent in entities:
+        if not match_anchor(ent, kind, kind_rule, char_h):
+            continue
+        eid = str(ent["id"])
+        if eid in seen:
+            continue
+        seen.add(eid)
+        out.append(ent)
+    return out
 
 
 def resolve_role(ent: dict, kind: str, kind_rule: dict) -> str | None:
-    """图层优先定角色；异类图层文字不入本类簇。不再做形态正则核对。"""
+    """图层优先定角色；异类图层文字不入本类组。不再做形态正则核对。"""
     layer_roles = kind_rule.get("layer_roles") or {}
     layer = str(ent.get("layer") or "")
     family = annotation_family(layer)
@@ -337,9 +299,8 @@ def match_kind_candidates_on_graph(
     kind_rule: dict,
 ) -> list[dict]:
     """
-    Candidate stage: many-to-many for boreholes.
-    Control points: bind groups ↔ circles via mutual top-K within tier1
-    (fallback mutual top-K in tier2 for leftovers).
+    同类文字（绑定组或孤立字）↔ 同类锚点，双向 Top-K 互选；
+    未匹配文字保持孤立，other 族文字不参与。
     """
     max_members = kind_rule.get("max_members") or dict(CFG.max_members)
     search_radius = float(kind_rule.get("search_radius") or 0.0)
@@ -351,160 +312,15 @@ def match_kind_candidates_on_graph(
         )
         search_radius = floor_norm * CFG.fallback_char_height
     outer = CFG.distance_tier2_ratio * search_radius
-
-    if kind == "control_point":
-        return _match_control_points_by_bind_groups(
-            graph,
-            anchors,
-            kind_rule=kind_rule,
-            max_members=max_members,
-            search_radius=search_radius,
-            outer=outer,
-        )
-
-    clusters: list[dict] = []
-    for anchor in anchors:
-        aid = str(anchor["id"])
-        by_role: dict[str, list[tuple[float, dict, dict]]] = defaultdict(list)
-        seen_member_ids: set[str] = set()
-
-        # 钻孔：按几何半径搜集种子文字（不依赖邻接边），再展开整个绑定组
-        # 避免左侧标高列因无邻接边、仅右侧有邻接而被整组漏掉
-        for _d, ent in _borehole_texts_near_anchor(graph, anchor, outer=outer):
-            member_ids = [str(ent["id"])]
-            if (
-                str(ent["id"]) in graph.nodes
-                and graph.nodes[str(ent["id"])].get("bind_family") == "borehole"
-            ):
-                member_ids = bind_group_member_ids(graph, str(ent["id"]))
-            for mid in member_ids:
-                if mid in seen_member_ids or mid not in graph.nodes:
-                    continue
-                seen_member_ids.add(mid)
-                mdata = graph.nodes[mid]
-                ent2 = {
-                    "id": mid,
-                    "layer": mdata.get("layer"),
-                    "text": mdata.get("text"),
-                    "x": mdata.get("x"),
-                    "y": mdata.get("y"),
-                    "rotation": mdata.get("rotation"),
-                    "char_height": mdata.get("char_height"),
-                    "radius": mdata.get("radius"),
-                    "block_name": mdata.get("block_name"),
-                }
-                role = resolve_role(ent2, kind, kind_rule)
-                if role is None:
-                    continue
-                if role == "elevation":
-                    layer_roles = kind_rule.get("layer_roles") or {}
-                    if layer_roles.get(str(ent2.get("layer") or "")) == "collar":
-                        role = "collar"
-                d2 = _min_dist_group_to_anchor(graph, [mid], anchor)
-                if d2 is None:
-                    continue
-                scores = _score_member(ent2, role, d2, kind_rule, search_radius)
-                if scores is None and mdata.get("bind_family") == "borehole":
-                    scores = {
-                        "score_layer": layer_score(ent2, role, kind_rule),
-                        "score_distance": 0.5,
-                        "score_orientation": 1.0,
-                        "score_total": 0.5,
-                    }
-                if scores is None:
-                    continue
-                by_role[role].append(
-                    (float(scores["score_total"]), ent2, {**scores, "dist": d2})
-                )
-
-        slot_members: list[dict] = []
-        order = ["borehole_id", "collar", "elevation", "seam_value"]
-        for role in order:
-            bucket = sorted(by_role.get(role) or [], key=lambda x: x[0], reverse=True)
-            # 钻孔：绑定组内成员全部入簇，不再按角色名额截断
-            lim = len(bucket) if kind == "borehole" else int(max_members.get(role, 1))
-            for _total, ent, scores in bucket[:lim]:
-                slot_members.append(
-                    _member_payload(ent, role, float(scores["dist"]), scores=scores)
-                )
-
-        if not any(m.get("role") == "collar" for m in slot_members):
-            elev_bucket = sorted(
-                by_role.get("elevation") or [], key=lambda x: x[0], reverse=True
-            )
-            taken = {m["id"] for m in slot_members}
-            for _total, ent, scores in elev_bucket:
-                if ent["id"] in taken:
-                    continue
-                try:
-                    val = abs(float(clean_text(ent.get("text", ""))))
-                except ValueError:
-                    val = -1.0
-                if val < 0:
-                    continue
-                slot_members.append(
-                    _member_payload(ent, "collar", float(scores["dist"]), scores=scores)
-                )
-                break
-
-        cluster = _finish_candidate_cluster(anchor, kind, kind_rule, slot_members)
-        if cluster is not None:
-            clusters.append(cluster)
-    return clusters
-
-
-def _borehole_texts_near_anchor(
-    graph,
-    anchor: dict,
-    *,
-    outer: float,
-) -> list[tuple[float, dict]]:
-    """
-    Borehole seed texts within geometric radius of the symbol.
-    Uses bind_family / annotation_family, not adjacency edges.
-    """
-    from text_roles import annotation_family
-
-    xy = _anchor_xy(anchor)
-    if xy is None:
-        return []
-    ax, ay = xy
-    out: list[tuple[float, dict]] = []
-    for nid, data in graph.nodes(data=True):
-        if data.get("node_kind") != "annotation":
-            continue
-        if str(data.get("shape_type") or "") != "text":
-            continue
-        if data.get("x") is None or data.get("y") is None:
-            continue
-        text = str(data.get("text") or "").strip()
-        if not text:
-            continue
-        fam = data.get("bind_family") or data.get("annotation_family")
-        if fam != "borehole":
-            if annotation_family(str(data.get("layer") or "")) != "borehole":
-                continue
-        d = math.hypot(float(data["x"]) - ax, float(data["y"]) - ay)
-        if d > float(outer):
-            continue
-        out.append(
-            (
-                d,
-                {
-                    "id": str(nid),
-                    "layer": data.get("layer"),
-                    "text": data.get("text"),
-                    "x": data.get("x"),
-                    "y": data.get("y"),
-                    "rotation": data.get("rotation"),
-                    "char_height": data.get("char_height"),
-                    "radius": data.get("radius"),
-                    "block_name": data.get("block_name"),
-                },
-            )
-        )
-    out.sort(key=lambda item: item[0])
-    return out
+    return _match_kind_by_bind_groups(
+        graph,
+        anchors,
+        kind=kind,
+        kind_rule=kind_rule,
+        max_members=max_members,
+        search_radius=search_radius,
+        outer=outer,
+    )
 
 
 def _anchor_xy(anchor: dict) -> tuple[float, float] | None:
@@ -530,9 +346,15 @@ def _min_dist_group_to_anchor(graph, member_ids: list[str], anchor: dict) -> flo
     return best
 
 
-def _collect_control_point_text_groups(graph, kind_rule: dict) -> list[list[str]]:
-    """Bind groups plus singleton id/elevation texts not already in a chain."""
-    kind = "control_point"
+_KIND_SINGLETON_ROLES: dict[str, set[str]] = {
+    "control_point": {"point_id", "elevation"},
+    "borehole": {"borehole_id", "collar", "elevation", "seam_value"},
+}
+
+
+def _collect_kind_text_groups(graph, kind: str, kind_rule: dict) -> list[list[str]]:
+    """同类绑定组 + 尚未入组的同类孤立文字（单字一组）。"""
+    allowed = _KIND_SINGLETON_ROLES.get(kind, set())
     groups = list_bind_groups(graph, family=kind)
     covered = {mid for g in groups for mid in g}
     for nid, data in graph.nodes(data=True):
@@ -542,6 +364,8 @@ def _collect_control_point_text_groups(graph, kind_rule: dict) -> list[list[str]
             continue
         sid = str(nid)
         if sid in covered:
+            continue
+        if annotation_family(str(data.get("layer") or "")) != kind:
             continue
         role_guess = resolve_role(
             {
@@ -556,7 +380,7 @@ def _collect_control_point_text_groups(graph, kind_rule: dict) -> list[list[str]
             kind,
             kind_rule,
         )
-        if role_guess in {"point_id", "elevation"}:
+        if role_guess in allowed:
             groups.append([sid])
     return groups
 
@@ -639,23 +463,23 @@ def _assign_groups_to_anchors_exclusive(
     return assignment
 
 
-def _slot_members_from_bind_group(
+def _slot_members_from_group(
     graph,
     members: list[str],
     anchor: dict,
     *,
+    kind: str,
     kind_rule: dict,
     max_members: dict,
     search_radius: float,
+    max_member_dist: float,
 ) -> list[dict]:
-    """Build role payloads for a whole bind group; do not drop for distance."""
-    kind = "control_point"
-    elev_lim = int(max_members.get("elevation", 2))
-    id_lim = int(max_members.get("point_id", 1))
-    elevs: list[dict] = []
-    ids: list[dict] = []
+    """从文字组中选取距锚点不超过 max_member_dist 的成员入组。"""
+    by_role: dict[str, list[dict]] = defaultdict(list)
 
     for mid in members:
+        if mid not in graph.nodes:
+            continue
         data = graph.nodes[mid]
         if str(data.get("shape_type") or "") != "text":
             continue
@@ -672,68 +496,92 @@ def _slot_members_from_bind_group(
         }
         role = resolve_role(ent, kind, kind_rule)
         if role is None:
-            from text_roles import is_elevation_text
-
-            if is_elevation_text(str(ent.get("text") or "")):
-                role = "elevation"
-            elif is_point_id_candidate(
-                str(ent.get("text") or ""), str(ent.get("layer") or "")
-            ):
-                role = "point_id"
-            else:
+            if kind == "control_point":
+                if is_elevation_text(str(ent.get("text") or "")):
+                    role = "elevation"
+                elif is_point_id_candidate(
+                    str(ent.get("text") or ""), str(ent.get("layer") or "")
+                ):
+                    role = "point_id"
+            if role is None:
                 continue
-        d = _min_dist_group_to_anchor(graph, [mid], anchor) or 0.0
+        if role == "elevation" and kind == "borehole":
+            layer_roles = kind_rule.get("layer_roles") or {}
+            if layer_roles.get(str(ent.get("layer") or "")) == "collar":
+                role = "collar"
+        d = _min_dist_group_to_anchor(graph, [mid], anchor)
+        if d is None or d > max_member_dist:
+            continue
         scores = _score_member(ent, role, d, kind_rule, search_radius)
         if scores is None:
-            # Candidate stage: keep bind-group members even if far from circle.
-            scores = {
-                "score_layer": layer_score(ent, role, kind_rule),
-                "score_distance": 0.5,
-                "score_orientation": 1.0,
-                "score_total": 0.5,
-            }
-        payload = _member_payload(ent, role, d, scores=scores)
-        if role == "elevation":
-            elevs.append(payload)
-        elif role == "point_id":
-            ids.append(payload)
+            continue
+        by_role[role].append(_member_payload(ent, role, d, scores=scores))
 
-    elevs.sort(key=lambda m: float(m.get("dist") or 0.0))
-    ids.sort(key=lambda m: float(m.get("dist") or 0.0))
-    return elevs[:elev_lim] + ids[:id_lim]
+    if kind == "control_point":
+        elev_lim = int(max_members.get("elevation", 2))
+        id_lim = int(max_members.get("point_id", 1))
+        elevs = sorted(by_role.get("elevation") or [], key=lambda m: m["dist"])
+        ids = sorted(by_role.get("point_id") or [], key=lambda m: m["dist"])
+        return elevs[:elev_lim] + ids[:id_lim]
+
+    slot_members: list[dict] = []
+    order = ["borehole_id", "collar", "elevation", "seam_value"]
+    for role in order:
+        bucket = sorted(by_role.get(role) or [], key=lambda m: m["dist"])
+        slot_members.extend(bucket)
+    if not any(m.get("role") == "collar" for m in slot_members):
+        for m in sorted(by_role.get("elevation") or [], key=lambda x: x["dist"]):
+            try:
+                val = abs(float(clean_text(m.get("text", ""))))
+            except ValueError:
+                continue
+            if val < 0:
+                continue
+            slot_members.append({**m, "role": "collar"})
+            break
+    return slot_members
 
 
-def _match_control_points_by_bind_groups(
+def _match_kind_by_bind_groups(
     graph,
     anchors: list[dict],
     *,
+    kind: str,
     kind_rule: dict,
     max_members: dict,
     search_radius: float,
     outer: float,
 ) -> list[dict]:
     """
-    Bind groups ↔ circles via mutual top-K within tier1; leftovers retry in tier2.
-    Matched groups/circles leave the isolated pools; unmatched stay isolated.
+    同类绑定组 / 孤立文字 ↔ 同类锚点：tier1 双向 Top-K，剩余 tier2 再互选。
+    未匹配文字保持孤立。
     """
-    kind = "control_point"
-    groups = _collect_control_point_text_groups(graph, kind_rule)
+    groups = _collect_kind_text_groups(graph, kind, kind_rule)
     tier1 = CFG.distance_tier1_ratio * search_radius
-    # 一阶：双向 Top-K 互选连线
-    assignment = _assign_groups_to_anchors_exclusive(
-        graph, groups, anchors, max_dist=tier1
+    assignment: dict[str, list[str]] = {}
+    member_dist: dict[str, float] = {}
+
+    def _merge_assign(new: dict[str, list[str]], *, max_dist: float) -> None:
+        for aid, mems in new.items():
+            assignment[aid] = mems
+            member_dist[aid] = max_dist
+
+    _merge_assign(
+        _assign_groups_to_anchors_exclusive(graph, groups, anchors, max_dist=tier1),
+        max_dist=tier1,
     )
     assigned_members = {mid for g in assignment.values() for mid in g}
     leftover_groups = [
         g for g in groups if not any(mid in assigned_members for mid in g)
     ]
     leftover_anchors = [a for a in anchors if str(a["id"]) not in assignment]
-    # 二阶：剩余孤立文字组 / 孤立圆再互选一次（半径 outer = tier2）
     if leftover_groups and leftover_anchors and outer > tier1:
-        extra = _assign_groups_to_anchors_exclusive(
-            graph, leftover_groups, leftover_anchors, max_dist=outer
+        _merge_assign(
+            _assign_groups_to_anchors_exclusive(
+                graph, leftover_groups, leftover_anchors, max_dist=outer
+            ),
+            max_dist=outer,
         )
-        assignment.update(extra)
 
     anchor_by_id = {str(a["id"]): a for a in anchors}
     clusters: list[dict] = []
@@ -741,13 +589,15 @@ def _match_control_points_by_bind_groups(
         anchor = anchor_by_id.get(aid)
         if anchor is None:
             continue
-        slot_members = _slot_members_from_bind_group(
+        slot_members = _slot_members_from_group(
             graph,
             members,
             anchor,
+            kind=kind,
             kind_rule=kind_rule,
             max_members=max_members,
             search_radius=search_radius,
+            max_member_dist=member_dist.get(aid, tier1),
         )
         cluster = _finish_candidate_cluster(anchor, kind, kind_rule, slot_members)
         if cluster is not None:
@@ -755,13 +605,70 @@ def _match_control_points_by_bind_groups(
     return clusters
 
 
+def _borehole_anchor_xy(cluster: dict) -> tuple[str, float, float, str] | None:
+    aid = str(cluster.get("anchor_id") or "")
+    for m in cluster.get("members") or []:
+        if str(m.get("id") or "") == aid and m.get("x") is not None:
+            return (
+                aid,
+                float(m["x"]),
+                float(m["y"]),
+                str(m.get("layer") or ""),
+            )
+    for m in cluster.get("members") or []:
+        if str(m.get("shape_type") or "") == "point-like" and m.get("x") is not None:
+            return (
+                str(m.get("id") or aid),
+                float(m["x"]),
+                float(m["y"]),
+                str(m.get("layer") or ""),
+            )
+    return None
+
+
+def _borehole_cluster_rank(cluster: dict, char_h: float) -> tuple[float, float]:
+    """Higher is better: (score, negative anchor-id distance)."""
+    bid_xy: tuple[float, float] | None = None
+    for m in cluster.get("members") or []:
+        if m.get("role") == "borehole_id" and m.get("x") is not None:
+            bid_xy = (float(m["x"]), float(m["y"]))
+            break
+    anchor = _borehole_anchor_xy(cluster)
+    score = 0.0
+    dist = float("inf")
+    if anchor is not None:
+        _aid, ax, ay, layer = anchor
+        if is_borehole_symbol_layer(layer):
+            score += 1000.0
+        if bid_xy is not None:
+            dist = math.hypot(ax - bid_xy[0], ay - bid_xy[1])
+            score -= dist
+        member_pts = [
+            (float(m["x"]), float(m["y"]))
+            for m in cluster.get("members") or []
+            if m.get("role") not in {None, ""}
+            and str(m.get("shape_type") or "") == "text"
+            and m.get("x") is not None
+        ]
+        if member_pts and math.isfinite(dist):
+            cx = sum(p[0] for p in member_pts) / len(member_pts)
+            cy = sum(p[1] for p in member_pts) / len(member_pts)
+            score -= 0.1 * math.hypot(ax - cx, ay - cy)
+    conf = float(cluster.get("confidence") or 0.0)
+    return (score + conf, -dist if math.isfinite(dist) else 0.0)
+
+
 def dedupe_borehole_clusters(clusters: list[dict], char_h: float) -> list[dict]:
     kept: list[dict] = []
-    seen: list[tuple[str, float, float]] = []
+    borehole: list[dict] = []
     for c in clusters:
         if c["kind"] != "borehole":
             kept.append(c)
-            continue
+        else:
+            borehole.append(c)
+
+    buckets: dict[tuple[str, int, int], list[dict]] = defaultdict(list)
+    for c in borehole:
         bid = ""
         ax = ay = 0.0
         for m in c["members"]:
@@ -772,15 +679,16 @@ def dedupe_borehole_clusters(clusters: list[dict], char_h: float) -> list[dict]:
         if not bid:
             kept.append(c)
             continue
-        dup = False
-        for t, sx, sy in seen:
-            if t == bid and math.hypot(ax - sx, ay - sy) < 3.0 * char_h:
-                dup = True
-                break
-        if dup:
-            continue
-        seen.append((bid, ax, ay))
-        kept.append(c)
+        key = (
+            bid,
+            int(round(ax / max(char_h, 1e-6))),
+            int(round(ay / max(char_h, 1e-6))),
+        )
+        buckets[key].append(c)
+
+    for group in buckets.values():
+        best = max(group, key=lambda c: _borehole_cluster_rank(c, char_h))
+        kept.append(best)
     return kept
 
 
@@ -793,8 +701,7 @@ def detect_clusters_on_graph(graph, entities: list[dict], rulepack: dict) -> lis
         )
     )
     graph.graph["median_char_height"] = char_h
-    if not graph.graph.get("bind_group_count") and not graph.graph.get("bind_edge_count"):
-        build_text_value_bind_chains(graph, cfg=CFG, char_h=char_h)
+    build_text_value_bind_chains(graph, cfg=CFG, char_h=char_h)
     clusters: list[dict] = []
     for kind in ("control_point", "borehole"):
         kind_rule = dict(rulepack["kinds"][kind])

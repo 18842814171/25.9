@@ -15,7 +15,7 @@ stage2/
 ├── geometry.py       # 图元提取、端点连接图、wall_lines 转换
 ├── graph_usage.py    # 端点图段列表、碎线提取
 ├── io.py             # JSON / 图持久化
-└── visualize.py      # 墙线、碎线聚类绘图（供库调用）
+└── visualize.py      # 墙线、碎线分类绘图（供库调用）
 ```
 
 ---
@@ -29,7 +29,7 @@ stage2/
 | Step 2A 圆角检测 | `python step2A/arc_bend_detect.py --stem ...` |
 | Step 2A 圆角裁端 | `python step2A/arc_normalize.py --stem ...` |
 | Step 2A 总览图 | `python step2A/run_overview.py --stem ...` |
-| Step 2B 碎线聚类 |` |
+| Step 2B 碎线分类 |` |
 | Step 2B 墙线可视化 |  |
 
 详细说明见 `step2A/README.md`、`step2B/README.md`。

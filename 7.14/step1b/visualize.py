@@ -296,7 +296,7 @@ def draw_structure_graph_with_texts(
                 color="w",
                 markerfacecolor=cfg.color_control_point,
                 markersize=8,
-                label="控制点簇",
+                label="控制点组",
             ),
             Line2D(
                 [0],
@@ -305,7 +305,7 @@ def draw_structure_graph_with_texts(
                 color="w",
                 markerfacecolor=cfg.color_borehole,
                 markersize=8,
-                label="钻孔簇",
+                label="钻孔组",
             ),
             Line2D(
                 [0],
@@ -322,7 +322,7 @@ def draw_structure_graph_with_texts(
                 color=cfg.color_attach_edge,
                 lw=1,
                 linestyle="--",
-                label="挂接",
+                label="关联",
             ),
         ]
     )
